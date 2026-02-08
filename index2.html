@@ -1,0 +1,958 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA SISWA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <style>
+        
+        
+        @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+}
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#212121;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#000000;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+        
+        
+        body {
+  font-family: sans-serif;
+  background-color: #dedede;
+  color: #333;
+  padding: 20px 0 28px 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.6rem;
+}
+
+.animal {
+  max-width: 650px;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.animal h4 {
+  margin: 0 0 6px 0;
+}
+
+.pet-photo {
+  float: left;
+  width: 40%;
+  margin-right: 15px;
+}
+
+.pet-name {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+
+.species {
+  font-size: 0.9rem;
+  color: #888;
+  vertical-align: middle;
+}
+
+.foods-list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 17px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.footer {
+  font-size: 0.7rem;
+  color: #888;
+  text-align: center;
+  margin: 0;
+}
+        
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+      var script_url = "https://script.google.com/macros/s/AKfycbyVhIWWPznHU2J93tyMxYQf0JczHSHAwRpNJKzxYxbPnb9iRM3h5ASo5toLb6INMp8y/exec";
+
+   
+   
+        function insert_value() {
+
+            $("#re").css("visibility", "hidden");
+            document.getElementById("loader").style.visibility = "visible";
+            $('#mySpinner').addClass('spinner');
+
+            
+            
+            
+            var id1 = $("#id").val();
+            var cost = $("#cost").val();
+            var name = $("#name").val();
+            var unit = $("#unit").val();
+            var orderid = $("#orderid").val();
+            var size = $("#size").val();
+            var color = $("#color").val();
+            var description = $("#description").val(); //////////////////
+
+            var url = script_url + "?callback=ctrlq&description=" + description + "&color=" + color + "&size=" + size + "&orderid=" + orderid + "&unit=" + unit + "&name=" + name + "&cost=" + cost + "&id=" + id1 + "&action=insert";
+
+            var request = jQuery.ajax({
+                crossDomain: true,
+                url: url,
+                method: "GET",
+                dataType: "jsonp"
+            });
+        }
+
+        // perbaharui data
+        function update_value() {
+            $("#re").css("visibility", "hidden");
+            document.getElementById("loader").style.visibility = "visible";
+
+               var id1 = $("#id").val();
+            var cost = $("#cost").val();
+            var name = $("#name").val();
+            var unit = $("#unit").val();
+            var orderid = $("#orderid").val();
+            var size = $("#size").val();
+            var color = $("#color").val();
+            var description = $("#description").val(); //////////////////
+
+            var url = script_url + "?callback=ctrlq&description=" + description + "&color=" + color + "&size=" + size + "&orderid=" + orderid + "&unit=" + unit + "&name=" + name + "&cost=" + cost + "&id=" + id1 + "&action=update";
+
+            var request = jQuery.ajax({
+                crossDomain: true,
+                url: url,
+                method: "GET",
+                dataType: "jsonp"
+            });
+        }
+
+        //hapus data
+        function delete_value() {
+            $("#re").css("visibility", "hidden");
+            document.getElementById("loader").style.visibility = "visible";
+
+            $('#mySpinner').addClass('spinner');
+               var id1 = $("#id").val();
+            var cost = $("#cost").val();
+            var name = $("#name").val();
+            var unit = $("#unit").val();
+            var orderid = $("#orderid").val();
+            var size = $("#size").val();
+            var color = $("#color").val();
+            var description = $("#description").val();  //////////////////
+
+            var url = script_url + "?callback=ctrlq&description=" + description + "&color=" + color + "&size=" + size + "&orderid=" + orderid + "&unit=" + unit + "&name=" + name + "&cost=" + cost + "&id=" + id1 + "&action=delete";
+
+            var request = jQuery.ajax({
+                crossDomain: true,
+                url: url,
+                method: "GET",
+                dataType: "jsonp"
+            });
+        }
+
+        // print the returned data
+        function ctrlq(e) {
+            $("#re").html(e.result);
+            $("#re").css("visibility", "visible");
+            read_value('');
+        }
+
+        function read_value(srch) {
+
+            $("#re").css("visibility", "hidden");
+            document.getElementById("loader").style.visibility = "visible";
+            var url = script_url + "?action=read";
+
+            $.getJSON(url, function(json) {
+
+                // buat tabel yang menampilkan data
+                var table = document.createElement("table");
+                table.setAttribute("id", "myTable");
+                var header = table.createTHead();
+                var row = header.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                var cell4 = row.insertCell(3);
+                var cell5 = row.insertCell(4);
+                var cell6 = row.insertCell(5);
+                var cell7 = row.insertCell(6);
+                var cell8 = row.insertCell(7); ///////////////////
+                row.style.background = "rgb(15,0,0)";
+
+                cell1.innerHTML = "<b>ID</b>";
+                cell2.innerHTML = "<b>cost</b>";
+                cell3.innerHTML = "<b>name</b>";
+                cell4.innerHTML = "<b>unit</b>";
+                cell5.innerHTML = "<b>orderid</b>";
+                cell6.innerHTML = "<b>size</b>";
+                cell7.innerHTML = "<b>color</b>";
+                cell8.innerHTML = "<b>description</b>"; //////////////////
+
+                //        alert(json.records);
+                // masukkan data ke dalam tabel
+                if (srch != '') {
+                    for (var i = 0; i < json.records.length; i++) {
+
+                        if (srch == json.records[i].ID) {
+                            tr = table.insertRow(-1);
+                            var tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].ID;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].cost;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].name;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].unit;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].orderid;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].size;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].color;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].description; //////////////////
+                        }
+                    }
+                    $("#re").html("Informasi data siswa");
+                    $("#re").css("visibility", "visible");
+                } else {
+                    for (var i = 0; i < json.records.length; i++) {
+
+                        tr = table.insertRow(-1);
+                        var tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].ID;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].cost;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].name;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].unit;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].orderid;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].size;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].color;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].description; ////////////////
+                    }
+                }
+
+                var divContainer = document.getElementById("showData");
+                divContainer.innerHTML = "";
+                divContainer.appendChild(table);
+                document.getElementById("loader").style.visibility = "hidden";
+                $("#re").css("visibility", "visible");
+
+                $("#id").val("")
+                $("#cost").val("")
+                $("#name").val("")
+                $("#unit").val("")
+                $("#orderid").val("")
+                $("#size").val("")
+                $("#color").val("")
+                $("#description").val("")
+                getData2Input(); ///////////////////
+            });
+        }
+        //////////// Ketika data dalam tabel diklik
+        function getData2Input() {
+            var table = document.getElementById("myTable");
+
+            if (table) {
+                for (var i = 0; i < table.rows.length; i++) {
+                    table.rows[i].onclick = function() {
+                        tableText(this);
+                    }
+                }
+            }
+        }
+
+        ///////////////////Ekstrak data dari Spreadsheet dan tampilkan di kolom.
+
+        function tableText(tableRow) {
+            var id = tableRow.childNodes[0].innerHTML;
+            var cost = tableRow.childNodes[1].innerHTML;
+            var name = tableRow.childNodes[2].innerHTML;
+            var unit = tableRow.childNodes[3].innerHTML;
+            var orderid = tableRow.childNodes[4].innerHTML;
+            var size = tableRow.childNodes[5].innerHTML;
+            var color = tableRow.childNodes[6].innerHTML;
+            var description = tableRow.childNodes[7].innerHTML; //////////
+            $("#id").val(id)
+            $("#cost").val(cost)
+            $("#name").val(name)
+            $("#unit").val(unit)
+            $("#orderid").val(orderid)
+            $("#size").val(size)
+            $("#color").val(color)
+            $("#description").val(description)
+
+        }
+    </script>
+
+</head>
+
+<body>
+      
+      
+      <div class="area">wgegwgwegwe<span id="images" class="images">image</span>w</div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                           home
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="index2.html">
+                        <i class="fa fa-globe fa-2x"></i>
+                        <span class="nav-text">
+                         orders
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="index3.html">
+                       <i class="fa fa-comments fa-2x"></i>
+                        <span class="nav-text">
+                           products
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-camera-retro fa-2x"></i>
+                        <span class="nav-text">
+                          customers
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-film fa-2x"></i>
+                        <span class="nav-text">
+                            content
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-book fa-2x"></i>
+                        <span class="nav-text">
+                          finance
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                       <i class="fa fa-cogs fa-2x"></i>
+                        <span class="nav-text">
+                            store
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">
+                            Member Map
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <i class="fa fa-info fa-2x"></i>
+                        <span class="nav-text">
+                            Documentation
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+    <!-- Buat Formulir -->
+    <div class="wrapper">
+        
+
+
+
+
+
+        <!-- Memanggil loader-->
+        <div id="loader"></div>
+        <p id="re"></p>
+     
+        <div id="mrphekeModal3" class="modal fade">
+            <form name="google-sheet">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" style="font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px;float: left;">CLOSE</button>
+                            
+                            
+                                    <div class="form" >
+
+
+
+
+            <div class="inputfield">
+                <label></label>
+                <input type="number" name="srchID" id="srchID" placeholder="Search by ID" style="text-align: center;" &nbsp; />
+                <input type="button" style="font-size:12pt;color:white;background-color:#5F9EA0;border:1px solid #000000;padding:2px" onclick="read_value($('#srchID').val())" value="Search" /><br>
+        
+            </div>
+<br>
+
+            <div class="inputfield">
+                <label>ID</label>
+                <input type="number" name="id" id="id" class="input" placeholder="Input ID">
+            </div>
+
+
+            <div class="inputfield">
+                <label>cost</label>
+                <input type="text" name="cost" id="cost" class="input" placeholder="cost">
+            </div>
+
+
+            
+            
+               <div class="inputfield">
+                <label>name</label>
+                <input type="text" name="name" id="name" class="input" placeholder="name">
+            </div>
+            
+               <div class="inputfield">
+                <label>unit</label>
+                <input type="text" name="unit" id="unit" class="input" placeholder="unit">
+            </div>
+            
+            
+               <div class="inputfield">
+                <label>orderid</label>
+                <input type="text" name="orderid" id="orderid" class="input" placeholder="orderid">
+            </div>
+            
+            
+            
+               <div class="inputfield">
+                <label>size</label>
+                <input type="text" name="size" id="size" class="input" placeholder="size">
+            </div>
+            
+               <div class="inputfield">
+                <label>color</label>
+                <input type="text" name="color" id="color" class="input" placeholder="color">
+            </div>
+            
+            
+                 <div class="inputfield">
+                <label>description</label>
+                <input type="text" name="description" id="description" class="input" placeholder="color">
+            </div>
+            
+            
+            
+            
+            
+            <div align="center">
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#228B22;border:1px solid #000000;padding:2px" id="b1" onClick="insert_value()" value="SUBMIT">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#DAA520;border:1px solid #000000;padding:2px" onclick="read_value('')" value="READ">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#0000CD;border:1px solid #000000;padding:2px" onclick="update_value()" value="UPDATE">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px" onclick="delete_value()" value="DELETE">
+            </div>
+
+  
+
+
+        </div>
+
+
+                            
+                            
+                            
+                   
+ <div id="showData">asf</div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    
+          <div id="mrphekeModal1" class="modal fade">
+            <form name="google-sheet">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" style="font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px;float: left;">CLOSE</button>
+                            
+                            
+                                    <div class="form" >
+
+
+
+
+            <div class="inputfield">
+                <label></label>
+                <input type="number" name="srchID" id="srchID" placeholder="Search by ID" style="text-align: center;" &nbsp; />
+                <input type="button" style="font-size:12pt;color:white;background-color:#5F9EA0;border:1px solid #000000;padding:2px" onclick="read_value($('#srchID').val())" value="Search" /><br>
+        
+            </div>
+<br>
+
+            <div class="inputfield">
+                <label>ID</label>
+                <input type="number" name="id" id="id" class="input" placeholder="Input ID">
+            </div>
+
+
+            <div class="inputfield">
+                <label>cost</label>
+                <input type="text" name="cost" id="cost" class="input" placeholder="cost">
+            </div>
+
+
+            
+            
+               <div class="inputfield">
+                <label>name</label>
+                <input type="text" name="name" id="name" class="input" placeholder="name">
+            </div>
+            
+               <div class="inputfield">
+                <label>unit</label>
+                <input type="text" name="unit" id="unit" class="input" placeholder="unit">
+            </div>
+            
+            
+               <div class="inputfield">
+                <label>orderid</label>
+                <input type="text" name="orderid" id="orderid" class="input" placeholder="orderid">
+            </div>
+            
+            
+            
+               <div class="inputfield">
+                <label>size</label>
+                <input type="text" name="size" id="size" class="input" placeholder="size">
+            </div>
+            
+               <div class="inputfield">
+                <label>color</label>
+                <input type="text" name="color" id="color" class="input" placeholder="color">
+            </div>
+            
+            
+                 <div class="inputfield">
+                <label>description</label>
+                <input type="text" name="description" id="description" class="input" placeholder="color">
+            </div>
+            
+            
+            
+            
+            
+            <div align="center">
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#228B22;border:1px solid #000000;padding:2px" id="b1" onClick="insert_value()" value="SUBMIT">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#DAA520;border:1px solid #000000;padding:2px" onclick="read_value('')" value="READ">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#0000CD;border:1px solid #000000;padding:2px" onclick="update_value()" value="UPDATE">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px" onclick="delete_value()" value="DELETE">
+            </div>
+
+  
+
+
+        </div>
+
+
+                            
+                            
+                            
+                   
+ <div id="showData">asf</div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    
+
+    
+    
+    
+     
+        <div id="mrphekeModal2" class="modal fade">
+            <form name="google-sheet">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" style="font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px;float: left;">CLOSE</button>
+                            
+                            
+                                    <div class="form" >
+
+
+
+
+            
+             
+             <iframe src="https://docs.google.com/spreadsheets/d/14ooqNmXvtkCDoAqOP9IUeenTEbBmj7uwikJJZI7wszI/edit#gid=0" style="width: 100%;height: 450px;"></iframe>
+            
+            
+            
+            <div align="center">
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#228B22;border:1px solid #000000;padding:2px" id="b1" onClick="insert_value()" value="SUBMIT">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#DAA520;border:1px solid #000000;padding:2px" onclick="read_value('')" value="READ">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#0000CD;border:1px solid #000000;padding:2px" onclick="update_value()" value="UPDATE">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px" onclick="delete_value()" value="DELETE">
+            </div>
+
+  
+
+
+        </div>
+
+
+                            
+                            
+                            
+                   
+ <div id="showData">asf</div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+
+    
+    
+    
+    
+    
+    
+
+
+ 
+<script>
+       var previous = null;
+    var current = null;
+    setInterval(function() {
+        
+         $.getJSON("", function() {
+            
+            current = JSON.stringify();            
+            if (previous && current && previous !== current) {
+                
+        
+            }
+            previous = current;
+        }); 
+        
+    (function() {
+    
+    
+   
+  var flickerAPI = "https://script.google.com/macros/s/AKfycbx_wjglQcwvcsvDS-63FgZMTQwKNfN7eOpXT0zl1nHqpV9ydYhPWvydD2bq_Ng26-8h0w/exec";
+    
+ 
+    
+  $.getJSON( flickerAPI, {}).done(function( data ) {
+      
+ 
+      
+      
+      
+      
+      
+      current = JSON.stringify(data);            
+            if (previous && current && previous !== current) {
+                console.log('refresh');
+                location.reload();
+            }
+            previous = current;
+      
+      
+        document.getElementById("images").innerHTML = 
+        
+  `<h1 class="app-title">shipping(${data.length} results)</h1>
+  ${data.map(clientTemplate).join("")}
+  <p class="footer">These ${data.length} clients were added recently.</p>`;
+      
+      function clientTemplate(client) { return `
+
+<div class="${client.price}" id="${client.Orderid}">
+    <div class="animal">
+    
+                       <div class="boxtest">
+${ client.country }
+                    <strong>city:${ client.city }<strong>state:</strong>${ client.state }
+                      <strong>state:</strong>${ client.address }
+                 </a>
+                  
+                         <a>
+                  # ${client.phonenumber}<br>
+                    ${client.email}<br>
+                      ${client.product}<br>
+
+ ${client.firstname} ${client.lastname}<br>
+                    ${client.phonenumber}<br>
+                     
+
+
+                            </a> 
+  
+    
+    <div class="title">
+            <a href="#mrphekeModal1" class="btn btn-primary" style="font-size: 13px;width: 150px;float: left;" data-toggle="modal"><i class="material-icons"></i>edit personal information</a>
+  <a href="#mrphekeModal3" class="btn btn-primary" style="font-size: 13px;width: 150px;float: left;" data-toggle="modal"><i class="material-icons"></i>edit shipping information</a>
+            <a href="#mrphekeModal2" class="btn btn-primary" style="font-size: 13px;width: 150px;float: left;" data-toggle="modal"><i class="material-icons"></i>Spreadsheet</a>
+        </div>
+    <div class="container">
+    <div class="visible">
+
+    </div>
+    <div class="hidden">
+        
+    </div>
+</div>
+    </div> 
+
+    </div>
+ </div>
+  `;
+}
+      
+      
+ 
+    });
+})();
+    
+      
+    }, 2000);      
+
+
+  
+ 
+
+
+
+  
+
+    
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>

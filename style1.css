@@ -1,0 +1,161 @@
+
+body {
+  background: #e0dfe7;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: grid;
+  width: 1000px;
+  margin: 30px auto;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-areas: "action performance storage " " analysis analysis boost " " follow-chart data-chart link-chart" ;
+  grid-gap: 20px;
+    
+}
+
+ 
+ 
+.action, .performance, .storage, .follow, .data, .link{
+  position: relative;
+  background: white;
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.action {
+  grid-area: action;
+}
+
+
+
+.performance {
+  grid-area: performance;
+}
+
+.storage {
+  grid-area: storage;
+}
+
+.follow {
+   grid-area: action;
+}
+
+
+.data {
+  grid-area: action;
+}
+
+.link {
+  grid-area: action;
+}
+.analysis-header {
+  grid-area: analysis-header;
+}
+.analysis-header h1 {
+  font-size: 18pt;
+  color: #654a82;
+  font-weight: normal;
+}
+
+.analysis-nav {
+  text-align: right;
+  grid-area: analysis-nav;
+}
+.analysis-nav h2 {
+  display: inline-block;
+  font-size: 12pt;
+  color: #4c3862;
+  background: white;
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: normal;
+}
+.analysis-nav h2 i {
+  font-size: 10pt;
+}
+
+.analysis-chart {
+  margin-top: 20px;
+  grid-area: analysis-data;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+.follow-chart {
+  margin-top: 20px;
+  grid-area: analysis-data;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+.boost {
+  display: grid;
+  grid-template-areas: "gap" "boost-card";
+  grid-area: boost;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.boost-card {
+  margin-top: 20px;
+  height: 349px;
+  padding: 20px;
+  background: #654a82;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.boost-card h2 {
+  color: white;
+  font-size: 24pt;
+}
+.boost-card h2:nth-of-type(2) {
+  margin: 5px 0 10px 0;
+}
+.boost-card h3 {
+  color: #d8d8e0;
+  font-size: 10pt;
+  font-weight: normal;
+}
+.boost-card img {
+  width: 300px;
+}
+
+#action-chart, #performance-chart, #storage-chart, #follow-chart, #data-chart, #link-chart {
+  position: absolute;
+  bottom: 0;
+}
+
+header {
+  padding: 70px 20px;
+}
+
+header h1, header h2 {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+header h2 {
+  font-size: 14pt;
+  color: rgba(101, 74, 130, 0.8);
+}
+
+header sup {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #C71585;
+}
+header sup i {
+  font-size: 18pt;
+}
+
+.up {
+  color: #32CD32;
+}
+
+.down {
+  color: #C71585;
+}

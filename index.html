@@ -1,290 +1,2349 @@
-<!DOCTYPE html>
+<html lang="en" class="p-theme-light" style="--pc-app-provider-scrollbar-width: 10px; --pc-checkbox-offset: 40px;">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="manifest" href="/manifest.json">
+    <link href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill-rule='evenodd' clip-rule='evenodd' d='M81.8182 18.1818V81.8182H18.1818V18.1818H81.8182ZM10 90V10H90V90H10Z'/></svg>" rel="icon">
+    <link rel="mask-icon" href="/csb-ios.svg" color="#fff">
+    <script src="https://codesandbox.io/static/browserfs12/browserfs.min.js" type="text/javascript"></script>
+    <link href="https://codesandbox.io/static/js/babel.7.21.8.min.js" rel="prefetch" as="script">
+      <link rel="stylesheet" href="order.css" >
+    <script charset="utf-8" src="https://codesandbox.io/static/js/0.312f0905d.chunk.js"></script>
+    <script charset="utf-8" src="https://codesandbox.io/static/js/1.390d5cd6d.chunk.js"></script>
+    <script charset="utf-8" src="https://codesandbox.io/static/js/2.f916e8469.chunk.js"></script>
+    <script charset="utf-8" src="https://codesandbox.io/static/js/7.c29658eb4.chunk.js"></script>
+
+  
+    
+
+    <link rel="manifest" href="/manifest.json">
+    <link href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill-rule='evenodd' clip-rule='evenodd' d='M81.8182 18.1818V81.8182H18.1818V18.1818H81.8182ZM10 90V10H90V90H10Z'/></svg>" rel="icon">
+    <link rel="mask-icon" href="/csb-ios.svg" color="#fff">
+    <script src="https://codesandbox.io/static/browserfs12/browserfs.min.js" type="text/javascript"></script>
+    <link href="https://codesandbox.io/static/js/babel.7.21.8.min.js" rel="prefetch" as="script">
+    <link rel="stylesheet" href="order.css">
+    <script charset="utf-8" src="https://codesandbox.io/static/js/0.312f0905d.chunk.js"></script>
+    <script charset="utf-8" src="https://codesandbox.io/static/js/1.390d5cd6d.chunk.js"></script>
+    <script charset="utf-8" src="https://codesandbox.io/static/js/2.f916e8469.chunk.js"></script>
+    <script charset="utf-8" src="https://codesandbox.io/static/js/7.c29658eb4.chunk.js"></script>
+     <link rel="stylesheet" href="./menu.css">
+    <!DOCTYPE html>
 <html lang="en" >
-<head>
-      <!-- jQuery -->
-    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!-- jQueryUI -->
-    <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" charset="utf-8"></script>
-<!-- Bootstrap -->
-    <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
-<!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/7dd8dcb030.js"></script>
-<!-- custom script -->
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
   
+     <link rel="stylesheet" href="./menu.css">
+ <link rel="stylesheet" href="./style.css">
   <meta charset="UTF-8">
- 	<title>onlineclasses</title>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="_csrf" content="IwC3meotu_W302c8Gs0C60_2J5fbKA32_glbKnbDKUc" />
-	
-			<meta name="description" content="onlineclasses1 makes it surprisingly easy to create a high-quality website, blog or online store. Over 40 million people use Weebly to bring their unique ideas to life.">
-	
-	<meta property="og:title" content="onlineclasses1 is the easiest way to create a website, store or blog">
-	<meta property="og:type" content="company">
-	<meta property="og:site_name" content="onlineclasses1.com">
-	<meta property="og:image" content="https://www.logopik.com/wp-content/uploads/edd/2018/10/Online-Education-Logo-Vector.png">
-    
-    
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Pro Sidebar template</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+<link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'><link rel="stylesheet" href="./style.css">
 </head>
-<body>
+   
+    <style>.layout {
+  z-index: 1;
+}
+.layout .header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.layout .content {
+  padding: 12px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.layout .footer {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  color: #7d84ab;
+  overflow-x: hidden !important;
+  position: relative;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #1a4173;
+}
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+  background-color: #0c1e35;
+}
+.sidebar .image-wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.sidebar .image-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.sidebar.has-bg-image .image-wrapper {
+  display: block;
+}
+.sidebar .sidebar-layout {
+  height: auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #0c1e35;
+  z-index: 2;
+}
+.sidebar .sidebar-layout .sidebar-header {
+  height: 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.sidebar .sidebar-layout .sidebar-header > span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.sidebar .sidebar-layout .sidebar-content {
+  flex-grow: 1;
+  padding: 10px 0;
+}
+.sidebar .sidebar-layout .sidebar-footer {
+  height: 230px;
+  min-height: 230px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.sidebar .sidebar-layout .sidebar-footer > span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@keyframes swing {
+  0%, 30%, 50%, 70%, 100% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+.layout .sidebar .menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.layout .sidebar .menu .menu-header {
+  font-weight: 600;
+  padding: 10px 25px;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  transition: opacity 0.3s;
+  opacity: 0.5;
+}
+.layout .sidebar .menu .menu-item a {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  color: #7d84ab;
+}
+.layout .sidebar .menu .menu-item a .menu-icon {
+  font-size: 1.2rem;
+  width: 35px;
+  min-width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 2px;
+  transition: color 0.3s;
+}
+.layout .sidebar .menu .menu-item a .menu-icon i {
+  display: inline-block;
+}
+.layout .sidebar .menu .menu-item a .menu-title {
+  font-size: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+  transition: color 0.3s;
+}
+.layout .sidebar .menu .menu-item a .menu-prefix,
+.layout .sidebar .menu .menu-item a .menu-suffix {
+  display: inline-block;
+  padding: 5px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.layout .sidebar .menu .menu-item a:hover .menu-title {
+  color: #dee2ec;
+}
+.layout .sidebar .menu .menu-item a:hover .menu-icon {
+  color: #dee2ec;
+}
+.layout .sidebar .menu .menu-item a:hover .menu-icon i {
+  animation: swing ease-in-out 0.5s 1 alternate;
+}
+.layout .sidebar .menu .menu-item a:hover::after {
+  border-color: #dee2ec !important;
+}
+.layout .sidebar .menu .menu-item.sub-menu {
+  position: relative;
+}
+.layout .sidebar .menu .menu-item.sub-menu > a::after {
+  content: "";
+  transition: transform 0.3s;
+  border-right: 2px solid currentcolor;
+  border-bottom: 2px solid currentcolor;
+  width: 5px;
+  height: 5px;
+  transform: rotate(-45deg);
+}
+.layout .sidebar .menu .menu-item.sub-menu > .sub-menu-list {
+  padding-left: 20px;
+  display: none;
+  overflow: hidden;
+  z-index: 999;
+}
+.layout .sidebar .menu .menu-item.sub-menu.open > a {
+  color: #dee2ec;
+}
+.layout .sidebar .menu .menu-item.sub-menu.open > a::after {
+  transform: rotate(45deg);
+}
+.layout .sidebar .menu .menu-item.active > a .menu-title {
+  color: #dee2ec;
+}
+.layout .sidebar .menu .menu-item.active > a::after {
+  border-color: #dee2ec;
+}
+.layout .sidebar .menu .menu-item.active > a .menu-icon {
+  color: #dee2ec;
+}
+.layout .sidebar .menu > ul > .sub-menu > .sub-menu-list {
+  background-color: #0b1a2c;
+}
+.layout .sidebar .menu.icon-shape-circle .menu-item a .menu-icon, .layout .sidebar .menu.icon-shape-rounded .menu-item a .menu-icon, .layout .sidebar .menu.icon-shape-square .menu-item a .menu-icon {
+  background-color: #0b1a2c;
+}
+.layout .sidebar .menu.icon-shape-circle .menu-item a .menu-icon {
+  border-radius: 50%;
+}
+.layout .sidebar .menu.icon-shape-rounded .menu-item a .menu-icon {
+  border-radius: 4px;
+}
+.layout .sidebar .menu.icon-shape-square .menu-item a .menu-icon {
+  border-radius: 0;
+}
+.layout .sidebar:not(.collapsed) .menu > ul > .menu-item.sub-menu > .sub-menu-list {
+  visibility: visible !important;
+  position: static !important;
+  transform: translate(0, 0) !important;
+}
+.layout .sidebar.collapsed .menu > ul > .menu-header {
+  opacity: 0;
+}
+.layout .sidebar.collapsed .menu > ul > .menu-item > a .menu-prefix,
+.layout .sidebar.collapsed .menu > ul > .menu-item > a .menu-suffix {
+  opacity: 0;
+}
+.layout .sidebar.collapsed .menu > ul > .menu-item.sub-menu > a::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: currentcolor;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  border: none;
+  transform: translateY(-50%);
+}
+.layout .sidebar.collapsed .menu > ul > .menu-item.sub-menu > a:hover::after {
+  background-color: #dee2ec;
+}
+.layout .sidebar.collapsed .menu > ul > .menu-item.sub-menu > .sub-menu-list {
+  transition: none !important;
+  width: 200px;
+  margin-left: 3px !important;
+  border-radius: 4px;
+  display: block !important;
+}
+.layout .sidebar.collapsed .menu > ul > .menu-item.active > a::after {
+  background-color: #dee2ec;
+}
+.layout .sidebar.has-bg-image .menu.icon-shape-circle .menu-item a .menu-icon, .layout .sidebar.has-bg-image .menu.icon-shape-rounded .menu-item a .menu-icon, .layout .sidebar.has-bg-image .menu.icon-shape-square .menu-item a .menu-icon {
+  background-color: rgba(11, 26, 44, 0.6);
+}
+.layout .sidebar.has-bg-image:not(.collapsed) .menu > ul > .sub-menu > .sub-menu-list {
+  background-color: rgba(11, 26, 44, 0.6);
+}
+.layout.rtl .sidebar .menu .menu-item a .menu-icon {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.layout.rtl .sidebar .menu .menu-item.sub-menu > a::after {
+  transform: rotate(135deg);
+}
+.layout.rtl .sidebar .menu .menu-item.sub-menu > .sub-menu-list {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.layout.rtl .sidebar .menu .menu-item.sub-menu.open > a::after {
+  transform: rotate(45deg);
+}
+.layout.rtl .sidebar.collapsed .menu > ul > .menu-item.sub-menu a::after {
+  right: auto;
+  left: 10px;
+}
+.layout.rtl .sidebar.collapsed .menu > ul > .menu-item.sub-menu > .sub-menu-list {
+  margin-left: -3px !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #3f4750;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  #btn-collapse {
+    display: none;
+  }
+}
+.layout .sidebar .pro-sidebar-logo {
+  display: flex;
+  align-items: center;
+}
+.layout .sidebar .pro-sidebar-logo > div {
+  width: 35px;
+  min-width: 35px;
+  height: 35px;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #ff8100;
+  margin-right: 10px;
+}
+.layout .sidebar .pro-sidebar-logo > h5 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  line-height: 30px;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+.layout .sidebar .footer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 20px 0;
+  border-radius: 8px;
+  width: 180px;
+  min-width: 190px;
+  margin: 0 auto;
+  background-color: #162d4a;
+}
+.layout .sidebar .footer-box img.react-logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.layout .sidebar .footer-box a {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.layout .sidebar .sidebar-collapser {
+  transition: left, right, 0.3s;
+  position: fixed;
+  left: 260px;
+  top: 40px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #00829f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  transform: translateX(50%);
+  z-index: 111;
+  cursor: pointer;
+  color: white;
+  box-shadow: 1px 1px 4px #0c1e35;
+}
+.layout .sidebar.collapsed .pro-sidebar-logo > h5 {
+  opacity: 0;
+}
+.layout .sidebar.collapsed .footer-box {
+  display: none;
+}
+.layout .sidebar.collapsed .sidebar-collapser {
+  left: 60px;
+}
+.layout .sidebar.collapsed .sidebar-collapser i {
+  transform: rotate(180deg);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #6c757d;
+}
+.badge.primary {
+  background-color: #ab2dff;
+}
+.badge.secondary {
+  background-color: #079b0b;
+}
+
+.sidebar-toggler {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #3f4750;
+}</style>
  
+<body style="background-color: var(--p-color-bg); color: var(--p-color-text);">
+    
+ 
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA SISWA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <style>
+        
+      .Custom-Polaris-Icon {
+  display: block;
+  height: 2rem; /* or value equivalent to 20px */
+  width: 2rem; /* or value equivalent to 20px */
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.Custom-Polaris-Icon__Svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+
+  /* Icon color */
+  fill: #000;
+} 
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#212121;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
   
+}
 
-    
-    
-    
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
 
-<link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html id="landing-page-home" lang="en">
-<head>
-	
-	
-		
-	<script src="https://use.typekit.net/cxj0npn.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
 
-	<!-- Stylesheets -->
-	<link href="testing.css" rel="stylesheet" type="text/css">
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
 
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
 
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
 
-	<!-- Scripts -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	<script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/utl.js?buildTime=1518741919&amp;"></script>
+a:hover,a:focus {
+text-decoration:none;
+}
 
-	
-	<script type="text/javascript">
-		Weebly.RequestToken = '';
-		var ASSETS_BASE = 'cdn2.editmysite.com';
-		var STATIC_BASE = 'cdn1.editmysite.com';
-		var WEEBLY_DEBUG = false;
-		var PIXEL_UUID  = '58690947-136f-4693-9281-934644bba56e';
-		var bootstrapData = {
-			'errorMsgs': {"wrongUserPass":"Wrong username or password","loginToAccess":"Please log-in to access that page","loginAgain":"Please log-in again to continue.","accountDeleted":"Your account was previously deleted","accountExists":"You already have an account. Please log-in.","loginInstead":"You already have an account. Please log-in."},
-			'is_eu_user': false,
-			'themes': {"vertical_ids":["95","8","14","10","12","13","104"],"verticals":[{"vertical_id":"95","shortname":"onlinestore","name":"Online Store","hidden":0,"sites":[{"site_id":"736562032190977919","theme_id":"164107688866319628","order":0,"screenshot_desktop":"58508da506476","screenshot_mobile":"583c91cc467f3","full_site":1,"subpage_content":1,"status":"active","site_name":"Kiko & Miles","theme_title":"Edison","site_url":"kikoandmiles.templates.editmysite.com"},{"site_id":"162028882852728363","theme_id":"164107688866319628","order":2,"screenshot_desktop":"583c8cca9d07c","screenshot_mobile":"583c8cd32056a","full_site":1,"subpage_content":1,"status":"active","site_name":"Avenue","theme_title":"Edison","site_url":"avenue.templates.editmysite.com"},{"site_id":"600983235358443042","theme_id":"952895320193812485","order":3,"screenshot_desktop":"586bfb3861ba0","screenshot_mobile":"588647346cd65","full_site":1,"subpage_content":1,"status":"active","site_name":"Hugo","theme_title":"CleanLines 2","site_url":"hugotemplate.templates.editmysite.com"},{"site_id":"930738938218931645","theme_id":"722557302383787297","order":4,"screenshot_desktop":"57d9f61b5e946","screenshot_mobile":"57da02abf23ad","full_site":1,"subpage_content":1,"status":"active","site_name":"SRLY","theme_title":"Brisk","site_url":"srly.templates.editmysite.com"},{"site_id":"364572055846425945","theme_id":"532804912680526614","order":5,"screenshot_desktop":"583c9246a7f56","screenshot_mobile":"583c9252218cc","full_site":1,"subpage_content":1,"status":"active","site_name":"Xander","theme_title":"Brisk 2","site_url":"xander.templates.editmysite.com"},{"site_id":"633530529799835085","theme_id":"402674496620160599","order":7,"screenshot_desktop":"57d9f6a58a86b","screenshot_mobile":"57da02e1e8ded","full_site":1,"subpage_content":1,"status":"active","site_name":"The Time Piece","theme_title":"CleanLines","site_url":"timepiece.templates.editmysite.com"}]},{"vertical_id":"8","shortname":"business","name":"Business","hidden":0,"sites":[{"site_id":"796703442801060125","theme_id":"917756704577650054","order":1,"screenshot_desktop":"58c83d3541a8f","screenshot_mobile":"58c83d4295871","full_site":1,"subpage_content":1,"status":"active","site_name":"Wildlife Conservation Services","theme_title":"Slick","site_url":"wcs.templates.editmysite.com"},{"site_id":"849917389696038668","theme_id":"164107688866319628","order":2,"screenshot_desktop":"5886466f5bdd3","screenshot_mobile":"588646893a053","full_site":1,"subpage_content":1,"status":"active","site_name":"Breal","theme_title":"Edison","site_url":"breal.templates.editmysite.com"},{"site_id":"558554390572235973","theme_id":"994334019802252716","order":3,"screenshot_desktop":"583c91ff01186","screenshot_mobile":"583c920fd9228","full_site":1,"subpage_content":1,"status":"active","site_name":"Wag & Paws","theme_title":"Unite 2","site_url":"wagandpaws.templates.editmysite.com"},{"site_id":"521087233321423464","theme_id":"994334019802252716","order":4,"screenshot_desktop":"5850900d43f21","screenshot_mobile":"5850901c2767e","full_site":1,"subpage_content":1,"status":"active","site_name":"Muse Technologies","theme_title":"Unite 2","site_url":"musetechnologies.templates.editmysite.com"},{"site_id":"566287647143199861","theme_id":"480273804761027045","order":5,"screenshot_desktop":"584847b8bc7d3","screenshot_mobile":"584847cab9f87","full_site":1,"subpage_content":1,"status":"active","site_name":"Travellin","theme_title":"Dusk 2","site_url":"travellin.templates.editmysite.com"},{"site_id":"251383052315009369","theme_id":"715256706361612609","order":6,"screenshot_desktop":"57db23854cfb2","screenshot_mobile":"57e2d9b0bcaff","full_site":1,"subpage_content":1,"status":"active","site_name":"Urban Dine","theme_title":"Birdseye 2","site_url":"urbandine.templates.editmysite.com"}]},{"vertical_id":"14","shortname":"portfolio","name":"Portfolio","hidden":0,"sites":[{"site_id":"385295602654236437","theme_id":"902971553450484470","order":0,"screenshot_desktop":"57e2d7c89ca08","screenshot_mobile":"57e2da7c2bb12","full_site":1,"subpage_content":1,"status":"active","site_name":"Modus Operandi","theme_title":"Cento","site_url":"modusoperandi.templates.editmysite.com"},{"site_id":"434975494227065686","theme_id":"586929146893339105","order":1,"screenshot_desktop":"57ed68fb9a69d","screenshot_mobile":"57ed7c79cd039","full_site":1,"subpage_content":1,"status":"active","site_name":"JS Photography","theme_title":"Journey","site_url":"js-photography.templates.editmysite.com"},{"site_id":"269689152576265369","theme_id":"715256706361612609","order":2,"screenshot_desktop":"57dc44507c6fc","screenshot_mobile":"57e2da954b201","full_site":1,"subpage_content":1,"status":"active","site_name":"Elijah Soul","theme_title":"Birdseye 2","site_url":"elijahsoul.templates.editmysite.com"},{"site_id":"818920441826955126","theme_id":"715256706361612609","order":3,"screenshot_desktop":"5817d7135168a","screenshot_mobile":"5817d85a26bbb","full_site":1,"subpage_content":1,"status":"active","site_name":"Sarah Smith","theme_title":"Birdseye 2","site_url":"susansmith.templates.editmysite.com"},{"site_id":"806599218842012522","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57dc48f65a39d","screenshot_mobile":"57e2dab1cac28","full_site":1,"subpage_content":1,"status":"active","site_name":"Oikos","theme_title":"Birdseye 2","site_url":"oikos.templates.editmysite.com"},{"site_id":"821196939937058411","theme_id":"541396811389990674","order":5,"screenshot_desktop":"57dc48e05b77b","screenshot_mobile":"57e2dabed2817","full_site":1,"subpage_content":1,"status":"active","site_name":"Typo Designs","theme_title":"Cento 2","site_url":"typodesign.templates.editmysite.com"}]},{"vertical_id":"10","shortname":"personal","name":"Personal","hidden":0,"sites":[{"site_id":"602815615684295787","theme_id":"341634742767992869","order":0,"screenshot_desktop":"57dc579d4453f","screenshot_mobile":"57e2d954a603c","full_site":1,"subpage_content":1,"status":"active","site_name":"James Coleman","theme_title":"Venue 2","site_url":"jamescoleman.templates.editmysite.com"},{"site_id":"383615049848805163","theme_id":"902971553450484470","order":2,"screenshot_desktop":"57e0644309a0c","screenshot_mobile":"57e2d94ae91d4","full_site":1,"subpage_content":1,"status":"active","site_name":"Mandy Miller","theme_title":"Cento","site_url":"mandy-miller.templates.editmysite.com"},{"site_id":"818920441826955126","theme_id":"715256706361612609","order":3,"screenshot_desktop":"57dc6d5401a89","screenshot_mobile":"57e2d95f6629a","full_site":1,"subpage_content":1,"status":"active","site_name":"Susan Smith","theme_title":"Birdseye 2","site_url":"susansmith.templates.editmysite.com"},{"site_id":"192669213563351847","theme_id":"994334019802252716","order":4,"screenshot_desktop":"57dc6d84dd38e","screenshot_mobile":"57e2d96ca1a4a","full_site":1,"subpage_content":1,"status":"active","site_name":"Bella Marcel","theme_title":"Unite 2","site_url":"bella-marcela.templates.editmysite.com"},{"site_id":"415026593431697285","theme_id":"105424170346016758","order":5,"screenshot_desktop":"57dc57a54798b","screenshot_mobile":"57e2d9766a309","full_site":1,"subpage_content":1,"status":"active","site_name":"Jay Sims","theme_title":"Oasis","site_url":"jaysims.templates.editmysite.com"},{"site_id":"156738245676865400","theme_id":"909203498669091979","order":6,"screenshot_desktop":"57e17c681522e","screenshot_mobile":"57e2de5935d77","full_site":1,"subpage_content":1,"status":"active","site_name":"Photos by Kim","theme_title":"Paper","site_url":"kimphotography.templates.editmysite.com"}]},{"vertical_id":"12","shortname":"event","name":"Event","hidden":0,"sites":[{"site_id":"811436302815733122","theme_id":"253477038470327955","order":1,"screenshot_desktop":"57e1d13535448","screenshot_mobile":"57e2d895f41a8","full_site":1,"subpage_content":1,"status":"active","site_name":"Vue 2016","theme_title":"Dusk","site_url":"vue.templates.editmysite.com"},{"site_id":"788288481688930459","theme_id":"715256706361612609","order":2,"screenshot_desktop":"57e1d1407a9b7","screenshot_mobile":"57e2d8a0bbba8","full_site":1,"subpage_content":1,"status":"active","site_name":"Run","theme_title":"Birdseye 2","site_url":"runagainstcancer.templates.editmysite.com"},{"site_id":"214151854891970659","theme_id":"902971553450484470","order":3,"screenshot_desktop":"57e1d150775ab","screenshot_mobile":"57e2d8ab4c66f","full_site":1,"subpage_content":1,"status":"active","site_name":"John & Maggy","theme_title":"Cento","site_url":"john-and-maggy.templates.editmysite.com"},{"site_id":"496528153658958158","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57e1d18d47c89","screenshot_mobile":"57e2d8c141e84","full_site":1,"subpage_content":1,"status":"active","site_name":"Century Arts","theme_title":"Birdseye 2","site_url":"century-arts.templates.editmysite.com"},{"site_id":"757281810517485733","theme_id":"105424170346016758","order":5,"screenshot_desktop":"57e1d19756697","screenshot_mobile":"57e2d8d7de462","full_site":1,"subpage_content":1,"status":"active","site_name":"Black Apron","theme_title":"Oasis","site_url":"black-apron.templates.editmysite.com"},{"site_id":"379428579909952493","theme_id":"402674496620160599","order":6,"screenshot_desktop":"57e1d1a426e21","screenshot_mobile":"57e2d8ef16565","full_site":1,"subpage_content":1,"status":"active","site_name":"Ariana & Hunter","theme_title":"CleanLines","site_url":"ariana-hunter.templates.editmysite.com"}]},{"vertical_id":"13","shortname":"blog","name":"Blog","hidden":0,"sites":[{"site_id":"408917857439597400","theme_id":"181491578639761880","order":0,"screenshot_desktop":"57e060200b147","screenshot_mobile":"57e2db2f227fa","full_site":1,"subpage_content":1,"status":"active","site_name":"Marcus Reid","theme_title":"Unite","site_url":"marcus.templates.editmysite.com"},{"site_id":"483636456506197906","theme_id":"917756704577650054","order":1,"screenshot_desktop":"57e07fa7dc7db","screenshot_mobile":"57e2db41ba872","full_site":1,"subpage_content":1,"status":"active","site_name":"Brooke Anderson","theme_title":"Slick","site_url":"brooke.templates.editmysite.com"},{"site_id":"766503135282657694","theme_id":"901818448816645918","order":2,"screenshot_desktop":"57dc5b2c41715","screenshot_mobile":"57e2cf9d347d7","full_site":1,"subpage_content":1,"status":"active","site_name":"Zoe's Dish","theme_title":"Birdseye","site_url":"zoe-dish.templates.editmysite.com"},{"site_id":"858282439969684465","theme_id":"902971553450484470","order":3,"screenshot_desktop":"57e06037ec81f","screenshot_mobile":"57e2dbc250908","full_site":1,"subpage_content":1,"status":"active","site_name":"Sights + Sounds","theme_title":"Cento","site_url":"sights-sounds.templates.editmysite.com"},{"site_id":"887878460605709276","theme_id":"116005133769609133","order":4,"screenshot_desktop":"57dc5b16751de","screenshot_mobile":"57e2dbcb62af6","full_site":1,"subpage_content":1,"status":"active","site_name":"Upstart","theme_title":"Haberdasher","site_url":"upstart.templates.editmysite.com"},{"site_id":"169640345872984079","theme_id":"181491578639761880","order":5,"screenshot_desktop":"57e062a0365dd","screenshot_mobile":"57e2dbd858da6","full_site":1,"subpage_content":1,"status":"active","site_name":"Unbound","theme_title":"Unite","site_url":"unbound.templates.editmysite.com"}]},{"vertical_id":"104","shortname":"other","name":"Other","hidden":0,"sites":[{"site_id":"319825474716943932","theme_id":"715256706361612609","order":0,"screenshot_desktop":"57e1c5a58d027","screenshot_mobile":"57e1c5af193de","full_site":1,"subpage_content":1,"status":"active","site_name":"Loveseat","theme_title":"Birdseye 2","site_url":"loveseat.templates.editmysite.com"},{"site_id":"251383052315009369","theme_id":"715256706361612609","order":1,"screenshot_desktop":"57e0699c2e247","screenshot_mobile":"57e2dc4f9303d","full_site":1,"subpage_content":1,"status":"active","site_name":"Urban Dine","theme_title":"Birdseye 2","site_url":"urbandine.templates.editmysite.com"},{"site_id":"385295602654236437","theme_id":"902971553450484470","order":2,"screenshot_desktop":"57e069f339117","screenshot_mobile":"57e2dc6a1385e","full_site":1,"subpage_content":0,"status":"active","site_name":"Modus Operandi","theme_title":"Cento","site_url":"modusoperandi.templates.editmysite.com"},{"site_id":"502006055512840970","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57e0698bd8212","screenshot_mobile":"57e2dca5d3e98","full_site":1,"subpage_content":1,"status":"active","site_name":"High Peak","theme_title":"Birdseye 2","site_url":"highpeak.templates.editmysite.com"},{"site_id":"818920441826955126","theme_id":"715256706361612609","order":5,"screenshot_desktop":"588a9437ed5eb","screenshot_mobile":"588a9442c0004","full_site":1,"subpage_content":1,"status":"active","site_name":"Sarah Smith","theme_title":"Birdseye 2","site_url":"susansmith.templates.editmysite.com"},{"site_id":"821196939937058411","theme_id":"541396811389990674","order":6,"screenshot_desktop":"57e067d941a6e","screenshot_mobile":"57e2dcd4ee969","full_site":1,"subpage_content":1,"status":"active","site_name":"Typo Designs","theme_title":"Cento 2","site_url":"typodesign.templates.editmysite.com"}]}],"all_sites":{"736562032190977919":{"site_id":"736562032190977919","theme_id":"164107688866319628","order":0,"screenshot_desktop":"58508da506476","screenshot_mobile":"583c91cc467f3","full_site":1,"subpage_content":1,"status":"active","site_name":"Kiko & Miles","theme_title":"Edison","site_url":"kikoandmiles.templates.editmysite.com"},"162028882852728363":{"site_id":"162028882852728363","theme_id":"164107688866319628","order":2,"screenshot_desktop":"583c8cca9d07c","screenshot_mobile":"583c8cd32056a","full_site":1,"subpage_content":1,"status":"active","site_name":"Avenue","theme_title":"Edison","site_url":"avenue.templates.editmysite.com"},"600983235358443042":{"site_id":"600983235358443042","theme_id":"952895320193812485","order":3,"screenshot_desktop":"586bfb3861ba0","screenshot_mobile":"588647346cd65","full_site":1,"subpage_content":1,"status":"active","site_name":"Hugo","theme_title":"CleanLines 2","site_url":"hugotemplate.templates.editmysite.com"},"930738938218931645":{"site_id":"930738938218931645","theme_id":"722557302383787297","order":4,"screenshot_desktop":"57d9f61b5e946","screenshot_mobile":"57da02abf23ad","full_site":1,"subpage_content":1,"status":"active","site_name":"SRLY","theme_title":"Brisk","site_url":"srly.templates.editmysite.com"},"364572055846425945":{"site_id":"364572055846425945","theme_id":"532804912680526614","order":5,"screenshot_desktop":"583c9246a7f56","screenshot_mobile":"583c9252218cc","full_site":1,"subpage_content":1,"status":"active","site_name":"Xander","theme_title":"Brisk 2","site_url":"xander.templates.editmysite.com"},"633530529799835085":{"site_id":"633530529799835085","theme_id":"402674496620160599","order":7,"screenshot_desktop":"57d9f6a58a86b","screenshot_mobile":"57da02e1e8ded","full_site":1,"subpage_content":1,"status":"active","site_name":"The Time Piece","theme_title":"CleanLines","site_url":"timepiece.templates.editmysite.com"},"796703442801060125":{"site_id":"796703442801060125","theme_id":"917756704577650054","order":1,"screenshot_desktop":"58c83d3541a8f","screenshot_mobile":"58c83d4295871","full_site":1,"subpage_content":1,"status":"active","site_name":"Wildlife Conservation Services","theme_title":"Slick","site_url":"wcs.templates.editmysite.com"},"849917389696038668":{"site_id":"849917389696038668","theme_id":"164107688866319628","order":2,"screenshot_desktop":"5886466f5bdd3","screenshot_mobile":"588646893a053","full_site":1,"subpage_content":1,"status":"active","site_name":"Breal","theme_title":"Edison","site_url":"breal.templates.editmysite.com"},"558554390572235973":{"site_id":"558554390572235973","theme_id":"994334019802252716","order":3,"screenshot_desktop":"583c91ff01186","screenshot_mobile":"583c920fd9228","full_site":1,"subpage_content":1,"status":"active","site_name":"Wag & Paws","theme_title":"Unite 2","site_url":"wagandpaws.templates.editmysite.com"},"521087233321423464":{"site_id":"521087233321423464","theme_id":"994334019802252716","order":4,"screenshot_desktop":"5850900d43f21","screenshot_mobile":"5850901c2767e","full_site":1,"subpage_content":1,"status":"active","site_name":"Muse Technologies","theme_title":"Unite 2","site_url":"musetechnologies.templates.editmysite.com"},"566287647143199861":{"site_id":"566287647143199861","theme_id":"480273804761027045","order":5,"screenshot_desktop":"584847b8bc7d3","screenshot_mobile":"584847cab9f87","full_site":1,"subpage_content":1,"status":"active","site_name":"Travellin","theme_title":"Dusk 2","site_url":"travellin.templates.editmysite.com"},"251383052315009369":{"site_id":"251383052315009369","theme_id":"715256706361612609","order":1,"screenshot_desktop":"57e0699c2e247","screenshot_mobile":"57e2dc4f9303d","full_site":1,"subpage_content":1,"status":"active","site_name":"Urban Dine","theme_title":"Birdseye 2","site_url":"urbandine.templates.editmysite.com"},"385295602654236437":{"site_id":"385295602654236437","theme_id":"902971553450484470","order":2,"screenshot_desktop":"57e069f339117","screenshot_mobile":"57e2dc6a1385e","full_site":1,"subpage_content":0,"status":"active","site_name":"Modus Operandi","theme_title":"Cento","site_url":"modusoperandi.templates.editmysite.com"},"434975494227065686":{"site_id":"434975494227065686","theme_id":"586929146893339105","order":1,"screenshot_desktop":"57ed68fb9a69d","screenshot_mobile":"57ed7c79cd039","full_site":1,"subpage_content":1,"status":"active","site_name":"JS Photography","theme_title":"Journey","site_url":"js-photography.templates.editmysite.com"},"269689152576265369":{"site_id":"269689152576265369","theme_id":"715256706361612609","order":2,"screenshot_desktop":"57dc44507c6fc","screenshot_mobile":"57e2da954b201","full_site":1,"subpage_content":1,"status":"active","site_name":"Elijah Soul","theme_title":"Birdseye 2","site_url":"elijahsoul.templates.editmysite.com"},"818920441826955126":{"site_id":"818920441826955126","theme_id":"715256706361612609","order":5,"screenshot_desktop":"588a9437ed5eb","screenshot_mobile":"588a9442c0004","full_site":1,"subpage_content":1,"status":"active","site_name":"Sarah Smith","theme_title":"Birdseye 2","site_url":"susansmith.templates.editmysite.com"},"806599218842012522":{"site_id":"806599218842012522","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57dc48f65a39d","screenshot_mobile":"57e2dab1cac28","full_site":1,"subpage_content":1,"status":"active","site_name":"Oikos","theme_title":"Birdseye 2","site_url":"oikos.templates.editmysite.com"},"821196939937058411":{"site_id":"821196939937058411","theme_id":"541396811389990674","order":6,"screenshot_desktop":"57e067d941a6e","screenshot_mobile":"57e2dcd4ee969","full_site":1,"subpage_content":1,"status":"active","site_name":"Typo Designs","theme_title":"Cento 2","site_url":"typodesign.templates.editmysite.com"},"602815615684295787":{"site_id":"602815615684295787","theme_id":"341634742767992869","order":0,"screenshot_desktop":"57dc579d4453f","screenshot_mobile":"57e2d954a603c","full_site":1,"subpage_content":1,"status":"active","site_name":"James Coleman","theme_title":"Venue 2","site_url":"jamescoleman.templates.editmysite.com"},"383615049848805163":{"site_id":"383615049848805163","theme_id":"902971553450484470","order":2,"screenshot_desktop":"57e0644309a0c","screenshot_mobile":"57e2d94ae91d4","full_site":1,"subpage_content":1,"status":"active","site_name":"Mandy Miller","theme_title":"Cento","site_url":"mandy-miller.templates.editmysite.com"},"192669213563351847":{"site_id":"192669213563351847","theme_id":"994334019802252716","order":4,"screenshot_desktop":"57dc6d84dd38e","screenshot_mobile":"57e2d96ca1a4a","full_site":1,"subpage_content":1,"status":"active","site_name":"Bella Marcel","theme_title":"Unite 2","site_url":"bella-marcela.templates.editmysite.com"},"415026593431697285":{"site_id":"415026593431697285","theme_id":"105424170346016758","order":5,"screenshot_desktop":"57dc57a54798b","screenshot_mobile":"57e2d9766a309","full_site":1,"subpage_content":1,"status":"active","site_name":"Jay Sims","theme_title":"Oasis","site_url":"jaysims.templates.editmysite.com"},"156738245676865400":{"site_id":"156738245676865400","theme_id":"909203498669091979","order":6,"screenshot_desktop":"57e17c681522e","screenshot_mobile":"57e2de5935d77","full_site":1,"subpage_content":1,"status":"active","site_name":"Photos by Kim","theme_title":"Paper","site_url":"kimphotography.templates.editmysite.com"},"811436302815733122":{"site_id":"811436302815733122","theme_id":"253477038470327955","order":1,"screenshot_desktop":"57e1d13535448","screenshot_mobile":"57e2d895f41a8","full_site":1,"subpage_content":1,"status":"active","site_name":"Vue 2016","theme_title":"Dusk","site_url":"vue.templates.editmysite.com"},"788288481688930459":{"site_id":"788288481688930459","theme_id":"715256706361612609","order":2,"screenshot_desktop":"57e1d1407a9b7","screenshot_mobile":"57e2d8a0bbba8","full_site":1,"subpage_content":1,"status":"active","site_name":"Run","theme_title":"Birdseye 2","site_url":"runagainstcancer.templates.editmysite.com"},"214151854891970659":{"site_id":"214151854891970659","theme_id":"902971553450484470","order":3,"screenshot_desktop":"57e1d150775ab","screenshot_mobile":"57e2d8ab4c66f","full_site":1,"subpage_content":1,"status":"active","site_name":"John & Maggy","theme_title":"Cento","site_url":"john-and-maggy.templates.editmysite.com"},"496528153658958158":{"site_id":"496528153658958158","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57e1d18d47c89","screenshot_mobile":"57e2d8c141e84","full_site":1,"subpage_content":1,"status":"active","site_name":"Century Arts","theme_title":"Birdseye 2","site_url":"century-arts.templates.editmysite.com"},"757281810517485733":{"site_id":"757281810517485733","theme_id":"105424170346016758","order":5,"screenshot_desktop":"57e1d19756697","screenshot_mobile":"57e2d8d7de462","full_site":1,"subpage_content":1,"status":"active","site_name":"Black Apron","theme_title":"Oasis","site_url":"black-apron.templates.editmysite.com"},"379428579909952493":{"site_id":"379428579909952493","theme_id":"402674496620160599","order":6,"screenshot_desktop":"57e1d1a426e21","screenshot_mobile":"57e2d8ef16565","full_site":1,"subpage_content":1,"status":"active","site_name":"Ariana & Hunter","theme_title":"CleanLines","site_url":"ariana-hunter.templates.editmysite.com"},"408917857439597400":{"site_id":"408917857439597400","theme_id":"181491578639761880","order":0,"screenshot_desktop":"57e060200b147","screenshot_mobile":"57e2db2f227fa","full_site":1,"subpage_content":1,"status":"active","site_name":"Marcus Reid","theme_title":"Unite","site_url":"marcus.templates.editmysite.com"},"483636456506197906":{"site_id":"483636456506197906","theme_id":"917756704577650054","order":1,"screenshot_desktop":"57e07fa7dc7db","screenshot_mobile":"57e2db41ba872","full_site":1,"subpage_content":1,"status":"active","site_name":"Brooke Anderson","theme_title":"Slick","site_url":"brooke.templates.editmysite.com"},"766503135282657694":{"site_id":"766503135282657694","theme_id":"901818448816645918","order":2,"screenshot_desktop":"57dc5b2c41715","screenshot_mobile":"57e2cf9d347d7","full_site":1,"subpage_content":1,"status":"active","site_name":"Zoe's Dish","theme_title":"Birdseye","site_url":"zoe-dish.templates.editmysite.com"},"858282439969684465":{"site_id":"858282439969684465","theme_id":"902971553450484470","order":3,"screenshot_desktop":"57e06037ec81f","screenshot_mobile":"57e2dbc250908","full_site":1,"subpage_content":1,"status":"active","site_name":"Sights + Sounds","theme_title":"Cento","site_url":"sights-sounds.templates.editmysite.com"},"887878460605709276":{"site_id":"887878460605709276","theme_id":"116005133769609133","order":4,"screenshot_desktop":"57dc5b16751de","screenshot_mobile":"57e2dbcb62af6","full_site":1,"subpage_content":1,"status":"active","site_name":"Upstart","theme_title":"Haberdasher","site_url":"upstart.templates.editmysite.com"},"169640345872984079":{"site_id":"169640345872984079","theme_id":"181491578639761880","order":5,"screenshot_desktop":"57e062a0365dd","screenshot_mobile":"57e2dbd858da6","full_site":1,"subpage_content":1,"status":"active","site_name":"Unbound","theme_title":"Unite","site_url":"unbound.templates.editmysite.com"},"319825474716943932":{"site_id":"319825474716943932","theme_id":"715256706361612609","order":0,"screenshot_desktop":"57e1c5a58d027","screenshot_mobile":"57e1c5af193de","full_site":1,"subpage_content":1,"status":"active","site_name":"Loveseat","theme_title":"Birdseye 2","site_url":"loveseat.templates.editmysite.com"},"502006055512840970":{"site_id":"502006055512840970","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57e0698bd8212","screenshot_mobile":"57e2dca5d3e98","full_site":1,"subpage_content":1,"status":"active","site_name":"High Peak","theme_title":"Birdseye 2","site_url":"highpeak.templates.editmysite.com"}}},
-			'previewingTheme': 'false',
-			'fromVertical': '',
-			'userId': 'false',
-			'show_sale_promo': false,
-			'sale_promo_html': "",
-			'useSocialSignUpActionCTA': false
-		};
-		var loginData = {"redirect":false};
-		var abTracking =  {
-			'carbonHomepageV2Group': "",
-			'phoneNumberSignupGroup': '',
-			'designServicesHomepageSectionGroup': "",
-			'homepageOnboardingGroup': ''
-		};
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
 
-			var abSegments = {"localeNewUserChat":"excluded","landingPage.onlineStore.valueProp":"test","social_sign_up_c_t_a_modal":"control","landingPage.all.navSwitch":"control"};
-
-		var oauth = {"domain":"www.onlineclasses1.com","user":false};
-		var abVars = {
-			'signupPhoneNumber': '',
-			'allowFullSiteCopy': '1'
-		};
-		var csrfToken = "IwC3meotu_W302c8Gs0C60_2J5fbKA32_glbKnbDKUc";
-		var nonce = "2489512540b0f2514bc1-1518828929-3ec4cac24729c227243652c246684c6d9121764bef31fb60dcf42b219fbaec80";
-		var showHerculesSection = "";
-
-		function themePreviewRPC() {
-					(function(){_W.setup_rpc({"url":"\/api\/JsonRPC\/Onboarding\/","actions":{"Onboarding":[{"name":"copyMerchandisedSite","len":3,"multiple":false,"standalone":false},{"name":"newSite","len":2,"multiple":false,"standalone":false},{"name":"setCustomTheme","len":3,"multiple":false,"standalone":false},{"name":"newSiteAndStartFreeTrial","len":2,"multiple":false,"standalone":false},{"name":"createFirstPages","len":1,"multiple":false,"standalone":false},{"name":"chooseFunnelExperience","len":1,"multiple":false,"standalone":false},{"name":"processPreselectedFunnelExperienceCookie","len":0,"multiple":false,"standalone":false}]},"namespace":"_W.Onboarding.RPC"});
-_W.setup_model_rpc({"rpc_namespace":"_W.Onboarding.RPC","model_namespace":"_W.Onboarding.BackboneModelData","collection_namespace":"_W.Onboarding.BackboneCollectionData","bootstrap_namespace":"_W.Onboarding.BackboneBootstrap","models":{"Onboarding":{"_class":"Onboarding.Model.Onboarding","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"Onboarding":{"_class":"Onboarding.Collection.Onboarding"}},"bootstrap":[]});
-})();
-		}
-	</script>
-
-
-</head>
-<body>
-<!-- End Google Tag Manager (noscript) - Install in Body -->
-
-
-	 
-	
-
-
-
-</svg>
-		<section class="lp-section lp-section--flush-bottom">
-			<div class="lp-section__container">
-			
-			</div>
-		</section>
-	</div>
-	
-
-
-
-
-
-	
-
-	
-
-<!-- this what keeps the website runing -->
-	<script type="text/javascript" src="test.js"></script>
-
-    
-    <!-- partial:index.partial.html -->
-<div id='chat-box'>
-    
-<div id='chat-top'>Need HELP? <span id='chat-top-right'><svg id='close-box' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z" fill='#fff'/></svg></span><div class='clear'></div></div>
-<div id='chat-msg'><p>hey are you looking to speak to some one send me a message see how i can help  </p>
-<div id='chat-form'>
-<div class='chat-in'>
-<input type='text' id='whats-in' Placeholder='Send Your Message...'/></div><div id='send-btn'><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 48 48"><path d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z" fill='rgb(18, 140, 126)'/></svg></div></div>
-</div>
-</div>
-    
-    <div id='chat-box2'>
-  <div id='chat-topp'>Need HELP? <span id='chat-top-left'><svg id='close-boxx' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z" fill='#fff'/></svg></span><div class='clear'></div></div><div id='chat-msgg'><p>hey there if you need help send me a message press the botton below</p><div  id='send-btn'><a href="http://m.me/programacionworld"><button style="font-size:18px;color:white;">messager</button></a></div>
-<div id='chat-formm'>
-<div class='chat-inn'>
-</div></div>
-</div>
-</div>
-    
-    
-    
-<div id='whats-chat'>
-
-<svg xmlns="http://www.w3.org/2000/svg" version="1" width="35" height="35" viewBox="0 0 90 90"><path d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z" fill="#FFF"/></svg>
-</div>
-   
-    <div id='messager-chat'>
-<i id="fb" class="fab fa-facebook-messenger" style="font-size:50px;color:white;"></i>
-
-</div>
-   
-<style>
-  body{width:100%}
-*{margin:0px;padding:0px;box-sizing:border-box;}
-#whats-chat{position:fixed;right:3%;bottom:10%;height:auto;width:auto;background:#25D366;padding:12.5px;border-radius:50px;z-index: 10;}
-#whats-chat:hover{cursor:pointer;box-shadow:2px 2px 15px #ccc;bottom:11%;z-index: 10;}
-#messager-chat{position:fixed;left:3%;bottom:10%;height:auto;width:auto;background:blue;padding:12.5px;border-radius:50px;z-index: 10;}
-#messager-chat:hover{cursor:pointer;box-shadow:2px 2px 15px #ccc;bottom:11%;z-index: 10;}
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#000000;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+        
         
 
-/*===============================messager left side*/
-#chat-box2{position:fixed;left:50px;bottom:18%;width:250px;height:200px;transition:all .5s;z-index: 10;}
-#chat-topp{width:100%;line-height:2;background:blue;color:white;text-align:center;border-radius:5px 5px 0 0;padding:0 10px;z-index: 10;}
-#chat-msgg{background:#ece5dd;padding:10px;border-radius:0 0 5px 5px;box-shadow:0 0 25px -10px white;z-index: 10;}
-#chat-msgg p{font-size:14px;padding:5px;background:white;border-radius:0 50px 50px 50px;margin-bottom:10px;z-index: 10;}
-#chat-formm{display:flex;}
-.chat-inn{width:80%;}
-#chat-formm input{border-radius:5px 0 5px 5px;border:none;outline:none;font-size:14px;padding:5px;line-height:2;z-index: 10;}
-#send-btnn{width:20%;padding: 0 5px;z-index: 10;}
-#chat-top-left{float:right;padding:5px 0;z-index: 10;}
-#chat-boxx:after{content:'';
-    position: absolute;
-    top:58%;
-    z-index: 10;
-    left: 90%;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent; 
+        
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+
+    <style>
+        
+        
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#212121;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
   
-  border-right:25px solid #ece5dd;}
-.right{float:right}
-.clear{clear:both}
-/*===============================*/
-#chat-box{position:fixed;right:-500px;bottom:18%;width:250px;height:200px;transition:all .5s;z-index: 10;}
-#chat-top{width:100%;line-height:2;background:rgb(18, 140, 126);color:white;text-align:center;border-radius:5px 5px 0 0;padding:0 10px;z-index: 10;}
-#chat-msg{background:#ece5dd;padding:10px;border-radius:0 0 5px 5px;box-shadow:0 0 25px -10px #999;z-index: 10;}
-#chat-msg p{font-size:14px;padding:5px;background:white;border-radius:0 50px 50px 50px;margin-bottom:10px;z-index: 10;}
-#chat-form{display:flex;}
-.chat-in{width:80%;}
-#chat-form input{border-radius:5px 0 5px 5px;border:none;outline:none;font-size:14px;padding:5px;line-height:2;z-index: 10;}
-#send-btn{width:20%;padding: 0 5px;z-index: 10;}
-#chat-top-right{float:right;padding:5px 0;z-index: 10;}
-#chat-box:after{content:'';
-    position: absolute;
-    top:58%;
-    left: 90%;
-    z-index: 10;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent; 
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#000000;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+        
+        
+
+        
+
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="manifest" href="/manifest.json">
+    <link href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill-rule='evenodd' clip-rule='evenodd' d='M81.8182 18.1818V81.8182H18.1818V18.1818H81.8182ZM10 90V10H90V90H10Z'/></svg>" rel="icon">
+    <link rel="mask-icon" href="/csb-ios.svg" color="#fff">
+    <script src="https://codesandbox.io/static/browserfs12/browserfs.min.js" type="text/javascript"></script>
+    <link href="https://codesandbox.io/static/js/babel.7.21.8.min.js" rel="prefetch" as="script">
+    <link rel="stylesheet" href="order.css">
+    <script charset="utf-8" src="https://codesandbox.io/static/js/0.312f0905d.chunk.js"></script>
+    <script charset="utf-8" src="https://codesandbox.io/static/js/1.390d5cd6d.chunk.js"></script>
+    <script charset="utf-8" src="https://codesandbox.io/static/js/2.f916e8469.chunk.js"></script>
+    <script charset="utf-8" src="https://codesandbox.io/static/js/7.c29658eb4.chunk.js"></script>
+     <link rel="stylesheet" href="menu.css">
+ 
   
-  border-right:25px solid #ece5dd;}
-.right{float:right}
-.clear{clear:both}
-    #fb{
-        width: 35;
-        height: 35; 
-    }
-</style>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+<link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'><link rel="stylesheet" href="./style.css">
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 
+    <style>
+        
+        
+        @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+}
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#212121;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .menu-title {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#000000;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+        
+        
+        body {
+  font-family: sans-serif;
+  background-color: #dedede;
+  color: #333;
+  padding: 20px 0 28px 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.6rem;
+}
+
+.animal {
+  max-width: 650px;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.animal h4 {
+  margin: 0 0 6px 0;
+}
+
+.pet-photo {
+  float: left;
+  width: 40%;
+  margin-right: 15px;
+}
+
+.pet-name {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+
+.species {
+  font-size: 0.9rem;
+  color: #888;
+  vertical-align: middle;
+}
+
+.foods-list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 17px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.footer {
+  font-size: 0.7rem;
+  color: #888;
+  text-align: center;
+  margin: 0;
+}
+        
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   
+     
+
+</head>
+
+<body> 
+
+    
+    
+  
+    
+     
+      <!-- Buat Formulir -->
+    <div class="wrapper">  
+    
+ 
+
+
+<!-- partial:index.partial.html -->
+<div class="layout has-sidebar fixed-sidebar fixed-header">
+      <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+        <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+        <div class="image-wrapper">
+          <img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
+        </div>
+        <div class="sidebar-layout">
+          <div class="sidebar-header">
+            <div class="pro-sidebar-logo">
+              <div>P</div>
+              <h5>Pro Sidebar</h5>
+      <nav class="main-menu">
+            <ul>
+               
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+ 
+                
+
+                 <li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.344 3.692a2.25 2.25 0 0 1 3.312 0l3.854 4.19a3.75 3.75 0 0 1 .99 2.538v3.33a2.75 2.75 0 0 1-2.75 2.75h-1.75a1.5 1.5 0 0 1-1.5-1.5v-2h-1v2a1.5 1.5 0 0 1-1.5 1.5h-1.75a2.75 2.75 0 0 1-2.75-2.75v-3.33c0-.94.353-1.847.99-2.539l3.854-4.189Zm2.208 1.016a.75.75 0 0 0-1.104 0l-3.854 4.189a2.25 2.25 0 0 0-.594 1.523v3.33c0 .69.56 1.25 1.25 1.25h1.75v-2a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v2h1.75c.69 0 1.25-.56 1.25-1.25v-3.33a2.25 2.25 0 0 0-.594-1.523l-3.854-4.19Z"/></svg>
+                           </i>
+                        <span class="nav-text"> Home</span>
+                    </a>
+                    
+                </li>
+                
+                 <li class="has-subnav">
+                  <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                          
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.976 3.5a2.75 2.75 0 0 0-2.72 2.347l-.662 4.46a8.75 8.75 0 0 0-.094 1.282v1.661a3.25 3.25 0 0 0 3.25 3.25h6.5a3.25 3.25 0 0 0 3.25-3.25v-1.66c0-.43-.032-.858-.095-1.283l-.66-4.46a2.75 2.75 0 0 0-2.72-2.347h-6.05Zm-1.237 2.567a1.25 1.25 0 0 1 1.237-1.067h6.048c.62 0 1.146.454 1.237 1.067l.583 3.933h-2.484a1.25 1.25 0 0 0-1.185.855l-.159.474a.25.25 0 0 1-.237.171h-1.558a.25.25 0 0 1-.237-.17l-.159-.475a1.25 1.25 0 0 0-1.185-.855h-2.484l.583-3.933Zm-.738 5.433-.001.09v1.66c0 .966.784 1.75 1.75 1.75h6.5a1.75 1.75 0 0 0 1.75-1.75v-1.75h-2.46l-.1.303a1.75 1.75 0 0 1-1.66 1.197h-1.56a1.75 1.75 0 0 1-1.66-1.197l-.1-.303h-2.46Z"/></svg>   
+                           
+                           </i>
+                        <span class="nav-text"> orders</span>
+                    </a>
+                    
+                </li>
+                           
+ <li class="has-subnav">
+                  <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path fill-rule="evenodd" d="M11.276 3.5a3.75 3.75 0 0 0-2.701 1.149l-4.254 4.417a2.75 2.75 0 0 0 .036 3.852l2.898 2.898a2.5 2.5 0 0 0 3.502.033l4.747-4.571a3.25 3.25 0 0 0 .996-2.341v-2.187a3.25 3.25 0 0 0-3.25-3.25h-1.974Zm-1.62 2.19a2.25 2.25 0 0 1 1.62-.69h1.974c.966 0 1.75.784 1.75 1.75v2.187c0 .475-.194.93-.536 1.26l-4.747 4.572a1 1 0 0 1-1.401-.014l-2.898-2.898a1.25 1.25 0 0 1-.016-1.75l4.253-4.418Z"/></svg> 
+                           </i>
+                        <span class="nav-text"> Products</span>
+                    </a>
+                    
+                </li>
+                
+    <li class="has-subnav">
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-2 3.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0Z"/><path fill-rule="evenodd" d="M15.484 14.227a6.274 6.274 0 0 0-10.968 0l-.437.786a1.338 1.338 0 0 0 1.17 1.987h9.502a1.338 1.338 0 0 0 1.17-1.987l-.437-.786Zm-9.657.728a4.773 4.773 0 0 1 8.346 0l.302.545h-8.95l.302-.545Z"/></svg>
+                           </i>
+                        <span class="nav-text"> Customers</span>
+                    </a>
+                    
+                </li>
+                
+                
+ <li class="has-subnav">
+                 
+              <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path fill-rule="evenodd" d="M7.42 3.5h5.16c.535 0 .98 0 1.345.03.38.03.736.098 1.073.27a2.75 2.75 0 0 1 1.202 1.202c.172.337.24.693.27 1.073.03.365.03.81.03 1.345v1.91c0 .535 0 .98-.03 1.345-.03.38-.098.736-.27 1.073a2.751 2.751 0 0 1-1.201 1.202c-.338.172-.694.24-1.074.27-.365.03-.81.03-1.345.03h-5.16c-.535 0-.98 0-1.345-.03-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.202-1.201c-.172-.338-.24-.694-.27-1.074-.03-.365-.03-.81-.03-1.345v-1.91c0-.535 0-.98.03-1.345.03-.38.098-.736.27-1.073a2.75 2.75 0 0 1 1.202-1.202c.337-.172.693-.24 1.073-.27.365-.03.81-.03 1.345-.03Zm-1.223 1.525c-.287.023-.424.065-.514.111a1.25 1.25 0 0 0-.547.547c-.046.09-.088.227-.111.514-.024.296-.025.68-.025 1.253v1.548l.908-1.073a1.75 1.75 0 0 1 2.68.01l2.412 2.894 1.086-1.304a1.75 1.75 0 0 1 2.778.116l.135.192.001-.533v-1.85c0-.572 0-.957-.025-1.253-.023-.287-.065-.424-.111-.514a1.25 1.25 0 0 0-.546-.547c-.091-.046-.228-.088-.515-.111-.296-.024-.68-.025-1.253-.025h-5.1c-.572 0-.957 0-1.253.025Zm-.514 6.589a1.25 1.25 0 0 1-.516-.49l1.886-2.23a.25.25 0 0 1 .383.001l2.38 2.855h-2.366c-.572 0-.957 0-1.253-.025-.287-.023-.424-.065-.514-.111Zm6.867.136h-.365l1.054-1.265a.25.25 0 0 1 .397.017l.751 1.073a1.274 1.274 0 0 1-.07.039c-.09.046-.227.088-.514.111-.296.024-.68.025-1.253.025Z"/><path d="M4 15.75a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/><path d="M12.75 15a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5Z"/></svg>
+
+                  </i>
+                
+               <span class="nav-text"> Content</span>    </a>
+                    
+                </li>
+
+
+
+
+
+ <li class="has-subnav">
+                   <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.54 3.177a1.25 1.25 0 0 0-1.08 0l-5.25 2.51a1.25 1.25 0 0 0-.71 1.128v1.185c0 .69.56 1.25 1.25 1.25v2.75h-.25a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-.25v-2.75c.69 0 1.25-.56 1.25-1.25v-1.185c0-.481-.276-.92-.71-1.128l-5.25-2.51Zm3.21 8.823v-2.75h-1.5v2.75h1.5Zm-3 0v-2.75h-1.5v2.75h1.5Zm-3 0v-2.75h-1.5v2.75h1.5Zm-2.75-5.027 5-2.392 5 2.392v.777h-10v-.777Zm0 7.527v-1h10v1h-10Z"/></svg>
+     
+                           
+                           </i>
+                           <span class="nav-text"> Finance</span>
+                        
+                    </a>
+                    
+                </li>
+             
+ <li class="has-subnav">
+                  <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.952 3.5h.096c.182 0 .371 0 .543.034a1.75 1.75 0 0 1 1.375 1.375c.035.172.034.361.034.543v9.096c0 .182 0 .371-.034.543a1.75 1.75 0 0 1-1.375 1.376 2.825 2.825 0 0 1-.543.033h-.096c-.182 0-.371 0-.543-.034a1.75 1.75 0 0 1-1.375-1.375 2.824 2.824 0 0 1-.034-.543v-9.096c0-.182 0-.371.034-.543a1.75 1.75 0 0 1 1.375-1.375c.172-.035.361-.034.543-.034Zm-.253 1.505a.25.25 0 0 0-.194.194 8.217 8.217 0 0 0-.005.3v9.001a8.221 8.221 0 0 0 .005.3.25.25 0 0 0 .194.195l.053.003c.055.002.127.002.248.002s.193 0 .248-.002l.053-.003a.25.25 0 0 0 .194-.194l.003-.053a8.05 8.05 0 0 0 .002-.248v-9a8.046 8.046 0 0 0-.005-.3.25.25 0 0 0-.194-.195 8.217 8.217 0 0 0-.3-.005 8.216 8.216 0 0 0-.302.005Z"/><path fill-rule="evenodd" d="M5.452 9h.096c.182 0 .371 0 .543.034a1.75 1.75 0 0 1 1.375 1.375c.035.172.034.361.034.543v3.596c0 .182 0 .371-.034.543a1.75 1.75 0 0 1-1.375 1.376 2.825 2.825 0 0 1-.543.033h-.096c-.182 0-.371 0-.543-.034a1.75 1.75 0 0 1-1.375-1.375 2.824 2.824 0 0 1-.034-.543v-3.596c0-.182 0-.371.034-.543a1.75 1.75 0 0 1 1.375-1.375c.172-.035.361-.034.543-.034Zm-.253 1.505a.25.25 0 0 0-.194.194 8.217 8.217 0 0 0-.005.3v3.501a8.221 8.221 0 0 0 .005.3.25.25 0 0 0 .194.195l.053.003c.055.002.127.002.248.002s.193 0 .248-.002l.053-.003a.25.25 0 0 0 .194-.194l.003-.053c.002-.054.002-.127.002-.248v-3.5a8.208 8.208 0 0 0-.005-.3.25.25 0 0 0-.194-.195 8.045 8.045 0 0 0-.3-.005 8.045 8.045 0 0 0-.302.005Z"/><path fill-rule="evenodd" d="M14.5 6h-.048c-.182 0-.371 0-.543.034a1.75 1.75 0 0 0-1.375 1.375 2.825 2.825 0 0 0-.034.543v6.596c0 .182 0 .371.034.543a1.75 1.75 0 0 0 1.375 1.376c.172.034.361.033.543.033h.096c.182 0 .371 0 .543-.034a1.75 1.75 0 0 0 1.375-1.375c.035-.172.034-.36.034-.543v-6.596c0-.182 0-.371-.034-.543a1.75 1.75 0 0 0-1.375-1.375c-.172-.035-.361-.034-.543-.034h-.048Zm-.495 1.7a.25.25 0 0 1 .194-.195 8.221 8.221 0 0 1 .3-.005 8.217 8.217 0 0 1 .302.005.25.25 0 0 1 .194.194l.003.053c.002.055.002.127.002.248v6.5a8.05 8.05 0 0 1-.005.3.25.25 0 0 1-.194.195l-.053.003a8.046 8.046 0 0 1-.248.002c-.121 0-.193 0-.248-.002l-.053-.003a.25.25 0 0 1-.194-.194l-.003-.053a8.05 8.05 0 0 1-.002-.248v-6.5c0-.121 0-.193.002-.248l.003-.053v.002-.002Z"/></svg>
+                           
+                           </i>
+                            <span class="nav-text"> Analytics</span>
+
+                    </a>
+                    
+                </li>
+             
+
+
+ <li class="has-subnav">
+             <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4.75 10a5.25 5.25 0 0 1 10.5 0 .75.75 0 0 0 1.5 0 6.75 6.75 0 1 0-6.75 6.75.75.75 0 0 0 0-1.5 5.25 5.25 0 0 1-5.25-5.25Z"/><path d="M11.537 9.805a.75.75 0 0 0 1.486-.208 3 3 0 1 0-3.492 3.372.75.75 0 0 0 .26-1.478 1.5 1.5 0 1 1 1.746-1.686Z"/><path d="M11.611 10.973a.5.5 0 0 0-.638.638l2.121 6.01a.5.5 0 0 0 .871.135l1.172-1.558 1.038 1.037a.5.5 0 0 0 .707 0l.353-.353a.5.5 0 0 0 0-.707l-1.037-1.038 1.558-1.172a.5.5 0 0 0-.135-.87l-6.01-2.122Z"/></svg>
+
+                           </i>
+                           <span class="nav-text">Marketing</span>
+                    </a>
+                    
+                </li>
+                
+                
+
+
+
+
+              <li class="has-subnav">
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.78 8.28a.75.75 0 0 0-1.06-1.06l-4.5 4.5a.75.75 0 1 0 1.06 1.06l4.5-4.5Z"/><path d="M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path fill-rule="evenodd" d="M12.094 3.514c-.822-1.79-3.366-1.79-4.188 0a.804.804 0 0 1-1.011.42c-1.848-.686-3.647 1.113-2.962 2.96a.804.804 0 0 1-.419 1.012c-1.79.822-1.79 3.366 0 4.188a.805.805 0 0 1 .42 1.011c-.686 1.848 1.113 3.647 2.96 2.962a.805.805 0 0 1 1.012.419c.822 1.79 3.366 1.79 4.188 0a.805.805 0 0 1 1.011-.42c1.848.686 3.647-1.113 2.962-2.96a.805.805 0 0 1 .419-1.012c1.79-.822 1.79-3.366 0-4.188a.805.805 0 0 1-.42-1.011c.686-1.848-1.113-3.647-2.96-2.962a.805.805 0 0 1-1.012-.419Zm-2.825.626a.804.804 0 0 1 1.462 0 2.304 2.304 0 0 0 2.896 1.2.804.804 0 0 1 1.034 1.034 2.304 2.304 0 0 0 1.199 2.895.804.804 0 0 1 0 1.462 2.304 2.304 0 0 0-1.2 2.896.805.805 0 0 1-1.034 1.034 2.304 2.304 0 0 0-2.895 1.199.804.804 0 0 1-1.462 0 2.304 2.304 0 0 0-2.896-1.2.804.804 0 0 1-1.033-1.034 2.305 2.305 0 0 0-1.2-2.895.804.804 0 0 1 0-1.462 2.304 2.304 0 0 0 1.2-2.896.804.804 0 0 1 1.033-1.033 2.304 2.304 0 0 0 2.896-1.2Z"/></svg>
+                           </i>
+                        <span class="nav-text">Discounts</span>
+                    </a>
+                    
+                </li>
+  <li class="has-subnav">
+            
+        
+
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M13.257 3h-6.514a1.25 1.25 0 0 0-.983.478l-2.386 3.037a1.75 1.75 0 0 0-.374 1.08v.655a2.75 2.75 0 0 0 1.5 2.45v4.55c0 .966.784 1.75 1.75 1.75h7.5a1.75 1.75 0 0 0 1.75-1.75v-4.55a2.75 2.75 0 0 0 1.5-2.45v-.481c0-.504-.17-.994-.48-1.39l-2.28-2.901a1.25 1.25 0 0 0-.983-.478Zm-.257 12.5h.75a.25.25 0 0 0 .25-.25v-4.25a2.742 2.742 0 0 1-2-.863 2.742 2.742 0 0 1-2 .863 2.742 2.742 0 0 1-2-.863 2.742 2.742 0 0 1-2 .863v4.25c0 .138.112.25.25.25h3.75v-2.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v2.5Zm-7-6h-.25c-.69 0-1.25-.56-1.25-1.25v-.654a.25.25 0 0 1 .053-.155l2.312-2.941h6.27l2.205 2.805a.75.75 0 0 1 .16.464v.481c0 .69-.56 1.25-1.25 1.25h-.25c-.69 0-1.25-.56-1.25-1.25v-.5a.75.75 0 0 0-1.5 0v.5a1.25 1.25 0 1 1-2.5 0v-.5a.75.75 0 0 0-1.5 0v.5c0 .69-.56 1.25-1.25 1.25Z"/></svg> 
+                           </i>
+                        <span class="nav-text"> Online Store</span>
+                    </a>
+                    
+                </li>           
+            <li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                     
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M15.747 2.354c.195-.196.512-.196.707 0l1.06 1.06c.196.195.196.512 0 .707l-.956.957-1.768-1.767.957-.957Z"/><path d="m14.083 4.018 1.768 1.768-2.831 2.83c-.359.359-.84.568-1.348.585l-.772.025c-.144.005-.263-.113-.258-.258l.026-.772c.016-.507.225-.989.584-1.348l2.83-2.83Z"/><path fill-rule="evenodd" d="M6.976 5c-.62 0-1.146.454-1.237 1.067l-.583 3.933h2.484c.538 0 1.015.344 1.185.855l.159.474c.034.102.13.171.237.171h1.558c.108 0 .203-.069.237-.171l.159-.474c.17-.51.647-.855 1.185-.855h2.484l-.086-.578c-.06-.41.222-.79.632-.851.41-.061.791.222.852.632l.163 1.104c.063.425.095.853.095 1.282v1.661c0 1.795-1.455 3.25-3.25 3.25h-6.5c-1.795 0-3.25-1.455-3.25-3.25v-1.66c0-.43.032-.858.094-1.283l.661-4.46c.2-1.348 1.357-2.347 2.72-2.347h3.775c.414 0 .75.336.75.75s-.336.75-.75.75h-3.774Zm-1.976 6.59v-.09h2.46l.1.303c.239.715.908 1.197 1.66 1.197h1.56c.753 0 1.421-.482 1.66-1.197l.1-.303h2.46v1.75c0 .966-.784 1.75-1.75 1.75h-6.5c-.966 0-1.75-.784-1.75-1.75v-1.66Z"/></svg>   
+                           
+                           </i>
+                        <span class="nav-text"> Email & SMS
+Settings</span>
+                    </a>
+                    
+                </li>
+     
+         <li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M14 16h-2a1 1 0 0 1-1-1v-2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v2.5a1 1 0 0 1-1 1h-2a2 2 0 0 1-2-2v-4.257a3 3 0 0 1 .879-2.122l3.707-3.707a2 2 0 0 1 2.828 0l3.707 3.707a3 3 0 0 1 .879 2.122v4.257a2 2 0 0 1-2 2Z"/></svg>  
+                           
+                           </i>
+                        <span class="nav-text"> Home</span>
+                    </a>
+                    
+                </li>     
+             
+         <div>
+
+<li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.255 5.847a2.75 2.75 0 0 1 2.72-2.347h6.05a2.75 2.75 0 0 1 2.72 2.347l.66 4.46c.063.425.095.853.095 1.282v1.661a3.25 3.25 0 0 1-3.25 3.25h-6.5a3.25 3.25 0 0 1-3.25-3.25v-1.66c0-.43.032-.858.094-1.283l.661-4.46Zm2.72-.847a1.25 1.25 0 0 0-1.236 1.067l-.583 3.933h2.484a1.25 1.25 0 0 1 1.185.855l.159.474a.25.25 0 0 0 .237.171h1.558a.25.25 0 0 0 .237-.17l.159-.475a1.25 1.25 0 0 1 1.185-.855h2.484l-.583-3.933a1.25 1.25 0 0 0-1.236-1.067h-6.05Z"/></svg>     
+                           </i>
+                        <span class="nav-text"> orders</span>
+                    </a>
+                    
+                </li>
+           
+              <li class="has-subnav">
+                    <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.575 4.649a3.75 3.75 0 0 1 2.7-1.149h1.975a3.25 3.25 0 0 1 3.25 3.25v2.187a3.25 3.25 0 0 1-.996 2.34l-4.747 4.572a2.5 2.5 0 0 1-3.502-.033l-2.898-2.898a2.75 2.75 0 0 1-.036-3.852l4.254-4.417Zm4.425 3.351a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>  
+                           
+                           </i>
+                        <span class="nav-text"> Products</span>
+                    </a>
+                    
+                </li>
+             
+
+
+
+ <li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 9.75a3.25 3.25 0 1 0 0-6.5 3.25 3.25 0 0 0 0 6.5Z"/><path d="M10 11.5c-1.968 0-3.815.95-4.959 2.552l-.561.786a1.05 1.05 0 0 0 .855 1.662h9.33a1.05 1.05 0 0 0 .855-1.662l-.561-.786a6.094 6.094 0 0 0-4.959-2.552Z"/></svg>
+                           </i>
+                        <span class="nav-text">Customers</span>
+                    </a>
+                    
+                </li>
+ 
+
+ <li class="has-subnav">
+               <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path fill-rule="evenodd" d="M7.42 3.5h5.16c.535 0 .98 0 1.345.03.38.03.736.098 1.073.27a2.75 2.75 0 0 1 1.202 1.202c.172.337.24.693.27 1.073.03.365.03.81.03 1.345v1.91c0 .535 0 .98-.03 1.345-.03.38-.098.736-.27 1.073a2.751 2.751 0 0 1-1.201 1.202c-.338.172-.694.24-1.074.27a6.052 6.052 0 0 1-.288.017.744.744 0 0 1-.137.013h-6.08c-.535 0-.98 0-1.345-.03-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.047-.934.75.75 0 0 1-.176-.31c-.157-.324-.22-.667-.25-1.031-.029-.365-.029-.81-.029-1.345v-1.91c0-.535 0-.98.03-1.345.03-.38.098-.736.27-1.073a2.75 2.75 0 0 1 1.202-1.202c.337-.172.693-.24 1.073-.27.365-.03.81-.03 1.345-.03Zm7.58 5.8-.001.533-.135-.192a1.75 1.75 0 0 0-2.778-.116l-1.086 1.303-2.411-2.893a1.75 1.75 0 0 0-2.68-.01l-.909 1.073v-1.548c0-.572 0-.957.025-1.253.023-.287.065-.424.111-.514a1.25 1.25 0 0 1 .547-.547c.09-.046.227-.088.514-.111.296-.024.68-.025 1.253-.025h5.1c.572 0 .957 0 1.252.025.288.023.425.065.516.111.235.12.426.311.546.547.046.09.088.227.111.514.024.296.025.68.025 1.253v1.85Z"/><path d="M4 15.75a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/><path d="M12.75 15a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5Z"/></svg>
+                           </i>
+                        <span class="nav-text"> Content</span>
+                    </a>
+                    
+                </li>
+
+
+                  
+                  
+                 
+
+
+
+
+ <li class="has-subnav">
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.54 3.177a1.25 1.25 0 0 0-1.08 0l-5.25 2.51a1.25 1.25 0 0 0-.71 1.128v1.185c0 .69.56 1.25 1.25 1.25v3h-.25a1 1 0 0 0-1 1v1.5a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-1.5a1 1 0 0 0-1-1h-.25v-3c.69 0 1.25-.56 1.25-1.25v-1.185c0-.481-.276-.92-.71-1.128l-5.25-2.51Zm1.71 6.073h1.5v3h-1.5v-3Zm-3 0h1.5v3h-1.5v-3Zm-3 0h1.5v3h-1.5v-3Z"/></svg>  
+                           
+                           </i>
+                       <span class="nav-text"> Finance</span>
+                    
+                    </a>
+                    
+                </li>
+
+
+
+
+ <li class="has-subnav">
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.971 4c-.204 0-.344 0-.465.024a1.25 1.25 0 0 0-.982.982c-.024.121-.024.26-.024.465v9.058c0 .204 0 .344.024.465.099.496.486.883.982.982a2.5 2.5 0 0 0 .465.024h.058c.204 0 .344 0 .465-.024a1.25 1.25 0 0 0 .982-.982 2.5 2.5 0 0 0 .024-.465v-9.058c0-.204 0-.344-.024-.465a1.25 1.25 0 0 0-.982-.982 2.504 2.504 0 0 0-.465-.024h-.058Z"/><path d="M5.471 9.5c-.204 0-.344 0-.465.024a1.25 1.25 0 0 0-.982.982c-.024.121-.024.26-.024.465v3.558c0 .204 0 .344.024.465.099.496.486.883.982.982a2.5 2.5 0 0 0 .465.024h.058c.204 0 .344 0 .465-.024a1.25 1.25 0 0 0 .982-.982c.024-.121.024-.26.024-.465v-3.558c0-.204 0-.344-.024-.465a1.25 1.25 0 0 0-.982-.982 2.503 2.503 0 0 0-.465-.024h-.058Z"/><path d="M14.471 6.5c-.204 0-.344 0-.465.024a1.25 1.25 0 0 0-.982.982c-.024.121-.024.26-.024.465v6.558c0 .204 0 .344.024.465.099.496.486.883.982.982.121.024.26.024.465.024h.058c.204 0 .344 0 .465-.024a1.25 1.25 0 0 0 .982-.982c.024-.121.024-.26.024-.465v-6.558c0-.204 0-.344-.024-.465a1.25 1.25 0 0 0-.982-.982 2.504 2.504 0 0 0-.465-.024h-.058Z"/></svg>
+                           
+                           </i>
+                           <span class="nav-text"> Analytics</span>
+                    
+                    </a>
+                    
+                </li>
+
+
+
+
+ <li class="has-subnav">
+                   <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 10a5 5 0 0 1 10 0 1 1 0 1 0 2 0 7 7 0 1 0-7 7 1 1 0 1 0 0-2 5 5 0 0 1-5-5Z"/><path d="M11.29 9.84a1 1 0 0 0 1.98-.278 3.25 3.25 0 1 0-3.782 3.653 1 1 0 1 0 .347-1.97 1.25 1.25 0 1 1 1.455-1.405Z"/><path d="M11.611 10.973a.5.5 0 0 0-.638.638l2.121 6.01a.5.5 0 0 0 .871.135l1.172-1.558 1.038 1.037a.5.5 0 0 0 .707 0l.353-.353a.5.5 0 0 0 0-.707l-1.037-1.038 1.558-1.172a.5.5 0 0 0-.135-.87l-6.01-2.122Z"/></svg>
+                           </i>
+                           <span class="nav-text">Marketing</span>
+                    </a>
+                    
+                </li>
+
+
+
+
+ <li class="has-subnav">
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.527 3.327c-.6-1.306-2.455-1.306-3.054 0a1.68 1.68 0 0 1-2.112.874c-1.347-.5-2.66.813-2.16 2.16a1.68 1.68 0 0 1-.874 2.112c-1.306.6-1.306 2.455 0 3.054a1.68 1.68 0 0 1 .874 2.112c-.5 1.347.813 2.659 2.16 2.16a1.68 1.68 0 0 1 2.112.874c.6 1.306 2.455 1.306 3.054 0a1.68 1.68 0 0 1 2.112-.874c1.347.499 2.66-.813 2.16-2.16a1.68 1.68 0 0 1 .874-2.112c1.306-.6 1.306-2.455 0-3.054a1.68 1.68 0 0 1-.874-2.112c.5-1.347-.813-2.66-2.16-2.16a1.68 1.68 0 0 1-2.112-.874Zm-2.527 4.923a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm3.53.53-4 4a.75.75 0 1 1-1.06-1.06l4-4a.75.75 0 1 1 1.06 1.06Zm.47 3.47a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+                           </i>
+                      <span class="nav-text">Discounts</span>
+                    </a>
+                    
+                </li>
+
+
+
+             
+             
+             
+             
+             
+             
+             
+             
+             
+  
+
+
+        <li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                         
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.278 3a2.75 2.75 0 0 1 2.162 1.051l2.16 2.75.01.013c.736 1.03.238 2.396-.831 2.811h-1.17c-.475 0-.915-.244-1.166-.646l-.663-1.06a.624.624 0 0 0-1.137.184l-.075.298a1.616 1.616 0 0 1-3.136 0l-.075-.298a.628.628 0 0 0-.637-.477.624.624 0 0 0-.5.293l-.662 1.06a1.375 1.375 0 0 1-1.166.646h-1.17c-1.07-.415-1.568-1.781-.832-2.81l.01-.015 2.16-2.749a2.75 2.75 0 0 1 2.162-1.051h4.556Z"/><path fill-rule="evenodd" d="M4.5 10.875v4.375c0 .966.784 1.75 1.75 1.75h7.5a1.75 1.75 0 0 0 1.75-1.75v-4.375h-.892a2.625 2.625 0 0 1-2.226-1.234l-.012-.02a2.866 2.866 0 0 1-4.74 0l-.012.02a2.625 2.625 0 0 1-2.226 1.234h-.892Zm8.5 2.475a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v2.4c0 .138.112.25.25.25h2.5a.25.25 0 0 0 .25-.25v-2.4Z"/></svg>  
+                           
+                           </i>
+                    <span class="nav-text"> Online Store</span>
+                    </a>
+         
+             </li>
+
+     <li class="has-subnav">
+                  <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.976 5c-.62 0-1.146.454-1.237 1.067l-.583 3.933h2.484c.538 0 1.015.344 1.185.855l.159.474c.034.102.13.171.237.171h1.558c.108 0 .203-.069.237-.171l.159-.474c.17-.51.647-.855 1.185-.855h2.484l-.086-.578c-.06-.41.222-.79.632-.851.41-.061.791.222.852.632l.163 1.104c.063.425.095.853.095 1.282v1.661c0 1.795-1.455 3.25-3.25 3.25h-6.5c-1.795 0-3.25-1.455-3.25-3.25v-1.66c0-.43.032-.858.094-1.283l.661-4.46c.2-1.348 1.357-2.347 2.72-2.347h3.775c.414 0 .75.336.75.75s-.336.75-.75.75h-3.774Z"/><path d="M16.454 2.354c-.195-.196-.512-.196-.707 0l-.957.957 1.768 1.767.957-.957c.195-.195.195-.512 0-.707l-1.06-1.06Z"/><path d="m15.85 5.786-1.767-1.768-2.83 2.83c-.36.36-.569.841-.585 1.348l-.026.772c-.005.145.114.263.258.258l.772-.025c.507-.017.99-.226 1.348-.585l2.83-2.83Z"/></svg>
+        
+                           </i>
+                                   <span class="nav-text"> Email & SMS
+Settings</span>
+                    </a>
+                    
+                </li>
+             
+             
+           
+          
+                  
+                
+
+            </ul>
+        </nav>
+   
+        
+  
+              </div>
+        </div>
+            
+          </div>
+          
+          
+         <nav >
+            <ul>
+               
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+ 
+                
+
+                 <li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.344 3.692a2.25 2.25 0 0 1 3.312 0l3.854 4.19a3.75 3.75 0 0 1 .99 2.538v3.33a2.75 2.75 0 0 1-2.75 2.75h-1.75a1.5 1.5 0 0 1-1.5-1.5v-2h-1v2a1.5 1.5 0 0 1-1.5 1.5h-1.75a2.75 2.75 0 0 1-2.75-2.75v-3.33c0-.94.353-1.847.99-2.539l3.854-4.189Zm2.208 1.016a.75.75 0 0 0-1.104 0l-3.854 4.189a2.25 2.25 0 0 0-.594 1.523v3.33c0 .69.56 1.25 1.25 1.25h1.75v-2a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v2h1.75c.69 0 1.25-.56 1.25-1.25v-3.33a2.25 2.25 0 0 0-.594-1.523l-3.854-4.19Z"/></svg>
+                           </i>
+                        <span class="nav-text"> Home</span>
+                    </a>
+                    
+                </li>
+                
+                 <li class="has-subnav">
+                  <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                          
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.976 3.5a2.75 2.75 0 0 0-2.72 2.347l-.662 4.46a8.75 8.75 0 0 0-.094 1.282v1.661a3.25 3.25 0 0 0 3.25 3.25h6.5a3.25 3.25 0 0 0 3.25-3.25v-1.66c0-.43-.032-.858-.095-1.283l-.66-4.46a2.75 2.75 0 0 0-2.72-2.347h-6.05Zm-1.237 2.567a1.25 1.25 0 0 1 1.237-1.067h6.048c.62 0 1.146.454 1.237 1.067l.583 3.933h-2.484a1.25 1.25 0 0 0-1.185.855l-.159.474a.25.25 0 0 1-.237.171h-1.558a.25.25 0 0 1-.237-.17l-.159-.475a1.25 1.25 0 0 0-1.185-.855h-2.484l.583-3.933Zm-.738 5.433-.001.09v1.66c0 .966.784 1.75 1.75 1.75h6.5a1.75 1.75 0 0 0 1.75-1.75v-1.75h-2.46l-.1.303a1.75 1.75 0 0 1-1.66 1.197h-1.56a1.75 1.75 0 0 1-1.66-1.197l-.1-.303h-2.46Z"/></svg>   
+                           
+                           </i>
+                        <span class="nav-text"> orders</span>
+                    </a>
+                    
+                </li>
+                           
+ <li class="has-subnav">
+                  <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path fill-rule="evenodd" d="M11.276 3.5a3.75 3.75 0 0 0-2.701 1.149l-4.254 4.417a2.75 2.75 0 0 0 .036 3.852l2.898 2.898a2.5 2.5 0 0 0 3.502.033l4.747-4.571a3.25 3.25 0 0 0 .996-2.341v-2.187a3.25 3.25 0 0 0-3.25-3.25h-1.974Zm-1.62 2.19a2.25 2.25 0 0 1 1.62-.69h1.974c.966 0 1.75.784 1.75 1.75v2.187c0 .475-.194.93-.536 1.26l-4.747 4.572a1 1 0 0 1-1.401-.014l-2.898-2.898a1.25 1.25 0 0 1-.016-1.75l4.253-4.418Z"/></svg> 
+                           </i>
+                        <span class="nav-text"> Products</span>
+                    </a>
+                    
+                </li>
+                
+    <li class="has-subnav">
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-2 3.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0Z"/><path fill-rule="evenodd" d="M15.484 14.227a6.274 6.274 0 0 0-10.968 0l-.437.786a1.338 1.338 0 0 0 1.17 1.987h9.502a1.338 1.338 0 0 0 1.17-1.987l-.437-.786Zm-9.657.728a4.773 4.773 0 0 1 8.346 0l.302.545h-8.95l.302-.545Z"/></svg>
+                           </i>
+                        <span class="nav-text"> Customers</span>
+                    </a>
+                    
+                </li>
+                
+                
+ <li class="has-subnav">
+                 
+              <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path fill-rule="evenodd" d="M7.42 3.5h5.16c.535 0 .98 0 1.345.03.38.03.736.098 1.073.27a2.75 2.75 0 0 1 1.202 1.202c.172.337.24.693.27 1.073.03.365.03.81.03 1.345v1.91c0 .535 0 .98-.03 1.345-.03.38-.098.736-.27 1.073a2.751 2.751 0 0 1-1.201 1.202c-.338.172-.694.24-1.074.27-.365.03-.81.03-1.345.03h-5.16c-.535 0-.98 0-1.345-.03-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.202-1.201c-.172-.338-.24-.694-.27-1.074-.03-.365-.03-.81-.03-1.345v-1.91c0-.535 0-.98.03-1.345.03-.38.098-.736.27-1.073a2.75 2.75 0 0 1 1.202-1.202c.337-.172.693-.24 1.073-.27.365-.03.81-.03 1.345-.03Zm-1.223 1.525c-.287.023-.424.065-.514.111a1.25 1.25 0 0 0-.547.547c-.046.09-.088.227-.111.514-.024.296-.025.68-.025 1.253v1.548l.908-1.073a1.75 1.75 0 0 1 2.68.01l2.412 2.894 1.086-1.304a1.75 1.75 0 0 1 2.778.116l.135.192.001-.533v-1.85c0-.572 0-.957-.025-1.253-.023-.287-.065-.424-.111-.514a1.25 1.25 0 0 0-.546-.547c-.091-.046-.228-.088-.515-.111-.296-.024-.68-.025-1.253-.025h-5.1c-.572 0-.957 0-1.253.025Zm-.514 6.589a1.25 1.25 0 0 1-.516-.49l1.886-2.23a.25.25 0 0 1 .383.001l2.38 2.855h-2.366c-.572 0-.957 0-1.253-.025-.287-.023-.424-.065-.514-.111Zm6.867.136h-.365l1.054-1.265a.25.25 0 0 1 .397.017l.751 1.073a1.274 1.274 0 0 1-.07.039c-.09.046-.227.088-.514.111-.296.024-.68.025-1.253.025Z"/><path d="M4 15.75a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/><path d="M12.75 15a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5Z"/></svg>
+
+                  </i>
+                
+               <span class="nav-text"> Content</span>    </a>
+                    
+                </li>
+
+
+
+
+
+ <li class="has-subnav">
+                   <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.54 3.177a1.25 1.25 0 0 0-1.08 0l-5.25 2.51a1.25 1.25 0 0 0-.71 1.128v1.185c0 .69.56 1.25 1.25 1.25v2.75h-.25a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-.25v-2.75c.69 0 1.25-.56 1.25-1.25v-1.185c0-.481-.276-.92-.71-1.128l-5.25-2.51Zm3.21 8.823v-2.75h-1.5v2.75h1.5Zm-3 0v-2.75h-1.5v2.75h1.5Zm-3 0v-2.75h-1.5v2.75h1.5Zm-2.75-5.027 5-2.392 5 2.392v.777h-10v-.777Zm0 7.527v-1h10v1h-10Z"/></svg>
+     
+                           
+                           </i>
+                           <span class="nav-text"> Finance</span>
+                        
+                    </a>
+                    
+                </li>
+             
+ <li class="has-subnav">
+                  <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.952 3.5h.096c.182 0 .371 0 .543.034a1.75 1.75 0 0 1 1.375 1.375c.035.172.034.361.034.543v9.096c0 .182 0 .371-.034.543a1.75 1.75 0 0 1-1.375 1.376 2.825 2.825 0 0 1-.543.033h-.096c-.182 0-.371 0-.543-.034a1.75 1.75 0 0 1-1.375-1.375 2.824 2.824 0 0 1-.034-.543v-9.096c0-.182 0-.371.034-.543a1.75 1.75 0 0 1 1.375-1.375c.172-.035.361-.034.543-.034Zm-.253 1.505a.25.25 0 0 0-.194.194 8.217 8.217 0 0 0-.005.3v9.001a8.221 8.221 0 0 0 .005.3.25.25 0 0 0 .194.195l.053.003c.055.002.127.002.248.002s.193 0 .248-.002l.053-.003a.25.25 0 0 0 .194-.194l.003-.053a8.05 8.05 0 0 0 .002-.248v-9a8.046 8.046 0 0 0-.005-.3.25.25 0 0 0-.194-.195 8.217 8.217 0 0 0-.3-.005 8.216 8.216 0 0 0-.302.005Z"/><path fill-rule="evenodd" d="M5.452 9h.096c.182 0 .371 0 .543.034a1.75 1.75 0 0 1 1.375 1.375c.035.172.034.361.034.543v3.596c0 .182 0 .371-.034.543a1.75 1.75 0 0 1-1.375 1.376 2.825 2.825 0 0 1-.543.033h-.096c-.182 0-.371 0-.543-.034a1.75 1.75 0 0 1-1.375-1.375 2.824 2.824 0 0 1-.034-.543v-3.596c0-.182 0-.371.034-.543a1.75 1.75 0 0 1 1.375-1.375c.172-.035.361-.034.543-.034Zm-.253 1.505a.25.25 0 0 0-.194.194 8.217 8.217 0 0 0-.005.3v3.501a8.221 8.221 0 0 0 .005.3.25.25 0 0 0 .194.195l.053.003c.055.002.127.002.248.002s.193 0 .248-.002l.053-.003a.25.25 0 0 0 .194-.194l.003-.053c.002-.054.002-.127.002-.248v-3.5a8.208 8.208 0 0 0-.005-.3.25.25 0 0 0-.194-.195 8.045 8.045 0 0 0-.3-.005 8.045 8.045 0 0 0-.302.005Z"/><path fill-rule="evenodd" d="M14.5 6h-.048c-.182 0-.371 0-.543.034a1.75 1.75 0 0 0-1.375 1.375 2.825 2.825 0 0 0-.034.543v6.596c0 .182 0 .371.034.543a1.75 1.75 0 0 0 1.375 1.376c.172.034.361.033.543.033h.096c.182 0 .371 0 .543-.034a1.75 1.75 0 0 0 1.375-1.375c.035-.172.034-.36.034-.543v-6.596c0-.182 0-.371-.034-.543a1.75 1.75 0 0 0-1.375-1.375c-.172-.035-.361-.034-.543-.034h-.048Zm-.495 1.7a.25.25 0 0 1 .194-.195 8.221 8.221 0 0 1 .3-.005 8.217 8.217 0 0 1 .302.005.25.25 0 0 1 .194.194l.003.053c.002.055.002.127.002.248v6.5a8.05 8.05 0 0 1-.005.3.25.25 0 0 1-.194.195l-.053.003a8.046 8.046 0 0 1-.248.002c-.121 0-.193 0-.248-.002l-.053-.003a.25.25 0 0 1-.194-.194l-.003-.053a8.05 8.05 0 0 1-.002-.248v-6.5c0-.121 0-.193.002-.248l.003-.053v.002-.002Z"/></svg>
+                           
+                           </i>
+                            <span class="nav-text"> Analytics</span>
+
+                    </a>
+                    
+                </li>
+             
+
+
+ <li class="has-subnav">
+             <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4.75 10a5.25 5.25 0 0 1 10.5 0 .75.75 0 0 0 1.5 0 6.75 6.75 0 1 0-6.75 6.75.75.75 0 0 0 0-1.5 5.25 5.25 0 0 1-5.25-5.25Z"/><path d="M11.537 9.805a.75.75 0 0 0 1.486-.208 3 3 0 1 0-3.492 3.372.75.75 0 0 0 .26-1.478 1.5 1.5 0 1 1 1.746-1.686Z"/><path d="M11.611 10.973a.5.5 0 0 0-.638.638l2.121 6.01a.5.5 0 0 0 .871.135l1.172-1.558 1.038 1.037a.5.5 0 0 0 .707 0l.353-.353a.5.5 0 0 0 0-.707l-1.037-1.038 1.558-1.172a.5.5 0 0 0-.135-.87l-6.01-2.122Z"/></svg>
+
+                           </i>
+                           <span class="nav-text">Marketing</span>
+                    </a>
+                    
+                </li>
+                
+                
+
+
+
+
+              <li class="has-subnav">
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.78 8.28a.75.75 0 0 0-1.06-1.06l-4.5 4.5a.75.75 0 1 0 1.06 1.06l4.5-4.5Z"/><path d="M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path fill-rule="evenodd" d="M12.094 3.514c-.822-1.79-3.366-1.79-4.188 0a.804.804 0 0 1-1.011.42c-1.848-.686-3.647 1.113-2.962 2.96a.804.804 0 0 1-.419 1.012c-1.79.822-1.79 3.366 0 4.188a.805.805 0 0 1 .42 1.011c-.686 1.848 1.113 3.647 2.96 2.962a.805.805 0 0 1 1.012.419c.822 1.79 3.366 1.79 4.188 0a.805.805 0 0 1 1.011-.42c1.848.686 3.647-1.113 2.962-2.96a.805.805 0 0 1 .419-1.012c1.79-.822 1.79-3.366 0-4.188a.805.805 0 0 1-.42-1.011c.686-1.848-1.113-3.647-2.96-2.962a.805.805 0 0 1-1.012-.419Zm-2.825.626a.804.804 0 0 1 1.462 0 2.304 2.304 0 0 0 2.896 1.2.804.804 0 0 1 1.034 1.034 2.304 2.304 0 0 0 1.199 2.895.804.804 0 0 1 0 1.462 2.304 2.304 0 0 0-1.2 2.896.805.805 0 0 1-1.034 1.034 2.304 2.304 0 0 0-2.895 1.199.804.804 0 0 1-1.462 0 2.304 2.304 0 0 0-2.896-1.2.804.804 0 0 1-1.033-1.034 2.305 2.305 0 0 0-1.2-2.895.804.804 0 0 1 0-1.462 2.304 2.304 0 0 0 1.2-2.896.804.804 0 0 1 1.033-1.033 2.304 2.304 0 0 0 2.896-1.2Z"/></svg>
+                           </i>
+                        <span class="nav-text">Discounts</span>
+                    </a>
+                    
+                </li>
+  <li class="has-subnav">
+            
+        
+
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M13.257 3h-6.514a1.25 1.25 0 0 0-.983.478l-2.386 3.037a1.75 1.75 0 0 0-.374 1.08v.655a2.75 2.75 0 0 0 1.5 2.45v4.55c0 .966.784 1.75 1.75 1.75h7.5a1.75 1.75 0 0 0 1.75-1.75v-4.55a2.75 2.75 0 0 0 1.5-2.45v-.481c0-.504-.17-.994-.48-1.39l-2.28-2.901a1.25 1.25 0 0 0-.983-.478Zm-.257 12.5h.75a.25.25 0 0 0 .25-.25v-4.25a2.742 2.742 0 0 1-2-.863 2.742 2.742 0 0 1-2 .863 2.742 2.742 0 0 1-2-.863 2.742 2.742 0 0 1-2 .863v4.25c0 .138.112.25.25.25h3.75v-2.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v2.5Zm-7-6h-.25c-.69 0-1.25-.56-1.25-1.25v-.654a.25.25 0 0 1 .053-.155l2.312-2.941h6.27l2.205 2.805a.75.75 0 0 1 .16.464v.481c0 .69-.56 1.25-1.25 1.25h-.25c-.69 0-1.25-.56-1.25-1.25v-.5a.75.75 0 0 0-1.5 0v.5a1.25 1.25 0 1 1-2.5 0v-.5a.75.75 0 0 0-1.5 0v.5c0 .69-.56 1.25-1.25 1.25Z"/></svg> 
+                           </i>
+                        <span class="nav-text"> Online Store</span>
+                    </a>
+                    
+                </li>           
+            <li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                     
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M15.747 2.354c.195-.196.512-.196.707 0l1.06 1.06c.196.195.196.512 0 .707l-.956.957-1.768-1.767.957-.957Z"/><path d="m14.083 4.018 1.768 1.768-2.831 2.83c-.359.359-.84.568-1.348.585l-.772.025c-.144.005-.263-.113-.258-.258l.026-.772c.016-.507.225-.989.584-1.348l2.83-2.83Z"/><path fill-rule="evenodd" d="M6.976 5c-.62 0-1.146.454-1.237 1.067l-.583 3.933h2.484c.538 0 1.015.344 1.185.855l.159.474c.034.102.13.171.237.171h1.558c.108 0 .203-.069.237-.171l.159-.474c.17-.51.647-.855 1.185-.855h2.484l-.086-.578c-.06-.41.222-.79.632-.851.41-.061.791.222.852.632l.163 1.104c.063.425.095.853.095 1.282v1.661c0 1.795-1.455 3.25-3.25 3.25h-6.5c-1.795 0-3.25-1.455-3.25-3.25v-1.66c0-.43.032-.858.094-1.283l.661-4.46c.2-1.348 1.357-2.347 2.72-2.347h3.775c.414 0 .75.336.75.75s-.336.75-.75.75h-3.774Zm-1.976 6.59v-.09h2.46l.1.303c.239.715.908 1.197 1.66 1.197h1.56c.753 0 1.421-.482 1.66-1.197l.1-.303h2.46v1.75c0 .966-.784 1.75-1.75 1.75h-6.5c-.966 0-1.75-.784-1.75-1.75v-1.66Z"/></svg>   
+                           
+                           </i>
+                        <span class="nav-text"> Email & SMS
+Settings</span>
+                    </a>
+                    
+                </li>
+     
+         <li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M14 16h-2a1 1 0 0 1-1-1v-2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v2.5a1 1 0 0 1-1 1h-2a2 2 0 0 1-2-2v-4.257a3 3 0 0 1 .879-2.122l3.707-3.707a2 2 0 0 1 2.828 0l3.707 3.707a3 3 0 0 1 .879 2.122v4.257a2 2 0 0 1-2 2Z"/></svg>  
+                           
+                           </i>
+                        <span class="nav-text"> Home</span>
+                    </a>
+                    
+                </li>     
+             
+         <div>
+
+<li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.255 5.847a2.75 2.75 0 0 1 2.72-2.347h6.05a2.75 2.75 0 0 1 2.72 2.347l.66 4.46c.063.425.095.853.095 1.282v1.661a3.25 3.25 0 0 1-3.25 3.25h-6.5a3.25 3.25 0 0 1-3.25-3.25v-1.66c0-.43.032-.858.094-1.283l.661-4.46Zm2.72-.847a1.25 1.25 0 0 0-1.236 1.067l-.583 3.933h2.484a1.25 1.25 0 0 1 1.185.855l.159.474a.25.25 0 0 0 .237.171h1.558a.25.25 0 0 0 .237-.17l.159-.475a1.25 1.25 0 0 1 1.185-.855h2.484l-.583-3.933a1.25 1.25 0 0 0-1.236-1.067h-6.05Z"/></svg>     
+                           </i>
+                        <span class="nav-text"> orders</span>
+                    </a>
+                    
+                </li>
+           
+              <li class="has-subnav">
+                    <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.575 4.649a3.75 3.75 0 0 1 2.7-1.149h1.975a3.25 3.25 0 0 1 3.25 3.25v2.187a3.25 3.25 0 0 1-.996 2.34l-4.747 4.572a2.5 2.5 0 0 1-3.502-.033l-2.898-2.898a2.75 2.75 0 0 1-.036-3.852l4.254-4.417Zm4.425 3.351a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>  
+                           
+                           </i>
+                        <span class="nav-text"> Products</span>
+                    </a>
+                    
+                </li>
+             
+
+
+
+ <li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 9.75a3.25 3.25 0 1 0 0-6.5 3.25 3.25 0 0 0 0 6.5Z"/><path d="M10 11.5c-1.968 0-3.815.95-4.959 2.552l-.561.786a1.05 1.05 0 0 0 .855 1.662h9.33a1.05 1.05 0 0 0 .855-1.662l-.561-.786a6.094 6.094 0 0 0-4.959-2.552Z"/></svg>
+                           </i>
+                        <span class="nav-text">Customers</span>
+                    </a>
+                    
+                </li>
+ 
+
+ <li class="has-subnav">
+               <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path fill-rule="evenodd" d="M7.42 3.5h5.16c.535 0 .98 0 1.345.03.38.03.736.098 1.073.27a2.75 2.75 0 0 1 1.202 1.202c.172.337.24.693.27 1.073.03.365.03.81.03 1.345v1.91c0 .535 0 .98-.03 1.345-.03.38-.098.736-.27 1.073a2.751 2.751 0 0 1-1.201 1.202c-.338.172-.694.24-1.074.27a6.052 6.052 0 0 1-.288.017.744.744 0 0 1-.137.013h-6.08c-.535 0-.98 0-1.345-.03-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.047-.934.75.75 0 0 1-.176-.31c-.157-.324-.22-.667-.25-1.031-.029-.365-.029-.81-.029-1.345v-1.91c0-.535 0-.98.03-1.345.03-.38.098-.736.27-1.073a2.75 2.75 0 0 1 1.202-1.202c.337-.172.693-.24 1.073-.27.365-.03.81-.03 1.345-.03Zm7.58 5.8-.001.533-.135-.192a1.75 1.75 0 0 0-2.778-.116l-1.086 1.303-2.411-2.893a1.75 1.75 0 0 0-2.68-.01l-.909 1.073v-1.548c0-.572 0-.957.025-1.253.023-.287.065-.424.111-.514a1.25 1.25 0 0 1 .547-.547c.09-.046.227-.088.514-.111.296-.024.68-.025 1.253-.025h5.1c.572 0 .957 0 1.252.025.288.023.425.065.516.111.235.12.426.311.546.547.046.09.088.227.111.514.024.296.025.68.025 1.253v1.85Z"/><path d="M4 15.75a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/><path d="M12.75 15a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5Z"/></svg>
+                           </i>
+                        <span class="nav-text"> Content</span>
+                    </a>
+                    
+                </li>
+
+
+                  
+                  
+                 
+
+
+
+
+ <li class="has-subnav">
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.54 3.177a1.25 1.25 0 0 0-1.08 0l-5.25 2.51a1.25 1.25 0 0 0-.71 1.128v1.185c0 .69.56 1.25 1.25 1.25v3h-.25a1 1 0 0 0-1 1v1.5a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-1.5a1 1 0 0 0-1-1h-.25v-3c.69 0 1.25-.56 1.25-1.25v-1.185c0-.481-.276-.92-.71-1.128l-5.25-2.51Zm1.71 6.073h1.5v3h-1.5v-3Zm-3 0h1.5v3h-1.5v-3Zm-3 0h1.5v3h-1.5v-3Z"/></svg>  
+                           
+                           </i>
+                       <span class="nav-text"> Finance</span>
+                    
+                    </a>
+                    
+                </li>
+
+
+
+
+ <li class="has-subnav">
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.971 4c-.204 0-.344 0-.465.024a1.25 1.25 0 0 0-.982.982c-.024.121-.024.26-.024.465v9.058c0 .204 0 .344.024.465.099.496.486.883.982.982a2.5 2.5 0 0 0 .465.024h.058c.204 0 .344 0 .465-.024a1.25 1.25 0 0 0 .982-.982 2.5 2.5 0 0 0 .024-.465v-9.058c0-.204 0-.344-.024-.465a1.25 1.25 0 0 0-.982-.982 2.504 2.504 0 0 0-.465-.024h-.058Z"/><path d="M5.471 9.5c-.204 0-.344 0-.465.024a1.25 1.25 0 0 0-.982.982c-.024.121-.024.26-.024.465v3.558c0 .204 0 .344.024.465.099.496.486.883.982.982a2.5 2.5 0 0 0 .465.024h.058c.204 0 .344 0 .465-.024a1.25 1.25 0 0 0 .982-.982c.024-.121.024-.26.024-.465v-3.558c0-.204 0-.344-.024-.465a1.25 1.25 0 0 0-.982-.982 2.503 2.503 0 0 0-.465-.024h-.058Z"/><path d="M14.471 6.5c-.204 0-.344 0-.465.024a1.25 1.25 0 0 0-.982.982c-.024.121-.024.26-.024.465v6.558c0 .204 0 .344.024.465.099.496.486.883.982.982.121.024.26.024.465.024h.058c.204 0 .344 0 .465-.024a1.25 1.25 0 0 0 .982-.982c.024-.121.024-.26.024-.465v-6.558c0-.204 0-.344-.024-.465a1.25 1.25 0 0 0-.982-.982 2.504 2.504 0 0 0-.465-.024h-.058Z"/></svg>
+                           
+                           </i>
+                           <span class="nav-text"> Analytics</span>
+                    
+                    </a>
+                    
+                </li>
+
+
+
+
+ <li class="has-subnav">
+                   <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 10a5 5 0 0 1 10 0 1 1 0 1 0 2 0 7 7 0 1 0-7 7 1 1 0 1 0 0-2 5 5 0 0 1-5-5Z"/><path d="M11.29 9.84a1 1 0 0 0 1.98-.278 3.25 3.25 0 1 0-3.782 3.653 1 1 0 1 0 .347-1.97 1.25 1.25 0 1 1 1.455-1.405Z"/><path d="M11.611 10.973a.5.5 0 0 0-.638.638l2.121 6.01a.5.5 0 0 0 .871.135l1.172-1.558 1.038 1.037a.5.5 0 0 0 .707 0l.353-.353a.5.5 0 0 0 0-.707l-1.037-1.038 1.558-1.172a.5.5 0 0 0-.135-.87l-6.01-2.122Z"/></svg>
+                           </i>
+                           <span class="nav-text">Marketing</span>
+                    </a>
+                    
+                </li>
+
+
+
+
+ <li class="has-subnav">
+                <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.527 3.327c-.6-1.306-2.455-1.306-3.054 0a1.68 1.68 0 0 1-2.112.874c-1.347-.5-2.66.813-2.16 2.16a1.68 1.68 0 0 1-.874 2.112c-1.306.6-1.306 2.455 0 3.054a1.68 1.68 0 0 1 .874 2.112c-.5 1.347.813 2.659 2.16 2.16a1.68 1.68 0 0 1 2.112.874c.6 1.306 2.455 1.306 3.054 0a1.68 1.68 0 0 1 2.112-.874c1.347.499 2.66-.813 2.16-2.16a1.68 1.68 0 0 1 .874-2.112c1.306-.6 1.306-2.455 0-3.054a1.68 1.68 0 0 1-.874-2.112c.5-1.347-.813-2.66-2.16-2.16a1.68 1.68 0 0 1-2.112-.874Zm-2.527 4.923a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm3.53.53-4 4a.75.75 0 1 1-1.06-1.06l4-4a.75.75 0 1 1 1.06 1.06Zm.47 3.47a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+                           </i>
+                      <span class="nav-text">Discounts</span>
+                    </a>
+                    
+                </li>
+
+
+
+             
+             
+             
+             
+             
+             
+             
+             
+             
+  
+
+
+        <li class="has-subnav">
+                 <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                         
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.278 3a2.75 2.75 0 0 1 2.162 1.051l2.16 2.75.01.013c.736 1.03.238 2.396-.831 2.811h-1.17c-.475 0-.915-.244-1.166-.646l-.663-1.06a.624.624 0 0 0-1.137.184l-.075.298a1.616 1.616 0 0 1-3.136 0l-.075-.298a.628.628 0 0 0-.637-.477.624.624 0 0 0-.5.293l-.662 1.06a1.375 1.375 0 0 1-1.166.646h-1.17c-1.07-.415-1.568-1.781-.832-2.81l.01-.015 2.16-2.749a2.75 2.75 0 0 1 2.162-1.051h4.556Z"/><path fill-rule="evenodd" d="M4.5 10.875v4.375c0 .966.784 1.75 1.75 1.75h7.5a1.75 1.75 0 0 0 1.75-1.75v-4.375h-.892a2.625 2.625 0 0 1-2.226-1.234l-.012-.02a2.866 2.866 0 0 1-4.74 0l-.012.02a2.625 2.625 0 0 1-2.226 1.234h-.892Zm8.5 2.475a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v2.4c0 .138.112.25.25.25h2.5a.25.25 0 0 0 .25-.25v-2.4Z"/></svg>  
+                           
+                           </i>
+                    <span class="nav-text"> Online Store</span>
+                    </a>
+         
+             </li>
+
+     <li class="has-subnav">
+                  <a href="index.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.976 5c-.62 0-1.146.454-1.237 1.067l-.583 3.933h2.484c.538 0 1.015.344 1.185.855l.159.474c.034.102.13.171.237.171h1.558c.108 0 .203-.069.237-.171l.159-.474c.17-.51.647-.855 1.185-.855h2.484l-.086-.578c-.06-.41.222-.79.632-.851.41-.061.791.222.852.632l.163 1.104c.063.425.095.853.095 1.282v1.661c0 1.795-1.455 3.25-3.25 3.25h-6.5c-1.795 0-3.25-1.455-3.25-3.25v-1.66c0-.43.032-.858.094-1.283l.661-4.46c.2-1.348 1.357-2.347 2.72-2.347h3.775c.414 0 .75.336.75.75s-.336.75-.75.75h-3.774Z"/><path d="M16.454 2.354c-.195-.196-.512-.196-.707 0l-.957.957 1.768 1.767.957-.957c.195-.195.195-.512 0-.707l-1.06-1.06Z"/><path d="m15.85 5.786-1.767-1.768-2.83 2.83c-.36.36-.569.841-.585 1.348l-.026.772c-.005.145.114.263.258.258l.772-.025c.507-.017.99-.226 1.348-.585l2.83-2.83Z"/></svg>
+        
+                           </i>
+                                   <span class="nav-text"> Email & SMS
+Settings</span>
+                    </a>
+                    
+                </li>
+             
+             
+           
+          
+                  
+                
+
+            </ul>
+        </nav>
+   
+        
+
+    
+      </aside>
+      <div id="overlay" class="overlay"></div>
+    
+    
+    
+    <!-- end of mainl -->
+    
+    
+    
+    
+    
+    
+    
+         
+      <div class="area">wgegwgwegwe<span id="images" class="images">image</span>w</div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                           home
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="index2.html">
+                        <i class="fa fa-globe fa-2x"></i>
+                        <span class="nav-text">
+                         orders
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="index3.html">
+                       <i class="fa fa-comments fa-2x"></i>
+                        <span class="nav-text">
+                           products
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-camera-retro fa-2x"></i>
+                        <span class="nav-text">
+                          customers
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-film fa-2x"></i>
+                        <span class="nav-text">
+                            content
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-book fa-2x"></i>
+                        <span class="nav-text">
+                          finance
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                       <i class="fa fa-cogs fa-2x"></i>
+                        <span class="nav-text">
+                            store
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">
+                            Member Map
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <i class="fa fa-info fa-2x"></i>
+                        <span class="nav-text">
+                            Documentation
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+    <!-- Buat Formulir -->
+    <div class="wrapper">
+        
+
+
+
+
+
+        <!-- Memanggil loader-->
+        <div id="loader"></div>
+        <p id="re"></p>
+     
+        <div id="mrphekeModal3" class="modal fade">
+            <form name="google-sheet">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" style="font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px;float: left;">CLOSE</button>
+                            
+                            
+                                    <div class="form" >
+
+
+
+
+            <div class="inputfield">
+                <label></label>
+                <input type="number" name="srchID" id="srchID" placeholder="Search by ID" style="text-align: center;" &nbsp; />
+                <input type="button" style="font-size:12pt;color:white;background-color:#5F9EA0;border:1px solid #000000;padding:2px" onclick="read_value($('#srchID').val())" value="Search" /><br>
+        
+            </div>
+<br>
+
+            <div class="inputfield">
+                <label>ID</label>
+                <input type="number" name="id" id="id" class="input" placeholder="Input ID">
+            </div>
+
+
+            <div class="inputfield">
+                <label>cost</label>
+                <input type="text" name="cost" id="cost" class="input" placeholder="cost">
+            </div>
+
+
+            
+            
+               <div class="inputfield">
+                <label>name</label>
+                <input type="text" name="name" id="name" class="input" placeholder="name">
+            </div>
+            
+               <div class="inputfield">
+                <label>unit</label>
+                <input type="text" name="unit" id="unit" class="input" placeholder="unit">
+            </div>
+            
+            
+               <div class="inputfield">
+                <label>orderid</label>
+                <input type="text" name="orderid" id="orderid" class="input" placeholder="orderid">
+            </div>
+            
+            
+            
+               <div class="inputfield">
+                <label>size</label>
+                <input type="text" name="size" id="size" class="input" placeholder="size">
+            </div>
+            
+               <div class="inputfield">
+                <label>color</label>
+                <input type="text" name="color" id="color" class="input" placeholder="color">
+            </div>
+            
+            
+                 <div class="inputfield">
+                <label>description</label>
+                <input type="text" name="description" id="description" class="input" placeholder="color">
+            </div>
+            
+            
+            
+            
+            
+            <div align="center">
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#228B22;border:1px solid #000000;padding:2px" id="b1" onClick="insert_value()" value="SUBMIT">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#DAA520;border:1px solid #000000;padding:2px" onclick="read_value('')" value="READ">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#0000CD;border:1px solid #000000;padding:2px" onclick="update_value()" value="UPDATE">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px" onclick="delete_value()" value="DELETE">
+            </div>
+
+  
+
+
+        </div>
+
+
+                            
+                            
+                            
+                   
+ <div id="showData">asf</div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    
+          <div id="mrphekeModal1" class="modal fade">
+            <form name="google-sheet">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" style="font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px;float: left;">CLOSE</button>
+                            
+                            
+                                    <div class="form" >
+
+
+
+
+            <div class="inputfield">
+                <label></label>
+                <input type="number" name="srchID" id="srchID" placeholder="Search by ID" style="text-align: center;" &nbsp; />
+                <input type="button" style="font-size:12pt;color:white;background-color:#5F9EA0;border:1px solid #000000;padding:2px" onclick="read_value($('#srchID').val())" value="Search" /><br>
+        
+            </div>
+<br>
+
+            <div class="inputfield">
+                <label>ID</label>
+                <input type="number" name="id" id="id" class="input" placeholder="Input ID">
+            </div>
+
+
+            <div class="inputfield">
+                <label>cost</label>
+                <input type="text" name="cost" id="cost" class="input" placeholder="cost">
+            </div>
+
+
+            
+            
+               <div class="inputfield">
+                <label>name</label>
+                <input type="text" name="name" id="name" class="input" placeholder="name">
+            </div>
+            
+               <div class="inputfield">
+                <label>unit</label>
+                <input type="text" name="unit" id="unit" class="input" placeholder="unit">
+            </div>
+            
+            
+               <div class="inputfield">
+                <label>orderid</label>
+                <input type="text" name="orderid" id="orderid" class="input" placeholder="orderid">
+            </div>
+            
+            
+            
+               <div class="inputfield">
+                <label>size</label>
+                <input type="text" name="size" id="size" class="input" placeholder="size">
+            </div>
+            
+               <div class="inputfield">
+                <label>color</label>
+                <input type="text" name="color" id="color" class="input" placeholder="color">
+            </div>
+            
+            
+                 <div class="inputfield">
+                <label>description</label>
+                <input type="text" name="description" id="description" class="input" placeholder="color">
+            </div>
+            
+            
+            
+            
+            
+            <div align="center">
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#228B22;border:1px solid #000000;padding:2px" id="b1" onClick="insert_value()" value="SUBMIT">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#DAA520;border:1px solid #000000;padding:2px" onclick="read_value('')" value="READ">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#0000CD;border:1px solid #000000;padding:2px" onclick="update_value()" value="UPDATE">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px" onclick="delete_value()" value="DELETE">
+            </div>
+
+  
+
+
+        </div>
+
+
+                            
+                            
+                            
+                   
+ <div id="showData">asf</div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    
+
+    
+    
+    
+     
+        <div id="mrphekeModal2" class="modal fade">
+            <form name="google-sheet">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" style="font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px;float: left;">CLOSE</button>
+                            
+                            
+                                    <div class="form" >
+
+
+
+
+            
+             
+             <iframe src="https://docs.google.com/spreadsheets/d/1led539ZxdGz8OUpurSFEdsIFcOQruW9n8wvXqNhfOwM/edit#gid=0" style="width: 100%;height: 450px;"></iframe>
+            
+            
+            
+            <div align="center">
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#228B22;border:1px solid #000000;padding:2px" id="b1" onClick="insert_value()" value="SUBMIT">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#DAA520;border:1px solid #000000;padding:2px" onclick="read_value('')" value="READ">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#0000CD;border:1px solid #000000;padding:2px" onclick="update_value()" value="UPDATE">
+
+                <input type="button" style="width: 100px;font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px" onclick="delete_value()" value="DELETE">
+            </div>
+
+  
+
+
+        </div>
+
+
+                            
+                            
+                            
+                   
+ <div id="showData">asf</div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+
+    
+    
+    
+    
+    
+    
+
+
+ 
 <script>
-document.getElementById('whats-chat').addEventListener("mouseover", showchatbox);
-document.getElementById('chat-top-right').addEventListener("click", closechatbox);
-document.getElementById('send-btn').addEventListener("click", sendmsg);
-window.addEventListener("load", showchatboxtime);
-function showchatbox(){
-document.getElementById('chat-box').style.right='8%'
-}
-function closechatbox(){
-document.getElementById('chat-box').style.right='-500px'
+       var previous = null;
+    var current = null;
+    setInterval(function() {
+        
+         $.getJSON("", function() {
+            
+            current = JSON.stringify();            
+            if (previous && current && previous !== current) {
+                
+        
+            }
+            previous = current;
+        }); 
+        
+    (function() {
+    
+    
+   
+  var flickerAPI = "https://script.google.com/macros/s/AKfycbx_wjglQcwvcsvDS-63FgZMTQwKNfN7eOpXT0zl1nHqpV9ydYhPWvydD2bq_Ng26-8h0w/exec";
+    
+ 
+    
+  $.getJSON( flickerAPI, {}).done(function( data ) {
+      
+ 
+      
+      
+      
+      
+      
+      current = JSON.stringify(data);            
+            if (previous && current && previous !== current) {
+                console.log('refresh');
+                location.reload();
+            }
+            previous = current;
+      
+      
+        document.getElementById("images").innerHTML = 
+        
+  `<h1 class="app-title">shipping(${data.length} results)</h1>
+  ${data.map(clientTemplate).join("")}
+  <p class="footer">These ${data.length} clients were added recently.</p>`;
+      
+      function clientTemplate(client) { return `
+
+<div class="${client.price}" id="${client.Orderid}">
+    <div class="animal">
+    
+                       <div class="boxtest">
+${ client.country }
+                    <strong>city:${ client.city }<strong>state:</strong>${ client.state }
+                      <strong>state:</strong>${ client.address }
+                 </a>
+                  
+                         <a>
+                  # ${client.phonenumber}<br>
+                    ${client.email}<br>
+                      ${client.product}<br>
+
+ ${client.firstname} ${client.lastname}<br>
+                    ${client.phonenumber}<br>
+                     
 
 
-}
-function showchatboxtime(){
-setTimeout(launchbox,500)
-}
-function launchbox(){
-document.getElementById('chat-box').style.right='8%'
+                            </a> 
+  
+    
+    <div class="title">
+            <a href="#mrphekeModal1" class="btn btn-primary" style="font-size: 13px;width: 150px;float: left;" data-toggle="modal"><i class="material-icons"></i>edit personal information</a>
+  <a href="#mrphekeModal3" class="btn btn-primary" style="font-size: 13px;width: 150px;float: left;" data-toggle="modal"><i class="material-icons"></i>edit shipping information</a>
+            <a href="#mrphekeModal2" class="btn btn-primary" style="font-size: 13px;width: 150px;float: left;" data-toggle="modal"><i class="material-icons"></i>Spreadsheet</a>
+        </div>
+    <div class="container">
+    <div class="visible">
 
-}
-function sendmsg(){
-var msg = document.getElementById('whats-in').value;
-var relmsg = msg.replace(/ /g,"%20");
- window.open('https://api.whatsapp.com/send?phone=523322147756&text='+relmsg,'_blank');
+    </div>
+    <div class="hidden">
+        
+    </div>
+</div>
+    </div> 
 
+    </div>
+ </div>
+  `;
 }
-</script>
-    <script>
-document.getElementById('messager-chat').addEventListener("mouseover", showchatbox);
-document.getElementById('chat-top-left').addEventListener("click", closechatbox);
-document.getElementById('send-btnn').addEventListener("click", sendmsg);
-window.addEventListener("load", showchatboxtime);
-function showchatbox(){
-document.getElementById('chat-box2').style.left='8%'
-}
-function closechatbox(){
-document.getElementById('chat-box2').style.left='-500px'
+      
+      
+ 
+    });
+})();
+    
+      
+    }, 2000);      
 
 
-}
-function showchatboxtime(){
-setTimeout(launchbox,500)
-}
-function launchbox(){
-document.getElementById('chat-box2').style.right='8%'
+  
+ 
 
-}
 
+
+  
+
+    
 </script>
     
-<!-- partial -->
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js'></script><script  src="./script.js"></script>
     
-</body>
-</html>
-<!-- partial -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js'></script><script  src="./script.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <div class="layout">
+        <main class="content">
+            
+     
+      
+            
+            
+            
+            
+          
+            
+            
+          
+            
+              
+            
+            
+            
+            
+           ===
+            
+            
+            
+            
+            
+            
+            
+            
+            
+               <div>
+        <div id="root">
+            
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+          <footer class="footer">
+            <small style="margin-bottom: 20px; display: inline-block">
+              © 2025 made with
+              <span style="color: red; font-size: 18px">&#10084;</span> by -
+              <a target="_blank" href="https://azouaoui.netlify.app"> Mohamed Azouaoui </a>
+            </small>
+            <br />
+            <div class="social-links">
+              <a href="https://github.com/azouaoui-med" target="_blank">
+                <i class="ri-github-fill ri-xl"></i>
+              </a>
+              <a href="https://twitter.com/azouaoui_med" target="_blank">
+                <i class="ri-twitter-fill ri-xl"></i>
+              </a>
+              <a href="https://codepen.io/azouaoui-med" target="_blank">
+                <i class="ri-codepen-fill ri-xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mohamed-azouaoui/" target="_blank">
+                <i class="ri-linkedin-box-fill ri-xl"></i>
+              </a>
+            </div>
+          </footer>
+        </main>
+        <div class="overlay"></div>
+      </div>
+    
+    
+    
+    
+    
+    <!-- end codel -->
+    </div>
+
+  <script src='https://unpkg.com/@popperjs/core@2'></script><script  src="./script.js"></script>
+    <script
+
 </body>
 </html>
