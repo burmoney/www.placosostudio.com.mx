@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+      <!-- jQuery -->
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- jQueryUI -->
+    <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" charset="utf-8"></script>
+<!-- Bootstrap -->
+    <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+<!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/7dd8dcb030.js"></script>
+<!-- custom script -->
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  
+  <meta charset="UTF-8">
+ 	<title>onlineclasses</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="_csrf" content="IwC3meotu_W302c8Gs0C60_2J5fbKA32_glbKnbDKUc" />
+	
+			<meta name="description" content="onlineclasses1 makes it surprisingly easy to create a high-quality website, blog or online store. Over 40 million people use Weebly to bring their unique ideas to life.">
+	
+	<meta property="og:title" content="onlineclasses1 is the easiest way to create a website, store or blog">
+	<meta property="og:type" content="company">
+	<meta property="og:site_name" content="onlineclasses1.com">
+	<meta property="og:image" content="https://www.logopik.com/wp-content/uploads/edd/2018/10/Online-Education-Logo-Vector.png">
+    
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ 
+  
+
+    
+    
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html id="landing-page-home" lang="en">
+<head>
+	
+	
+		
+	<script src="https://use.typekit.net/cxj0npn.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<!-- Stylesheets -->
+	<link href="testing.css" rel="stylesheet" type="text/css">
+
+
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	<script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/utl.js?buildTime=1518741919&amp;"></script>
+
+	
+	<script type="text/javascript">
+		Weebly.RequestToken = '';
+		var ASSETS_BASE = 'cdn2.editmysite.com';
+		var STATIC_BASE = 'cdn1.editmysite.com';
+		var WEEBLY_DEBUG = false;
+		var PIXEL_UUID  = '58690947-136f-4693-9281-934644bba56e';
+		var bootstrapData = {
+			'errorMsgs': {"wrongUserPass":"Wrong username or password","loginToAccess":"Please log-in to access that page","loginAgain":"Please log-in again to continue.","accountDeleted":"Your account was previously deleted","accountExists":"You already have an account. Please log-in.","loginInstead":"You already have an account. Please log-in."},
+			'is_eu_user': false,
+			'themes': {"vertical_ids":["95","8","14","10","12","13","104"],"verticals":[{"vertical_id":"95","shortname":"onlinestore","name":"Online Store","hidden":0,"sites":[{"site_id":"736562032190977919","theme_id":"164107688866319628","order":0,"screenshot_desktop":"58508da506476","screenshot_mobile":"583c91cc467f3","full_site":1,"subpage_content":1,"status":"active","site_name":"Kiko & Miles","theme_title":"Edison","site_url":"kikoandmiles.templates.editmysite.com"},{"site_id":"162028882852728363","theme_id":"164107688866319628","order":2,"screenshot_desktop":"583c8cca9d07c","screenshot_mobile":"583c8cd32056a","full_site":1,"subpage_content":1,"status":"active","site_name":"Avenue","theme_title":"Edison","site_url":"avenue.templates.editmysite.com"},{"site_id":"600983235358443042","theme_id":"952895320193812485","order":3,"screenshot_desktop":"586bfb3861ba0","screenshot_mobile":"588647346cd65","full_site":1,"subpage_content":1,"status":"active","site_name":"Hugo","theme_title":"CleanLines 2","site_url":"hugotemplate.templates.editmysite.com"},{"site_id":"930738938218931645","theme_id":"722557302383787297","order":4,"screenshot_desktop":"57d9f61b5e946","screenshot_mobile":"57da02abf23ad","full_site":1,"subpage_content":1,"status":"active","site_name":"SRLY","theme_title":"Brisk","site_url":"srly.templates.editmysite.com"},{"site_id":"364572055846425945","theme_id":"532804912680526614","order":5,"screenshot_desktop":"583c9246a7f56","screenshot_mobile":"583c9252218cc","full_site":1,"subpage_content":1,"status":"active","site_name":"Xander","theme_title":"Brisk 2","site_url":"xander.templates.editmysite.com"},{"site_id":"633530529799835085","theme_id":"402674496620160599","order":7,"screenshot_desktop":"57d9f6a58a86b","screenshot_mobile":"57da02e1e8ded","full_site":1,"subpage_content":1,"status":"active","site_name":"The Time Piece","theme_title":"CleanLines","site_url":"timepiece.templates.editmysite.com"}]},{"vertical_id":"8","shortname":"business","name":"Business","hidden":0,"sites":[{"site_id":"796703442801060125","theme_id":"917756704577650054","order":1,"screenshot_desktop":"58c83d3541a8f","screenshot_mobile":"58c83d4295871","full_site":1,"subpage_content":1,"status":"active","site_name":"Wildlife Conservation Services","theme_title":"Slick","site_url":"wcs.templates.editmysite.com"},{"site_id":"849917389696038668","theme_id":"164107688866319628","order":2,"screenshot_desktop":"5886466f5bdd3","screenshot_mobile":"588646893a053","full_site":1,"subpage_content":1,"status":"active","site_name":"Breal","theme_title":"Edison","site_url":"breal.templates.editmysite.com"},{"site_id":"558554390572235973","theme_id":"994334019802252716","order":3,"screenshot_desktop":"583c91ff01186","screenshot_mobile":"583c920fd9228","full_site":1,"subpage_content":1,"status":"active","site_name":"Wag & Paws","theme_title":"Unite 2","site_url":"wagandpaws.templates.editmysite.com"},{"site_id":"521087233321423464","theme_id":"994334019802252716","order":4,"screenshot_desktop":"5850900d43f21","screenshot_mobile":"5850901c2767e","full_site":1,"subpage_content":1,"status":"active","site_name":"Muse Technologies","theme_title":"Unite 2","site_url":"musetechnologies.templates.editmysite.com"},{"site_id":"566287647143199861","theme_id":"480273804761027045","order":5,"screenshot_desktop":"584847b8bc7d3","screenshot_mobile":"584847cab9f87","full_site":1,"subpage_content":1,"status":"active","site_name":"Travellin","theme_title":"Dusk 2","site_url":"travellin.templates.editmysite.com"},{"site_id":"251383052315009369","theme_id":"715256706361612609","order":6,"screenshot_desktop":"57db23854cfb2","screenshot_mobile":"57e2d9b0bcaff","full_site":1,"subpage_content":1,"status":"active","site_name":"Urban Dine","theme_title":"Birdseye 2","site_url":"urbandine.templates.editmysite.com"}]},{"vertical_id":"14","shortname":"portfolio","name":"Portfolio","hidden":0,"sites":[{"site_id":"385295602654236437","theme_id":"902971553450484470","order":0,"screenshot_desktop":"57e2d7c89ca08","screenshot_mobile":"57e2da7c2bb12","full_site":1,"subpage_content":1,"status":"active","site_name":"Modus Operandi","theme_title":"Cento","site_url":"modusoperandi.templates.editmysite.com"},{"site_id":"434975494227065686","theme_id":"586929146893339105","order":1,"screenshot_desktop":"57ed68fb9a69d","screenshot_mobile":"57ed7c79cd039","full_site":1,"subpage_content":1,"status":"active","site_name":"JS Photography","theme_title":"Journey","site_url":"js-photography.templates.editmysite.com"},{"site_id":"269689152576265369","theme_id":"715256706361612609","order":2,"screenshot_desktop":"57dc44507c6fc","screenshot_mobile":"57e2da954b201","full_site":1,"subpage_content":1,"status":"active","site_name":"Elijah Soul","theme_title":"Birdseye 2","site_url":"elijahsoul.templates.editmysite.com"},{"site_id":"818920441826955126","theme_id":"715256706361612609","order":3,"screenshot_desktop":"5817d7135168a","screenshot_mobile":"5817d85a26bbb","full_site":1,"subpage_content":1,"status":"active","site_name":"Sarah Smith","theme_title":"Birdseye 2","site_url":"susansmith.templates.editmysite.com"},{"site_id":"806599218842012522","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57dc48f65a39d","screenshot_mobile":"57e2dab1cac28","full_site":1,"subpage_content":1,"status":"active","site_name":"Oikos","theme_title":"Birdseye 2","site_url":"oikos.templates.editmysite.com"},{"site_id":"821196939937058411","theme_id":"541396811389990674","order":5,"screenshot_desktop":"57dc48e05b77b","screenshot_mobile":"57e2dabed2817","full_site":1,"subpage_content":1,"status":"active","site_name":"Typo Designs","theme_title":"Cento 2","site_url":"typodesign.templates.editmysite.com"}]},{"vertical_id":"10","shortname":"personal","name":"Personal","hidden":0,"sites":[{"site_id":"602815615684295787","theme_id":"341634742767992869","order":0,"screenshot_desktop":"57dc579d4453f","screenshot_mobile":"57e2d954a603c","full_site":1,"subpage_content":1,"status":"active","site_name":"James Coleman","theme_title":"Venue 2","site_url":"jamescoleman.templates.editmysite.com"},{"site_id":"383615049848805163","theme_id":"902971553450484470","order":2,"screenshot_desktop":"57e0644309a0c","screenshot_mobile":"57e2d94ae91d4","full_site":1,"subpage_content":1,"status":"active","site_name":"Mandy Miller","theme_title":"Cento","site_url":"mandy-miller.templates.editmysite.com"},{"site_id":"818920441826955126","theme_id":"715256706361612609","order":3,"screenshot_desktop":"57dc6d5401a89","screenshot_mobile":"57e2d95f6629a","full_site":1,"subpage_content":1,"status":"active","site_name":"Susan Smith","theme_title":"Birdseye 2","site_url":"susansmith.templates.editmysite.com"},{"site_id":"192669213563351847","theme_id":"994334019802252716","order":4,"screenshot_desktop":"57dc6d84dd38e","screenshot_mobile":"57e2d96ca1a4a","full_site":1,"subpage_content":1,"status":"active","site_name":"Bella Marcel","theme_title":"Unite 2","site_url":"bella-marcela.templates.editmysite.com"},{"site_id":"415026593431697285","theme_id":"105424170346016758","order":5,"screenshot_desktop":"57dc57a54798b","screenshot_mobile":"57e2d9766a309","full_site":1,"subpage_content":1,"status":"active","site_name":"Jay Sims","theme_title":"Oasis","site_url":"jaysims.templates.editmysite.com"},{"site_id":"156738245676865400","theme_id":"909203498669091979","order":6,"screenshot_desktop":"57e17c681522e","screenshot_mobile":"57e2de5935d77","full_site":1,"subpage_content":1,"status":"active","site_name":"Photos by Kim","theme_title":"Paper","site_url":"kimphotography.templates.editmysite.com"}]},{"vertical_id":"12","shortname":"event","name":"Event","hidden":0,"sites":[{"site_id":"811436302815733122","theme_id":"253477038470327955","order":1,"screenshot_desktop":"57e1d13535448","screenshot_mobile":"57e2d895f41a8","full_site":1,"subpage_content":1,"status":"active","site_name":"Vue 2016","theme_title":"Dusk","site_url":"vue.templates.editmysite.com"},{"site_id":"788288481688930459","theme_id":"715256706361612609","order":2,"screenshot_desktop":"57e1d1407a9b7","screenshot_mobile":"57e2d8a0bbba8","full_site":1,"subpage_content":1,"status":"active","site_name":"Run","theme_title":"Birdseye 2","site_url":"runagainstcancer.templates.editmysite.com"},{"site_id":"214151854891970659","theme_id":"902971553450484470","order":3,"screenshot_desktop":"57e1d150775ab","screenshot_mobile":"57e2d8ab4c66f","full_site":1,"subpage_content":1,"status":"active","site_name":"John & Maggy","theme_title":"Cento","site_url":"john-and-maggy.templates.editmysite.com"},{"site_id":"496528153658958158","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57e1d18d47c89","screenshot_mobile":"57e2d8c141e84","full_site":1,"subpage_content":1,"status":"active","site_name":"Century Arts","theme_title":"Birdseye 2","site_url":"century-arts.templates.editmysite.com"},{"site_id":"757281810517485733","theme_id":"105424170346016758","order":5,"screenshot_desktop":"57e1d19756697","screenshot_mobile":"57e2d8d7de462","full_site":1,"subpage_content":1,"status":"active","site_name":"Black Apron","theme_title":"Oasis","site_url":"black-apron.templates.editmysite.com"},{"site_id":"379428579909952493","theme_id":"402674496620160599","order":6,"screenshot_desktop":"57e1d1a426e21","screenshot_mobile":"57e2d8ef16565","full_site":1,"subpage_content":1,"status":"active","site_name":"Ariana & Hunter","theme_title":"CleanLines","site_url":"ariana-hunter.templates.editmysite.com"}]},{"vertical_id":"13","shortname":"blog","name":"Blog","hidden":0,"sites":[{"site_id":"408917857439597400","theme_id":"181491578639761880","order":0,"screenshot_desktop":"57e060200b147","screenshot_mobile":"57e2db2f227fa","full_site":1,"subpage_content":1,"status":"active","site_name":"Marcus Reid","theme_title":"Unite","site_url":"marcus.templates.editmysite.com"},{"site_id":"483636456506197906","theme_id":"917756704577650054","order":1,"screenshot_desktop":"57e07fa7dc7db","screenshot_mobile":"57e2db41ba872","full_site":1,"subpage_content":1,"status":"active","site_name":"Brooke Anderson","theme_title":"Slick","site_url":"brooke.templates.editmysite.com"},{"site_id":"766503135282657694","theme_id":"901818448816645918","order":2,"screenshot_desktop":"57dc5b2c41715","screenshot_mobile":"57e2cf9d347d7","full_site":1,"subpage_content":1,"status":"active","site_name":"Zoe's Dish","theme_title":"Birdseye","site_url":"zoe-dish.templates.editmysite.com"},{"site_id":"858282439969684465","theme_id":"902971553450484470","order":3,"screenshot_desktop":"57e06037ec81f","screenshot_mobile":"57e2dbc250908","full_site":1,"subpage_content":1,"status":"active","site_name":"Sights + Sounds","theme_title":"Cento","site_url":"sights-sounds.templates.editmysite.com"},{"site_id":"887878460605709276","theme_id":"116005133769609133","order":4,"screenshot_desktop":"57dc5b16751de","screenshot_mobile":"57e2dbcb62af6","full_site":1,"subpage_content":1,"status":"active","site_name":"Upstart","theme_title":"Haberdasher","site_url":"upstart.templates.editmysite.com"},{"site_id":"169640345872984079","theme_id":"181491578639761880","order":5,"screenshot_desktop":"57e062a0365dd","screenshot_mobile":"57e2dbd858da6","full_site":1,"subpage_content":1,"status":"active","site_name":"Unbound","theme_title":"Unite","site_url":"unbound.templates.editmysite.com"}]},{"vertical_id":"104","shortname":"other","name":"Other","hidden":0,"sites":[{"site_id":"319825474716943932","theme_id":"715256706361612609","order":0,"screenshot_desktop":"57e1c5a58d027","screenshot_mobile":"57e1c5af193de","full_site":1,"subpage_content":1,"status":"active","site_name":"Loveseat","theme_title":"Birdseye 2","site_url":"loveseat.templates.editmysite.com"},{"site_id":"251383052315009369","theme_id":"715256706361612609","order":1,"screenshot_desktop":"57e0699c2e247","screenshot_mobile":"57e2dc4f9303d","full_site":1,"subpage_content":1,"status":"active","site_name":"Urban Dine","theme_title":"Birdseye 2","site_url":"urbandine.templates.editmysite.com"},{"site_id":"385295602654236437","theme_id":"902971553450484470","order":2,"screenshot_desktop":"57e069f339117","screenshot_mobile":"57e2dc6a1385e","full_site":1,"subpage_content":0,"status":"active","site_name":"Modus Operandi","theme_title":"Cento","site_url":"modusoperandi.templates.editmysite.com"},{"site_id":"502006055512840970","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57e0698bd8212","screenshot_mobile":"57e2dca5d3e98","full_site":1,"subpage_content":1,"status":"active","site_name":"High Peak","theme_title":"Birdseye 2","site_url":"highpeak.templates.editmysite.com"},{"site_id":"818920441826955126","theme_id":"715256706361612609","order":5,"screenshot_desktop":"588a9437ed5eb","screenshot_mobile":"588a9442c0004","full_site":1,"subpage_content":1,"status":"active","site_name":"Sarah Smith","theme_title":"Birdseye 2","site_url":"susansmith.templates.editmysite.com"},{"site_id":"821196939937058411","theme_id":"541396811389990674","order":6,"screenshot_desktop":"57e067d941a6e","screenshot_mobile":"57e2dcd4ee969","full_site":1,"subpage_content":1,"status":"active","site_name":"Typo Designs","theme_title":"Cento 2","site_url":"typodesign.templates.editmysite.com"}]}],"all_sites":{"736562032190977919":{"site_id":"736562032190977919","theme_id":"164107688866319628","order":0,"screenshot_desktop":"58508da506476","screenshot_mobile":"583c91cc467f3","full_site":1,"subpage_content":1,"status":"active","site_name":"Kiko & Miles","theme_title":"Edison","site_url":"kikoandmiles.templates.editmysite.com"},"162028882852728363":{"site_id":"162028882852728363","theme_id":"164107688866319628","order":2,"screenshot_desktop":"583c8cca9d07c","screenshot_mobile":"583c8cd32056a","full_site":1,"subpage_content":1,"status":"active","site_name":"Avenue","theme_title":"Edison","site_url":"avenue.templates.editmysite.com"},"600983235358443042":{"site_id":"600983235358443042","theme_id":"952895320193812485","order":3,"screenshot_desktop":"586bfb3861ba0","screenshot_mobile":"588647346cd65","full_site":1,"subpage_content":1,"status":"active","site_name":"Hugo","theme_title":"CleanLines 2","site_url":"hugotemplate.templates.editmysite.com"},"930738938218931645":{"site_id":"930738938218931645","theme_id":"722557302383787297","order":4,"screenshot_desktop":"57d9f61b5e946","screenshot_mobile":"57da02abf23ad","full_site":1,"subpage_content":1,"status":"active","site_name":"SRLY","theme_title":"Brisk","site_url":"srly.templates.editmysite.com"},"364572055846425945":{"site_id":"364572055846425945","theme_id":"532804912680526614","order":5,"screenshot_desktop":"583c9246a7f56","screenshot_mobile":"583c9252218cc","full_site":1,"subpage_content":1,"status":"active","site_name":"Xander","theme_title":"Brisk 2","site_url":"xander.templates.editmysite.com"},"633530529799835085":{"site_id":"633530529799835085","theme_id":"402674496620160599","order":7,"screenshot_desktop":"57d9f6a58a86b","screenshot_mobile":"57da02e1e8ded","full_site":1,"subpage_content":1,"status":"active","site_name":"The Time Piece","theme_title":"CleanLines","site_url":"timepiece.templates.editmysite.com"},"796703442801060125":{"site_id":"796703442801060125","theme_id":"917756704577650054","order":1,"screenshot_desktop":"58c83d3541a8f","screenshot_mobile":"58c83d4295871","full_site":1,"subpage_content":1,"status":"active","site_name":"Wildlife Conservation Services","theme_title":"Slick","site_url":"wcs.templates.editmysite.com"},"849917389696038668":{"site_id":"849917389696038668","theme_id":"164107688866319628","order":2,"screenshot_desktop":"5886466f5bdd3","screenshot_mobile":"588646893a053","full_site":1,"subpage_content":1,"status":"active","site_name":"Breal","theme_title":"Edison","site_url":"breal.templates.editmysite.com"},"558554390572235973":{"site_id":"558554390572235973","theme_id":"994334019802252716","order":3,"screenshot_desktop":"583c91ff01186","screenshot_mobile":"583c920fd9228","full_site":1,"subpage_content":1,"status":"active","site_name":"Wag & Paws","theme_title":"Unite 2","site_url":"wagandpaws.templates.editmysite.com"},"521087233321423464":{"site_id":"521087233321423464","theme_id":"994334019802252716","order":4,"screenshot_desktop":"5850900d43f21","screenshot_mobile":"5850901c2767e","full_site":1,"subpage_content":1,"status":"active","site_name":"Muse Technologies","theme_title":"Unite 2","site_url":"musetechnologies.templates.editmysite.com"},"566287647143199861":{"site_id":"566287647143199861","theme_id":"480273804761027045","order":5,"screenshot_desktop":"584847b8bc7d3","screenshot_mobile":"584847cab9f87","full_site":1,"subpage_content":1,"status":"active","site_name":"Travellin","theme_title":"Dusk 2","site_url":"travellin.templates.editmysite.com"},"251383052315009369":{"site_id":"251383052315009369","theme_id":"715256706361612609","order":1,"screenshot_desktop":"57e0699c2e247","screenshot_mobile":"57e2dc4f9303d","full_site":1,"subpage_content":1,"status":"active","site_name":"Urban Dine","theme_title":"Birdseye 2","site_url":"urbandine.templates.editmysite.com"},"385295602654236437":{"site_id":"385295602654236437","theme_id":"902971553450484470","order":2,"screenshot_desktop":"57e069f339117","screenshot_mobile":"57e2dc6a1385e","full_site":1,"subpage_content":0,"status":"active","site_name":"Modus Operandi","theme_title":"Cento","site_url":"modusoperandi.templates.editmysite.com"},"434975494227065686":{"site_id":"434975494227065686","theme_id":"586929146893339105","order":1,"screenshot_desktop":"57ed68fb9a69d","screenshot_mobile":"57ed7c79cd039","full_site":1,"subpage_content":1,"status":"active","site_name":"JS Photography","theme_title":"Journey","site_url":"js-photography.templates.editmysite.com"},"269689152576265369":{"site_id":"269689152576265369","theme_id":"715256706361612609","order":2,"screenshot_desktop":"57dc44507c6fc","screenshot_mobile":"57e2da954b201","full_site":1,"subpage_content":1,"status":"active","site_name":"Elijah Soul","theme_title":"Birdseye 2","site_url":"elijahsoul.templates.editmysite.com"},"818920441826955126":{"site_id":"818920441826955126","theme_id":"715256706361612609","order":5,"screenshot_desktop":"588a9437ed5eb","screenshot_mobile":"588a9442c0004","full_site":1,"subpage_content":1,"status":"active","site_name":"Sarah Smith","theme_title":"Birdseye 2","site_url":"susansmith.templates.editmysite.com"},"806599218842012522":{"site_id":"806599218842012522","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57dc48f65a39d","screenshot_mobile":"57e2dab1cac28","full_site":1,"subpage_content":1,"status":"active","site_name":"Oikos","theme_title":"Birdseye 2","site_url":"oikos.templates.editmysite.com"},"821196939937058411":{"site_id":"821196939937058411","theme_id":"541396811389990674","order":6,"screenshot_desktop":"57e067d941a6e","screenshot_mobile":"57e2dcd4ee969","full_site":1,"subpage_content":1,"status":"active","site_name":"Typo Designs","theme_title":"Cento 2","site_url":"typodesign.templates.editmysite.com"},"602815615684295787":{"site_id":"602815615684295787","theme_id":"341634742767992869","order":0,"screenshot_desktop":"57dc579d4453f","screenshot_mobile":"57e2d954a603c","full_site":1,"subpage_content":1,"status":"active","site_name":"James Coleman","theme_title":"Venue 2","site_url":"jamescoleman.templates.editmysite.com"},"383615049848805163":{"site_id":"383615049848805163","theme_id":"902971553450484470","order":2,"screenshot_desktop":"57e0644309a0c","screenshot_mobile":"57e2d94ae91d4","full_site":1,"subpage_content":1,"status":"active","site_name":"Mandy Miller","theme_title":"Cento","site_url":"mandy-miller.templates.editmysite.com"},"192669213563351847":{"site_id":"192669213563351847","theme_id":"994334019802252716","order":4,"screenshot_desktop":"57dc6d84dd38e","screenshot_mobile":"57e2d96ca1a4a","full_site":1,"subpage_content":1,"status":"active","site_name":"Bella Marcel","theme_title":"Unite 2","site_url":"bella-marcela.templates.editmysite.com"},"415026593431697285":{"site_id":"415026593431697285","theme_id":"105424170346016758","order":5,"screenshot_desktop":"57dc57a54798b","screenshot_mobile":"57e2d9766a309","full_site":1,"subpage_content":1,"status":"active","site_name":"Jay Sims","theme_title":"Oasis","site_url":"jaysims.templates.editmysite.com"},"156738245676865400":{"site_id":"156738245676865400","theme_id":"909203498669091979","order":6,"screenshot_desktop":"57e17c681522e","screenshot_mobile":"57e2de5935d77","full_site":1,"subpage_content":1,"status":"active","site_name":"Photos by Kim","theme_title":"Paper","site_url":"kimphotography.templates.editmysite.com"},"811436302815733122":{"site_id":"811436302815733122","theme_id":"253477038470327955","order":1,"screenshot_desktop":"57e1d13535448","screenshot_mobile":"57e2d895f41a8","full_site":1,"subpage_content":1,"status":"active","site_name":"Vue 2016","theme_title":"Dusk","site_url":"vue.templates.editmysite.com"},"788288481688930459":{"site_id":"788288481688930459","theme_id":"715256706361612609","order":2,"screenshot_desktop":"57e1d1407a9b7","screenshot_mobile":"57e2d8a0bbba8","full_site":1,"subpage_content":1,"status":"active","site_name":"Run","theme_title":"Birdseye 2","site_url":"runagainstcancer.templates.editmysite.com"},"214151854891970659":{"site_id":"214151854891970659","theme_id":"902971553450484470","order":3,"screenshot_desktop":"57e1d150775ab","screenshot_mobile":"57e2d8ab4c66f","full_site":1,"subpage_content":1,"status":"active","site_name":"John & Maggy","theme_title":"Cento","site_url":"john-and-maggy.templates.editmysite.com"},"496528153658958158":{"site_id":"496528153658958158","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57e1d18d47c89","screenshot_mobile":"57e2d8c141e84","full_site":1,"subpage_content":1,"status":"active","site_name":"Century Arts","theme_title":"Birdseye 2","site_url":"century-arts.templates.editmysite.com"},"757281810517485733":{"site_id":"757281810517485733","theme_id":"105424170346016758","order":5,"screenshot_desktop":"57e1d19756697","screenshot_mobile":"57e2d8d7de462","full_site":1,"subpage_content":1,"status":"active","site_name":"Black Apron","theme_title":"Oasis","site_url":"black-apron.templates.editmysite.com"},"379428579909952493":{"site_id":"379428579909952493","theme_id":"402674496620160599","order":6,"screenshot_desktop":"57e1d1a426e21","screenshot_mobile":"57e2d8ef16565","full_site":1,"subpage_content":1,"status":"active","site_name":"Ariana & Hunter","theme_title":"CleanLines","site_url":"ariana-hunter.templates.editmysite.com"},"408917857439597400":{"site_id":"408917857439597400","theme_id":"181491578639761880","order":0,"screenshot_desktop":"57e060200b147","screenshot_mobile":"57e2db2f227fa","full_site":1,"subpage_content":1,"status":"active","site_name":"Marcus Reid","theme_title":"Unite","site_url":"marcus.templates.editmysite.com"},"483636456506197906":{"site_id":"483636456506197906","theme_id":"917756704577650054","order":1,"screenshot_desktop":"57e07fa7dc7db","screenshot_mobile":"57e2db41ba872","full_site":1,"subpage_content":1,"status":"active","site_name":"Brooke Anderson","theme_title":"Slick","site_url":"brooke.templates.editmysite.com"},"766503135282657694":{"site_id":"766503135282657694","theme_id":"901818448816645918","order":2,"screenshot_desktop":"57dc5b2c41715","screenshot_mobile":"57e2cf9d347d7","full_site":1,"subpage_content":1,"status":"active","site_name":"Zoe's Dish","theme_title":"Birdseye","site_url":"zoe-dish.templates.editmysite.com"},"858282439969684465":{"site_id":"858282439969684465","theme_id":"902971553450484470","order":3,"screenshot_desktop":"57e06037ec81f","screenshot_mobile":"57e2dbc250908","full_site":1,"subpage_content":1,"status":"active","site_name":"Sights + Sounds","theme_title":"Cento","site_url":"sights-sounds.templates.editmysite.com"},"887878460605709276":{"site_id":"887878460605709276","theme_id":"116005133769609133","order":4,"screenshot_desktop":"57dc5b16751de","screenshot_mobile":"57e2dbcb62af6","full_site":1,"subpage_content":1,"status":"active","site_name":"Upstart","theme_title":"Haberdasher","site_url":"upstart.templates.editmysite.com"},"169640345872984079":{"site_id":"169640345872984079","theme_id":"181491578639761880","order":5,"screenshot_desktop":"57e062a0365dd","screenshot_mobile":"57e2dbd858da6","full_site":1,"subpage_content":1,"status":"active","site_name":"Unbound","theme_title":"Unite","site_url":"unbound.templates.editmysite.com"},"319825474716943932":{"site_id":"319825474716943932","theme_id":"715256706361612609","order":0,"screenshot_desktop":"57e1c5a58d027","screenshot_mobile":"57e1c5af193de","full_site":1,"subpage_content":1,"status":"active","site_name":"Loveseat","theme_title":"Birdseye 2","site_url":"loveseat.templates.editmysite.com"},"502006055512840970":{"site_id":"502006055512840970","theme_id":"715256706361612609","order":4,"screenshot_desktop":"57e0698bd8212","screenshot_mobile":"57e2dca5d3e98","full_site":1,"subpage_content":1,"status":"active","site_name":"High Peak","theme_title":"Birdseye 2","site_url":"highpeak.templates.editmysite.com"}}},
+			'previewingTheme': 'false',
+			'fromVertical': '',
+			'userId': 'false',
+			'show_sale_promo': false,
+			'sale_promo_html': "",
+			'useSocialSignUpActionCTA': false
+		};
+		var loginData = {"redirect":false};
+		var abTracking =  {
+			'carbonHomepageV2Group': "",
+			'phoneNumberSignupGroup': '',
+			'designServicesHomepageSectionGroup': "",
+			'homepageOnboardingGroup': ''
+		};
+
+			var abSegments = {"localeNewUserChat":"excluded","landingPage.onlineStore.valueProp":"test","social_sign_up_c_t_a_modal":"control","landingPage.all.navSwitch":"control"};
+
+		var oauth = {"domain":"www.onlineclasses1.com","user":false};
+		var abVars = {
+			'signupPhoneNumber': '',
+			'allowFullSiteCopy': '1'
+		};
+		var csrfToken = "IwC3meotu_W302c8Gs0C60_2J5fbKA32_glbKnbDKUc";
+		var nonce = "2489512540b0f2514bc1-1518828929-3ec4cac24729c227243652c246684c6d9121764bef31fb60dcf42b219fbaec80";
+		var showHerculesSection = "";
+
+		function themePreviewRPC() {
+					(function(){_W.setup_rpc({"url":"\/api\/JsonRPC\/Onboarding\/","actions":{"Onboarding":[{"name":"copyMerchandisedSite","len":3,"multiple":false,"standalone":false},{"name":"newSite","len":2,"multiple":false,"standalone":false},{"name":"setCustomTheme","len":3,"multiple":false,"standalone":false},{"name":"newSiteAndStartFreeTrial","len":2,"multiple":false,"standalone":false},{"name":"createFirstPages","len":1,"multiple":false,"standalone":false},{"name":"chooseFunnelExperience","len":1,"multiple":false,"standalone":false},{"name":"processPreselectedFunnelExperienceCookie","len":0,"multiple":false,"standalone":false}]},"namespace":"_W.Onboarding.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.Onboarding.RPC","model_namespace":"_W.Onboarding.BackboneModelData","collection_namespace":"_W.Onboarding.BackboneCollectionData","bootstrap_namespace":"_W.Onboarding.BackboneBootstrap","models":{"Onboarding":{"_class":"Onboarding.Model.Onboarding","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"Onboarding":{"_class":"Onboarding.Collection.Onboarding"}},"bootstrap":[]});
+})();
+		}
+	</script>
+
+
+</head>
+<body>
+<!-- End Google Tag Manager (noscript) - Install in Body -->
+
+
+	 
+	
+
+
+
+</svg>
+		<section class="lp-section lp-section--flush-bottom">
+			<div class="lp-section__container">
+			
+			</div>
+		</section>
+	</div>
+	
+
+
+
+
+
+	
+
+	
+
+<!-- this what keeps the website runing -->
+	<script type="text/javascript" src="test.js"></script>
+
+    
+    <!-- partial:index.partial.html -->
+<div id='chat-box'>
+    
+<div id='chat-top'>Need HELP? <span id='chat-top-right'><svg id='close-box' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z" fill='#fff'/></svg></span><div class='clear'></div></div>
+<div id='chat-msg'><p>hey are you looking to speak to some one send me a message see how i can help  </p>
+<div id='chat-form'>
+<div class='chat-in'>
+<input type='text' id='whats-in' Placeholder='Send Your Message...'/></div><div id='send-btn'><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 48 48"><path d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z" fill='rgb(18, 140, 126)'/></svg></div></div>
+</div>
+</div>
+    
+    <div id='chat-box2'>
+  <div id='chat-topp'>Need HELP? <span id='chat-top-left'><svg id='close-boxx' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z" fill='#fff'/></svg></span><div class='clear'></div></div><div id='chat-msgg'><p>hey there if you need help send me a message press the botton below</p><div  id='send-btn'><a href="http://m.me/programacionworld"><button style="font-size:18px;color:white;">messager</button></a></div>
+<div id='chat-formm'>
+<div class='chat-inn'>
+</div></div>
+</div>
+</div>
+    
+    
+    
+<div id='whats-chat'>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1" width="35" height="35" viewBox="0 0 90 90"><path d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z" fill="#FFF"/></svg>
+</div>
+   
+    <div id='messager-chat'>
+<i id="fb" class="fab fa-facebook-messenger" style="font-size:50px;color:white;"></i>
+
+</div>
+   
+<style>
+  body{width:100%}
+*{margin:0px;padding:0px;box-sizing:border-box;}
+#whats-chat{position:fixed;right:3%;bottom:10%;height:auto;width:auto;background:#25D366;padding:12.5px;border-radius:50px;z-index: 10;}
+#whats-chat:hover{cursor:pointer;box-shadow:2px 2px 15px #ccc;bottom:11%;z-index: 10;}
+#messager-chat{position:fixed;left:3%;bottom:10%;height:auto;width:auto;background:blue;padding:12.5px;border-radius:50px;z-index: 10;}
+#messager-chat:hover{cursor:pointer;box-shadow:2px 2px 15px #ccc;bottom:11%;z-index: 10;}
+        
+
+/*===============================messager left side*/
+#chat-box2{position:fixed;left:50px;bottom:18%;width:250px;height:200px;transition:all .5s;z-index: 10;}
+#chat-topp{width:100%;line-height:2;background:blue;color:white;text-align:center;border-radius:5px 5px 0 0;padding:0 10px;z-index: 10;}
+#chat-msgg{background:#ece5dd;padding:10px;border-radius:0 0 5px 5px;box-shadow:0 0 25px -10px white;z-index: 10;}
+#chat-msgg p{font-size:14px;padding:5px;background:white;border-radius:0 50px 50px 50px;margin-bottom:10px;z-index: 10;}
+#chat-formm{display:flex;}
+.chat-inn{width:80%;}
+#chat-formm input{border-radius:5px 0 5px 5px;border:none;outline:none;font-size:14px;padding:5px;line-height:2;z-index: 10;}
+#send-btnn{width:20%;padding: 0 5px;z-index: 10;}
+#chat-top-left{float:right;padding:5px 0;z-index: 10;}
+#chat-boxx:after{content:'';
+    position: absolute;
+    top:58%;
+    z-index: 10;
+    left: 90%;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent; 
+  
+  border-right:25px solid #ece5dd;}
+.right{float:right}
+.clear{clear:both}
+/*===============================*/
+#chat-box{position:fixed;right:-500px;bottom:18%;width:250px;height:200px;transition:all .5s;z-index: 10;}
+#chat-top{width:100%;line-height:2;background:rgb(18, 140, 126);color:white;text-align:center;border-radius:5px 5px 0 0;padding:0 10px;z-index: 10;}
+#chat-msg{background:#ece5dd;padding:10px;border-radius:0 0 5px 5px;box-shadow:0 0 25px -10px #999;z-index: 10;}
+#chat-msg p{font-size:14px;padding:5px;background:white;border-radius:0 50px 50px 50px;margin-bottom:10px;z-index: 10;}
+#chat-form{display:flex;}
+.chat-in{width:80%;}
+#chat-form input{border-radius:5px 0 5px 5px;border:none;outline:none;font-size:14px;padding:5px;line-height:2;z-index: 10;}
+#send-btn{width:20%;padding: 0 5px;z-index: 10;}
+#chat-top-right{float:right;padding:5px 0;z-index: 10;}
+#chat-box:after{content:'';
+    position: absolute;
+    top:58%;
+    left: 90%;
+    z-index: 10;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent; 
+  
+  border-right:25px solid #ece5dd;}
+.right{float:right}
+.clear{clear:both}
+    #fb{
+        width: 35;
+        height: 35; 
+    }
+</style>
+<script>
+document.getElementById('whats-chat').addEventListener("mouseover", showchatbox);
+document.getElementById('chat-top-right').addEventListener("click", closechatbox);
+document.getElementById('send-btn').addEventListener("click", sendmsg);
+window.addEventListener("load", showchatboxtime);
+function showchatbox(){
+document.getElementById('chat-box').style.right='8%'
+}
+function closechatbox(){
+document.getElementById('chat-box').style.right='-500px'
+
+
+}
+function showchatboxtime(){
+setTimeout(launchbox,500)
+}
+function launchbox(){
+document.getElementById('chat-box').style.right='8%'
+
+}
+function sendmsg(){
+var msg = document.getElementById('whats-in').value;
+var relmsg = msg.replace(/ /g,"%20");
+ window.open('https://api.whatsapp.com/send?phone=523322147756&text='+relmsg,'_blank');
+
+}
+</script>
+    <script>
+document.getElementById('messager-chat').addEventListener("mouseover", showchatbox);
+document.getElementById('chat-top-left').addEventListener("click", closechatbox);
+document.getElementById('send-btnn').addEventListener("click", sendmsg);
+window.addEventListener("load", showchatboxtime);
+function showchatbox(){
+document.getElementById('chat-box2').style.left='8%'
+}
+function closechatbox(){
+document.getElementById('chat-box2').style.left='-500px'
+
+
+}
+function showchatboxtime(){
+setTimeout(launchbox,500)
+}
+function launchbox(){
+document.getElementById('chat-box2').style.right='8%'
+
+}
+
+</script>
+    
+<!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js'></script><script  src="./script.js"></script>
+    
+</body>
+</html>
+<!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
