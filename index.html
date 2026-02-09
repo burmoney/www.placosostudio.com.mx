@@ -190,27 +190,12 @@ html, body {
     border-radius: 50%;
     background: rgba(255, 255, 255, .5);
     z-index: 2;
-    margin-top: 4px;
+    margin-top: 4px; 
     animation: ball .45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
   }
 
-  /* Body styles */
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-
-  html, body {
-    height: 100%;
-  }
-
-  body {
-    background: linear-gradient(135deg, #044f48, #2a7561);
-    background-size: cover;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    line-height: 1.3;
-    overflow: hidden;
-  }
+   
+ 
 
   .bg {
     width: 100%;
@@ -222,26 +207,23 @@ html, body {
     filter: blur(80px);
     transform: scale(1.2);
   }
-
-  /* Chat styles */
-  .chat {
-    position: absolute;
-    /* Using the center mixin concept */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 80vh;
-    max-height: 500px;
-    z-index: 2;
-    overflow: hidden;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
-    background: rgba(0, 0, 0, .5);
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
+.chat {
+  position: fixed; /* Changed from absolute to fixed */
+  bottom: 20px;    /* Distance from bottom */
+  left: 20px;      /* Distance from left */
+  width: 300px;
+  height: 80vh;
+  max-height: 500px;
+  z-index: 9999;   /* High z-index to stay on top */
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, .5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+   
 
   /* Chat Title */
   .chat-title {
