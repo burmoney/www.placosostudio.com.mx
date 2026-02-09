@@ -1,0 +1,1051 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA SISWA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+      /* Basic styles for cards and layout */
+#cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  padding: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  background: #fff;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+
+.main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  background: #212121;
+  overflow-y: auto;   /* 🔑 allows menu scrolling */
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+      
+   
+        body {
+  font-family: sans-serif;
+  background-color: #dedede;
+  color: #333;
+  padding: 20px 0 28px 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.6rem;
+}
+
+.animal {
+  max-width: 650px;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.animal h4 {
+  margin: 0 0 6px 0;
+}
+
+.pet-photo {
+  float: left;
+  width: 40%;
+  margin-right: 15px;
+}
+
+.pet-name {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+
+.species {
+  font-size: 0.9rem;
+  color: #888;
+  vertical-align: middle;
+}
+
+.foods-list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 17px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.footer {
+  font-size: 0.7rem;
+  color: #888;
+  text-align: center;
+  margin: 0;
+}
+        
+
+    </style>
+
+    <style>
+        html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 60px;        /* same as sidebar width */
+  right: 0;
+  height: 50px;      /* set your header height */
+  background: #fff;
+       /* higher than sidebar */
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+      .Custom-Polaris-Icon {
+  display: block;
+  height: 2rem; /* or value equivalent to 20px */
+  width: 2rem; /* or value equivalent to 20px */
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.Custom-Polaris-Icon__Svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+
+  /* Icon color */
+  fill: #000;
+} 
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+ 
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#000000;
+}
+.area {
+   margin: 0;
+  padding: 0;
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+
+ 
+ S
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+        
+        
+
+        
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+      var script_url = "https://script.google.com/macros/s/AKfycbzRGEVIUnqB5MtgLDOw81zSsZPPALAAa5-KAJO0xjsIcbz3WNOw6sESsUP1tLDLq70i/exec";
+
+     var flickerAPI = "https://script.google.com/macros/s/AKfycbzRGEVIUnqB5MtgLDOw81zSsZPPALAAa5-KAJO0xjsIcbz3WNOw6sESsUP1tLDLq70i/exec";
+    
+   
+        function insert_value() {
+
+            $("#re").css("visibility", "hidden");
+            document.getElementById("loader").style.visibility = "visible";
+            $('#mySpinner').addClass('spinner');
+
+            
+            
+            
+            var id1 = $("#id").val();
+            var cost = $("#cost").val();
+            var name = $("#name").val();
+            var unit = $("#unit").val();
+            var orderid = $("#orderid").val();
+            var size = $("#size").val();
+            var color = $("#color").val();
+            var description = $("#description").val(); //////////////////
+
+            var url = script_url + "?callback=ctrlq&description=" + description + "&color=" + color + "&size=" + size + "&orderid=" + orderid + "&unit=" + unit + "&name=" + name + "&cost=" + cost + "&id=" + id1 + "&action=insert";
+
+            var request = jQuery.ajax({
+                crossDomain: true,
+                url: url,
+                method: "GET",
+                dataType: "jsonp"
+            });
+        }
+
+        // perbaharui data
+        function update_value() {
+            $("#re").css("visibility", "hidden");
+            document.getElementById("loader").style.visibility = "visible";
+
+               var id1 = $("#id").val();
+            var cost = $("#cost").val();
+            var name = $("#name").val();
+            var unit = $("#unit").val();
+            var orderid = $("#orderid").val();
+            var size = $("#size").val();
+            var color = $("#color").val();
+            var description = $("#description").val(); //////////////////
+
+            var url = script_url + "?callback=ctrlq&description=" + description + "&color=" + color + "&size=" + size + "&orderid=" + orderid + "&unit=" + unit + "&name=" + name + "&cost=" + cost + "&id=" + id1 + "&action=update";
+
+            var request = jQuery.ajax({
+                crossDomain: true,
+                url: url,
+                method: "GET",
+                dataType: "jsonp"
+            });
+        }
+
+        //hapus data
+        function delete_value() {
+            $("#re").css("visibility", "hidden");
+            document.getElementById("loader").style.visibility = "visible";
+
+            $('#mySpinner').addClass('spinner');
+               var id1 = $("#id").val();
+            var cost = $("#cost").val();
+            var name = $("#name").val();
+            var unit = $("#unit").val();
+            var orderid = $("#orderid").val();
+            var size = $("#size").val();
+            var color = $("#color").val();
+            var description = $("#description").val();  //////////////////
+
+            var url = script_url + "?callback=ctrlq&description=" + description + "&color=" + color + "&size=" + size + "&orderid=" + orderid + "&unit=" + unit + "&name=" + name + "&cost=" + cost + "&id=" + id1 + "&action=delete";
+
+            var request = jQuery.ajax({
+                crossDomain: true,
+                url: url,
+                method: "GET",
+                dataType: "jsonp"
+            });
+        }
+
+        // print the returned data
+        function ctrlq(e) {
+            $("#re").html(e.result);
+            $("#re").css("visibility", "visible");
+            read_value('');
+        }
+
+        function read_value(srch) {
+
+            $("#re").css("visibility", "hidden");
+            document.getElementById("loader").style.visibility = "visible";
+            var url = script_url + "?action=read";
+
+            $.getJSON(url, function(json) {
+
+                // buat tabel yang menampilkan data
+                var table = document.createElement("table");
+                table.setAttribute("id", "myTable");
+                var header = table.createTHead();
+                var row = header.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                var cell4 = row.insertCell(3);
+                var cell5 = row.insertCell(4);
+                var cell6 = row.insertCell(5);
+                var cell7 = row.insertCell(6);
+                var cell8 = row.insertCell(7); ///////////////////
+                row.style.background = "rgb(15,0,0)";
+
+                cell1.innerHTML = "<b>ID</b>";
+                cell2.innerHTML = "<b>cost</b>";
+                cell3.innerHTML = "<b>name</b>";
+                cell4.innerHTML = "<b>unit</b>";
+                cell5.innerHTML = "<b>orderid</b>";
+                cell6.innerHTML = "<b>size</b>";
+                cell7.innerHTML = "<b>color</b>";
+                cell8.innerHTML = "<b>description</b>"; //////////////////
+
+                //        alert(json.records);
+                // masukkan data ke dalam tabel
+                if (srch != '') {
+                    for (var i = 0; i < json.records.length; i++) {
+
+                        if (srch == json.records[i].ID) {
+                            tr = table.insertRow(-1);
+                            var tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].ID;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].cost;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].name;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].unit;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].orderid;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].size;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].color;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].description; //////////////////
+                        }
+                    }
+                    $("#re").html("Informasi data siswa");
+                    $("#re").css("visibility", "visible");
+                } else {
+                    for (var i = 0; i < json.records.length; i++) {
+
+                        tr = table.insertRow(-1);
+                        var tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].ID;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].cost;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].name;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].unit;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].orderid;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].size;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].color;
+                            tabCell = tr.insertCell(-1);
+                            tabCell.innerHTML = json.records[i].description; ////////////////
+                    }
+                }
+
+                var divContainer = document.getElementById("showData");
+                divContainer.innerHTML = "";
+                divContainer.appendChild(table);
+                document.getElementById("loader").style.visibility = "hidden";
+                $("#re").css("visibility", "visible");
+
+                $("#id").val("")
+                $("#cost").val("")
+                $("#name").val("")
+                $("#unit").val("")
+                $("#orderid").val("")
+                $("#size").val("")
+                $("#color").val("")
+                $("#description").val("")
+                getData2Input(); ///////////////////
+            });
+        }
+        //////////// Ketika data dalam tabel diklik
+        function getData2Input() {
+            var table = document.getElementById("myTable");
+
+            if (table) {
+                for (var i = 0; i < table.rows.length; i++) {
+                    table.rows[i].onclick = function() {
+                        tableText(this);
+                    }
+                }
+            }
+        }
+
+        ///////////////////Ekstrak data dari Spreadsheet dan tampilkan di kolom.
+
+        function tableText(tableRow) {
+            var id = tableRow.childNodes[0].innerHTML;
+            var cost = tableRow.childNodes[1].innerHTML;
+            var name = tableRow.childNodes[2].innerHTML;
+            var unit = tableRow.childNodes[3].innerHTML;
+            var orderid = tableRow.childNodes[4].innerHTML;
+            var size = tableRow.childNodes[5].innerHTML;
+            var color = tableRow.childNodes[6].innerHTML;
+            var description = tableRow.childNodes[7].innerHTML; //////////
+            $("#id").val(id)
+            $("#cost").val(cost)
+            $("#name").val(name)
+            $("#unit").val(unit)
+            $("#orderid").val(orderid)
+            $("#size").val(size)
+            $("#color").val(color)
+            $("#description").val(description)
+
+        }
+        
+function showData() {
+    var id = document.getElementById('srchID').value;
+    if (id) {
+        // You can add your logic here to fetch or display data based on ID
+        document.getElementById('showData').style.display = 'block';
+        document.getElementById('showData').innerHTML = 'Data for ID: ' + id; // Example content
+    } else {
+        alert('Please enter an ID to search.');
+    }
+}
+
+function hideData() {
+    document.getElementById('showData').style.display = 'none';
+}
+    </script>
+
+
+
+<script>
+function searchAndShow() {
+    var id = $('#srchID').val();
+    read_value(id);
+    // Show the data container after processing
+    document.getElementById('showData').style.display = 'block';
+}
+
+function hideData() {
+    document.getElementById('showData').style.display = 'none';
+}
+</script>
+
+
+
+
+
+
+
+
+</head>
+     
+      
+
+
+<body>
+      
+
+<h2 style="text-align:center;">Shipping Data from API</h2>
+
+<input type="text" id="searchInput" placeholder="Search by name or id" style="width:300px; margin:auto; display:block; padding:8px;">
+<button onclick="filterCards()" style="display:block; margin:auto; margin-top:10px;">Filter</button>
+
+<div id="cardsContainer">
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 1</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> tshirt</p>
+        <p><strong>Total:</strong> 1</p>
+        <p><strong>Address:</strong> 123 main st, reno, nv</p>
+        <p><strong>Price:</strong> $2500</p>
+        <p><strong>Timestamp:</strong> 2025-04-24T08:06:01.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 2</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> tshirt</p>
+        <p><strong>Total:</strong> 1</p>
+        <p><strong>Address:</strong> 124 main st, reno, nv</p>
+        <p><strong>Price:</strong> $2500</p>
+        <p><strong>Timestamp:</strong> 2025-04-25T08:06:01.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 2</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> tshirt</p>
+        <p><strong>Total:</strong> 1</p>
+        <p><strong>Address:</strong> 125 main st, reno, nv</p>
+        <p><strong>Price:</strong> $2500</p>
+        <p><strong>Timestamp:</strong> 2025-04-26T08:06:01.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 2</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> tshirt</p>
+        <p><strong>Total:</strong> 1</p>
+        <p><strong>Address:</strong> 126 main st, reno, nv</p>
+        <p><strong>Price:</strong> $2500</p>
+        <p><strong>Timestamp:</strong> 2025-04-27T08:06:01.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 2</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> tshirt</p>
+        <p><strong>Total:</strong> 1</p>
+        <p><strong>Address:</strong> 127 main st, reno, nv</p>
+        <p><strong>Price:</strong> $2500</p>
+        <p><strong>Timestamp:</strong> 2025-04-28T08:06:01.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 2</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> tshirt</p>
+        <p><strong>Total:</strong> 1</p>
+        <p><strong>Address:</strong> 128 main st, reno, nv</p>
+        <p><strong>Price:</strong> $2500</p>
+        <p><strong>Timestamp:</strong> 2025-04-29T08:06:01.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 9</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> 2500</p>
+        <p><strong>Total:</strong> 1</p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $test</p>
+        <p><strong>Timestamp:</strong> 2026-02-08T22:14:13.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 10</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> asdaasd</p>
+        <p><strong>Total:</strong> </p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $</p>
+        <p><strong>Timestamp:</strong> 2026-02-08T22:17:32.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 3</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> 2500</p>
+        <p><strong>Total:</strong> 1</p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $test</p>
+        <p><strong>Timestamp:</strong> 2026-02-08T22:41:36.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 11</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> 2500</p>
+        <p><strong>Total:</strong> 1</p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $test</p>
+        <p><strong>Timestamp:</strong> 2026-02-08T22:48:04.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 16</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> asdaasd</p>
+        <p><strong>Total:</strong> cascasc</p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $</p>
+        <p><strong>Timestamp:</strong> 2026-02-08T23:09:02.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 17</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> asdaasd</p>
+        <p><strong>Total:</strong> dasdasda</p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $asdadasda</p>
+        <p><strong>Timestamp:</strong> 2026-02-08T23:13:11.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 4</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> asdaasd</p>
+        <p><strong>Total:</strong> dasdasda</p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $asdadasda</p>
+        <p><strong>Timestamp:</strong> 2026-02-08T23:18:53.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 2222222</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> 222222222222</p>
+        <p><strong>Total:</strong> 2222222</p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $222222222222</p>
+        <p><strong>Timestamp:</strong> 2026-02-08T23:27:30.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="https://raw.githubusercontent.com/burmoney/placoso.mx/refs/heads/gh-pages/images/logo.png" alt="Image">
+        <h4>Order#: 8</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> asdaasd</p>
+        <p><strong>Total:</strong> dasdasda</p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $asdadasda</p>
+        <p><strong>Timestamp:</strong> 2026-02-08T23:30:24.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="" alt="Image">
+        <h4>Order#: 6</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> asdaasd</p>
+        <p><strong>Total:</strong> dasdasda</p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $asdadasda</p>
+        <p><strong>Timestamp:</strong> 2026-02-09T04:35:10.000Z</p>
+      </div>
+    
+      <div class="card">
+        <img src="" alt="Image">
+        <h4>Order#: 13</h4>
+        <p><strong>Name:</strong> undefined</p>
+        <p><strong>Product:</strong> daadw</p>
+        <p><strong>Total:</strong> dasdasda</p>
+        <p><strong>Address:</strong> , , </p>
+        <p><strong>Price:</strong> $asdasdas</p>
+        <p><strong>Timestamp:</strong> 2026-02-09T05:34:40.000Z</p>
+      </div>
+    </div>
+
+<script>
+const script_url = "https://script.google.com/macros/s/AKfycbzRGEVIUnqB5MtgLDOw81zSsZPPALAAa5-KAJO0xjsIcbz3WNOw6sESsUP1tLDLq70i/exec";
+
+// Function to fetch data and display
+function fetchAndDisplay() {
+  $.getJSON(script_url, function(data) {
+    displayCards(data);
+  });
+}
+
+function displayCards(data) {
+  const container = $("#cardsContainer");
+  container.empty();
+  data.forEach(item => {
+    const cardHtml = `
+      <div class="card">
+        <img src="${item.image}" alt="Image" />
+        <h4>Order#: ${item.id}</h4>
+        <p><strong>Name:</strong> ${item.name}</p>
+        <p><strong>Product:</strong> ${item.product}</p>
+        <p><strong>Total:</strong> ${item.quantity}</p>
+        <p><strong>Address:</strong> ${item.address}, ${item.city}, ${item.state}</p>
+        <p><strong>Price:</strong> $${item.price}</p>
+        <p><strong>Timestamp:</strong> ${item.timestamp}</p>
+      </div>
+    `;
+    container.append(cardHtml);
+  });
+}
+
+// Filter cards based on search input
+function filterCards() {
+  const query = $('#searchInput').val().toLowerCase();
+  $("#cardsContainer .card").each(function() {
+    const text = $(this).text().toLowerCase();
+    if (text.includes(query)) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  });
+}
+
+// Load data on page load
+$(document).ready(function() {
+  fetchAndDisplay();
+});
+</script>
+
+
+
+<div class="html-viewer-info-panel html-viewer-panel-right">
+      <div class="html-viewer-panel-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div class="stars-container">
+            <span class="star" data-rating="1">★</span>
+            <span class="star" data-rating="2">★</span>
+            <span class="star" data-rating="3">★</span>
+            <span class="star" data-rating="4">★</span>
+            <span class="star" data-rating="5">★</span>
+          </div>
+          <span class="html-viewer-rate-text">Rate Us</span>
+        </div>
+          <div class="html-viewer-header-controls">
+          <div class="html-viewer-position-controls" title="Panel Position">
+            <button class="html-viewer-position-btn" data-position="left" title="Left">←</button>
+            <button class="html-viewer-position-btn active" data-position="right" title="Right">→</button>
+          </div>
+          <button class="html-viewer-close-panel" title="Close">×</button>
+        </div>
+      </div>
+    </div><div class="html-viewer-tooltip"></div>
+<div class="area">
+  <!-- Your page content goes here -->
+</div>
+
+
+
+
+         <nav class="main-menu">
+            <ul>
+               
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+ 
+                
+
+                
+     
+         <li class="has-subnav">
+                 <a href="Home.html">
+                       <i class="Custom-Polaris-Icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M14 16h-2a1 1 0 0 1-1-1v-2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v2.5a1 1 0 0 1-1 1h-2a2 2 0 0 1-2-2v-4.257a3 3 0 0 1 .879-2.122l3.707-3.707a2 2 0 0 1 2.828 0l3.707 3.707a3 3 0 0 1 .879 2.122v4.257a2 2 0 0 1-2 2Z"/></svg>  
+                           
+                           </i>
+                        <span class="nav-text"> Home</span>
+                    </a>
+                    
+                </li>     
+             
+         <div>
+
+<li class="has-subnav">
+                 <a href="Orders.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.255 5.847a2.75 2.75 0 0 1 2.72-2.347h6.05a2.75 2.75 0 0 1 2.72 2.347l.66 4.46c.063.425.095.853.095 1.282v1.661a3.25 3.25 0 0 1-3.25 3.25h-6.5a3.25 3.25 0 0 1-3.25-3.25v-1.66c0-.43.032-.858.094-1.283l.661-4.46Zm2.72-.847a1.25 1.25 0 0 0-1.236 1.067l-.583 3.933h2.484a1.25 1.25 0 0 1 1.185.855l.159.474a.25.25 0 0 0 .237.171h1.558a.25.25 0 0 0 .237-.17l.159-.475a1.25 1.25 0 0 1 1.185-.855h2.484l-.583-3.933a1.25 1.25 0 0 0-1.236-1.067h-6.05Z"/></svg>     
+                           </i>
+                        <span class="nav-text"> orders</span>
+                    </a>
+                    
+                </li>
+           
+              <li class="has-subnav">
+                    <a href="Products.html">
+                       <i class="Custom-Polaris-Icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.575 4.649a3.75 3.75 0 0 1 2.7-1.149h1.975a3.25 3.25 0 0 1 3.25 3.25v2.187a3.25 3.25 0 0 1-.996 2.34l-4.747 4.572a2.5 2.5 0 0 1-3.502-.033l-2.898-2.898a2.75 2.75 0 0 1-.036-3.852l4.254-4.417Zm4.425 3.351a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>  
+                           
+                           </i>
+                        <span class="nav-text"> Products</span>
+                    </a>
+                    
+                </li>
+             
+
+
+
+ <li class="has-subnav">
+                 <a href="Customers.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 9.75a3.25 3.25 0 1 0 0-6.5 3.25 3.25 0 0 0 0 6.5Z"/><path d="M10 11.5c-1.968 0-3.815.95-4.959 2.552l-.561.786a1.05 1.05 0 0 0 .855 1.662h9.33a1.05 1.05 0 0 0 .855-1.662l-.561-.786a6.094 6.094 0 0 0-4.959-2.552Z"/></svg>
+                           </i>
+                        <span class="nav-text">Customers</span>
+                    </a>
+                    
+                </li>
+ 
+
+ <li class="has-subnav">
+               <a href="Content.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path fill-rule="evenodd" d="M7.42 3.5h5.16c.535 0 .98 0 1.345.03.38.03.736.098 1.073.27a2.75 2.75 0 0 1 1.202 1.202c.172.337.24.693.27 1.073.03.365.03.81.03 1.345v1.91c0 .535 0 .98-.03 1.345-.03.38-.098.736-.27 1.073a2.751 2.751 0 0 1-1.201 1.202c-.338.172-.694.24-1.074.27a6.052 6.052 0 0 1-.288.017.744.744 0 0 1-.137.013h-6.08c-.535 0-.98 0-1.345-.03-.38-.03-.736-.098-1.073-.27a2.75 2.75 0 0 1-1.047-.934.75.75 0 0 1-.176-.31c-.157-.324-.22-.667-.25-1.031-.029-.365-.029-.81-.029-1.345v-1.91c0-.535 0-.98.03-1.345.03-.38.098-.736.27-1.073a2.75 2.75 0 0 1 1.202-1.202c.337-.172.693-.24 1.073-.27.365-.03.81-.03 1.345-.03Zm7.58 5.8-.001.533-.135-.192a1.75 1.75 0 0 0-2.778-.116l-1.086 1.303-2.411-2.893a1.75 1.75 0 0 0-2.68-.01l-.909 1.073v-1.548c0-.572 0-.957.025-1.253.023-.287.065-.424.111-.514a1.25 1.25 0 0 1 .547-.547c.09-.046.227-.088.514-.111.296-.024.68-.025 1.253-.025h5.1c.572 0 .957 0 1.252.025.288.023.425.065.516.111.235.12.426.311.546.547.046.09.088.227.111.514.024.296.025.68.025 1.253v1.85Z"/><path d="M4 15.75a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Z"/><path d="M12.75 15a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5Z"/></svg>
+                           </i>
+                        <span class="nav-text"> Content</span>
+                    </a>
+                    
+                </li>
+
+
+                  
+                  
+                 
+
+
+
+
+ <li class="has-subnav">
+                <a href="Finance.html">
+                       <i class="Custom-Polaris-Icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.54 3.177a1.25 1.25 0 0 0-1.08 0l-5.25 2.51a1.25 1.25 0 0 0-.71 1.128v1.185c0 .69.56 1.25 1.25 1.25v3h-.25a1 1 0 0 0-1 1v1.5a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-1.5a1 1 0 0 0-1-1h-.25v-3c.69 0 1.25-.56 1.25-1.25v-1.185c0-.481-.276-.92-.71-1.128l-5.25-2.51Zm1.71 6.073h1.5v3h-1.5v-3Zm-3 0h1.5v3h-1.5v-3Zm-3 0h1.5v3h-1.5v-3Z"/></svg>  
+                           
+                           </i>
+                       <span class="nav-text"> Finance</span>
+                    
+                    </a>
+                    
+                </li>
+
+
+
+
+ <li class="has-subnav">
+                <a href="Analytics.html">
+                       <i class="Custom-Polaris-Icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.971 4c-.204 0-.344 0-.465.024a1.25 1.25 0 0 0-.982.982c-.024.121-.024.26-.024.465v9.058c0 .204 0 .344.024.465.099.496.486.883.982.982a2.5 2.5 0 0 0 .465.024h.058c.204 0 .344 0 .465-.024a1.25 1.25 0 0 0 .982-.982 2.5 2.5 0 0 0 .024-.465v-9.058c0-.204 0-.344-.024-.465a1.25 1.25 0 0 0-.982-.982 2.504 2.504 0 0 0-.465-.024h-.058Z"/><path d="M5.471 9.5c-.204 0-.344 0-.465.024a1.25 1.25 0 0 0-.982.982c-.024.121-.024.26-.024.465v3.558c0 .204 0 .344.024.465.099.496.486.883.982.982a2.5 2.5 0 0 0 .465.024h.058c.204 0 .344 0 .465-.024a1.25 1.25 0 0 0 .982-.982c.024-.121.024-.26.024-.465v-3.558c0-.204 0-.344-.024-.465a1.25 1.25 0 0 0-.982-.982 2.503 2.503 0 0 0-.465-.024h-.058Z"/><path d="M14.471 6.5c-.204 0-.344 0-.465.024a1.25 1.25 0 0 0-.982.982c-.024.121-.024.26-.024.465v6.558c0 .204 0 .344.024.465.099.496.486.883.982.982.121.024.26.024.465.024h.058c.204 0 .344 0 .465-.024a1.25 1.25 0 0 0 .982-.982c.024-.121.024-.26.024-.465v-6.558c0-.204 0-.344-.024-.465a1.25 1.25 0 0 0-.982-.982 2.504 2.504 0 0 0-.465-.024h-.058Z"/></svg>
+                           
+                           </i>
+                           <span class="nav-text"> Analytics</span>
+                    
+                    </a>
+                    
+                </li>
+
+
+
+
+ <li class="has-subnav">
+                   <a href="Marketing.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 10a5 5 0 0 1 10 0 1 1 0 1 0 2 0 7 7 0 1 0-7 7 1 1 0 1 0 0-2 5 5 0 0 1-5-5Z"/><path d="M11.29 9.84a1 1 0 0 0 1.98-.278 3.25 3.25 0 1 0-3.782 3.653 1 1 0 1 0 .347-1.97 1.25 1.25 0 1 1 1.455-1.405Z"/><path d="M11.611 10.973a.5.5 0 0 0-.638.638l2.121 6.01a.5.5 0 0 0 .871.135l1.172-1.558 1.038 1.037a.5.5 0 0 0 .707 0l.353-.353a.5.5 0 0 0 0-.707l-1.037-1.038 1.558-1.172a.5.5 0 0 0-.135-.87l-6.01-2.122Z"/></svg>
+                           </i>
+                           <span class="nav-text">Marketing</span>
+                    </a>
+                    
+                </li>
+
+
+
+
+ <li class="has-subnav">
+                <a href="Discounts.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.527 3.327c-.6-1.306-2.455-1.306-3.054 0a1.68 1.68 0 0 1-2.112.874c-1.347-.5-2.66.813-2.16 2.16a1.68 1.68 0 0 1-.874 2.112c-1.306.6-1.306 2.455 0 3.054a1.68 1.68 0 0 1 .874 2.112c-.5 1.347.813 2.659 2.16 2.16a1.68 1.68 0 0 1 2.112.874c.6 1.306 2.455 1.306 3.054 0a1.68 1.68 0 0 1 2.112-.874c1.347.499 2.66-.813 2.16-2.16a1.68 1.68 0 0 1 .874-2.112c1.306-.6 1.306-2.455 0-3.054a1.68 1.68 0 0 1-.874-2.112c.5-1.347-.813-2.66-2.16-2.16a1.68 1.68 0 0 1-2.112-.874Zm-2.527 4.923a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm3.53.53-4 4a.75.75 0 1 1-1.06-1.06l4-4a.75.75 0 1 1 1.06 1.06Zm.47 3.47a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+                           </i>
+                      <span class="nav-text">Discounts</span>
+                    </a>
+                    
+                </li>
+
+
+
+             
+             
+             
+             
+                 
+  
+        <li class="has-subnav">
+                 <a href="Online.html">
+                       <i class="Custom-Polaris-Icon">
+                         
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.278 3a2.75 2.75 0 0 1 2.162 1.051l2.16 2.75.01.013c.736 1.03.238 2.396-.831 2.811h-1.17c-.475 0-.915-.244-1.166-.646l-.663-1.06a.624.624 0 0 0-1.137.184l-.075.298a1.616 1.616 0 0 1-3.136 0l-.075-.298a.628.628 0 0 0-.637-.477.624.624 0 0 0-.5.293l-.662 1.06a1.375 1.375 0 0 1-1.166.646h-1.17c-1.07-.415-1.568-1.781-.832-2.81l.01-.015 2.16-2.749a2.75 2.75 0 0 1 2.162-1.051h4.556Z"/><path fill-rule="evenodd" d="M4.5 10.875v4.375c0 .966.784 1.75 1.75 1.75h7.5a1.75 1.75 0 0 0 1.75-1.75v-4.375h-.892a2.625 2.625 0 0 1-2.226-1.234l-.012-.02a2.866 2.866 0 0 1-4.74 0l-.012.02a2.625 2.625 0 0 1-2.226 1.234h-.892Zm8.5 2.475a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v2.4c0 .138.112.25.25.25h2.5a.25.25 0 0 0 .25-.25v-2.4Z"/></svg>  
+                           
+                           </i>
+                    <span class="nav-text"> Online Store</span>
+                    </a>
+         
+             </li>
+
+     <li class="has-subnav">
+                  <a href="Email.html">
+                       <i class="Custom-Polaris-Icon">
+                           
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.976 5c-.62 0-1.146.454-1.237 1.067l-.583 3.933h2.484c.538 0 1.015.344 1.185.855l.159.474c.034.102.13.171.237.171h1.558c.108 0 .203-.069.237-.171l.159-.474c.17-.51.647-.855 1.185-.855h2.484l-.086-.578c-.06-.41.222-.79.632-.851.41-.061.791.222.852.632l.163 1.104c.063.425.095.853.095 1.282v1.661c0 1.795-1.455 3.25-3.25 3.25h-6.5c-1.795 0-3.25-1.455-3.25-3.25v-1.66c0-.43.032-.858.094-1.283l.661-4.46c.2-1.348 1.357-2.347 2.72-2.347h3.775c.414 0 .75.336.75.75s-.336.75-.75.75h-3.774Z"/><path d="M16.454 2.354c-.195-.196-.512-.196-.707 0l-.957.957 1.768 1.767.957-.957c.195-.195.195-.512 0-.707l-1.06-1.06Z"/><path d="m15.85 5.786-1.767-1.768-2.83 2.83c-.36.36-.569.841-.585 1.348l-.026.772c-.005.145.114.263.258.258l.772-.025c.507-.017.99-.226 1.348-.585l2.83-2.83Z"/></svg>
+        
+                           </i>
+                                   <span class="nav-text"> Email & SMS
+Settings</span>
+                    </a>
+                    
+                </li>
+             
+             
+           
+          
+                  
+                
+
+            </ul>
+        </nav>
+    
+    
+    
+
+
+ 
+ 
+    
+    
+   
+    
+</body>
+</html>
