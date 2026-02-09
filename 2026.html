@@ -1,0 +1,965 @@
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths -webkit-" style=""><head>
+    <meta name="viewport" content="width=device-width,initial-scale=1"> 
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive CSS Grid</title>
+  <style media="" data-href="./style.css">:root {
+  --main-radius: 5px;
+  --main-padding: 0px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.0fr 1.5fr 1.5fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main sidebar sidebar"
+    "content1 content1 sidebar sidebar"
+    "footer footer sidebar sidebar"
+    "content3 content3 content2 content2";
+  grid-gap: 0.5rem;
+ 
+  color: #004d40;
+
+}
+
+nav {
+     justify-self: center;
+background: white;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+}
+
+main {
+background: white;
+  grid-area: main;
+ padding-top: 0;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+  text-align: center;
+}
+
+#content11 {
+    margin-left: 50px;
+background: white;
+   padding-top: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#content1 {
+   padding-top: 0; 
+background: white;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+}
+
+#content2 {
+background: white;
+  z-index: 1;
+
+  grid-area: content2;
+  border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+
+#content3 {
+background: white;
+  grid-area: content3;
+ 
+  border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+
+footer {
+background: white;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+}
+
+a {
+  text-align: center;
+  display: block;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "content1"
+      "sidebar"
+      "content3"
+      "footer"
+      "content2";
+  }
+    
+  
+  iframe{
+  width: 100%;
+
+
+}  
+      
+
+     
+    
+    #content1 {
+    
+background: white;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+    footer {
+background: white;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+    .box{
+width: 100%;
+ z-index: 0;
+      
+    }
+    
+   
+
+    .box2{
+width:100%;
+         z-index: 0;
+      
+    }
+        .box3{
+          width: 100%;
+         z-index: 0;
+            background-color: gainsboro;
+            float:right;
+      
+    }
+}</style>
+<style>
+    
+  
+    
+      
+    img {
+  width: 95%;
+  height: auto;
+  margin: 10px;
+        
+       
+}
+    
+    
+     .text1{
+          width: 90%;
+         margin-left: 10%;
+    } 
+    
+    
+    
+    
+iframe{
+  width: 80%;
+    float: right;
+
+}
+    
+   .photo {
+  width: 88%;
+       float: right;
+}
+    
+
+       
+        ul.a {
+  list-style-type: circle;
+}
+        
+
+ul.a {
+margin: 12px;
+padding: 0;
+}
+ul.a li{
+margin: 0 0 12px 0;
+font-size: .9em;
+line-height: 1em;
+}
+
+body:nth-of-type(1) ul.a li{
+list-style-type:none;
+padding: 0 0 0 45px;
+position:relative;
+}
+
+body:nth-of-type(1) ul.a li:before{
+/*fill it with a blank space*/
+content:"\00a0";
+
+/*make it a block element*/
+display: block;
+
+/*adding an 8px round border to a 0x0 element creates an 8px circle*/
+border: solid 9px #272727;
+border-radius: 9px;
+-moz-border-radius: 9px;
+-webkit-border-radius: 9px;
+height: 0;
+width: 0;
+
+/*Now position it on the left of the list item, and center it vertically
+(so that it will work with multiple line list-items)*/
+position: absolute;
+left: 7px;
+top: 40%;
+margin-top: -8px;
+}
+
+body:nth-of-type(1) ul.a li:after{
+/*Add another block-level blank space*/
+content:"\00a0";
+display:block;
+
+/*Make it a small rectangle so the border will create an L-shape*/
+width: 3px;
+height: 6px;
+
+/*Add a white border on the bottom and left, creating that 'L' */
+border: solid #eeeeee;
+border-width: 0 2px 2px 0;
+
+/*Position it on top of the circle*/
+position:absolute;
+left: 14px;
+top: 40%;
+margin-top: -4px;
+
+/*Rotate the L 45 degrees to turn it into a checkmark*/
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+}      
+
+ body {
+font-family: Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+    h3{
+          text-align: center;
+    }  
+     h1{
+          text-align: center;
+    }  
+    
+    
+     .content11{
+    
+        background-color: gainsboro;
+        width: 350px;
+         z-index: ;
+    }
+    
+   .box {
+    
+        background-color: gainsboro;
+        max-width:350px;
+         z-index: ;
+    }
+    .box2{
+    height: 350px;
+        width: 100%;
+         z-index: 0;
+      
+    }
+        .box3{
+          width: 350px;
+         z-index: 0;
+            background-color: gainsboro;
+            float:right;
+      
+    }
+    
+    
+
+
+
+</style>
+    
+     
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+<style media="" data-href="./style.css">:root {
+  --main-radius: 5px;
+  --main-padding: 0px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.0fr 1.5fr 1.5fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "main main sidebar sidebar"
+    "content1 content1 sidebar sidebar"
+    "footer footer sidebar sidebar"
+    "content3 content3 content2 content2";
+  grid-gap: 0.5rem;
+ 
+  color: #004d40;
+
+}
+
+nav {
+     justify-self: center;
+background: white;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+}
+
+main {
+background: white;
+  grid-area: main;
+ padding-top: 0;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+  text-align: center;
+}
+
+#content11 {
+    margin-left: 50px;
+background: white;
+   padding-top: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+    padding: var(--main-padding);
+}
+
+#content1 {
+   padding-top: 0; 
+background: white;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+}
+
+#content2 {
+background: white;
+  z-index: 1;
+
+  grid-area: content2;
+  border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+
+#content3 {
+background: white;
+  grid-area: content3;
+ 
+  border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+
+footer {
+background: white;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding: var(--main-padding);
+}
+
+a {
+  text-align: center;
+  display: block;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "content1"
+      "sidebar"
+      "content3"
+      "footer"
+      "content2";
+  }
+    
+  
+  iframe{
+  width: 100%;
+
+
+}  
+      
+
+     
+    
+    #content1 {
+    
+background: white;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+    footer {
+background: white;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+   padding: var(--main-padding);
+}
+    .box{
+width: 100%;
+ z-index: 0;
+      
+    }
+    
+   
+
+    .box2{
+width:100%;
+         z-index: 0;
+      
+    }
+        .box3{
+          width: 100%;
+         z-index: 0;
+            background-color: gainsboro;
+            float:right;
+      
+    }
+}</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    
+    
+    
+    
+    
+<script src="https://static.hotmart.com/checkout/widget.min.js"></script><link rel="stylesheet" type="text/css" href="https://static.hotmart.com/css/hotmart-fb.min.css" data-inprogress=""><script type="text/javascript" src="//static.hotmart.com/checkout/jquery/jquery-3.2.1.min.js"></script><script type="text/javascript" src="//static.hotmart.com/checkout/fancybox/jquery.fancybox.min.js"></script><link type="text/css" rel="stylesheet" href="//static.hotmart.com/checkout/fancybox/jquery.fancybox.min.css" data-inprogress=""></head>
+<body>
+    
+    
+    
+    
+   
+
+    
+
+    
+    
+    
+    
+    <script type="text/javascript">
+	function importHotmart(){ 
+ 		var imported = document.createElement('script'); 
+ 		imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+ 		document.head.appendChild(imported); 
+		var link = document.createElement('link'); 
+		link.rel = 'stylesheet'; 
+		link.type = 'text/css'; 
+		link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+		document.head.appendChild(link);	} 
+ 	importHotmart(); 
+ </script> 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- partial:index.partial.html -->
+
+  <style media="" data-href="https://fonts.googleapis.com/css?family=Inter:400,800,900&amp;display=swap">/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+  <!-- Code by Angela Delise
+https://codepen.io/angeladelise/pen/YzXLdyq
+  Video Tutorial: https://www.youtube.com/watch?v=68O6eOGAGqA -->
+
+
+
+<div class="container">
+    
+    
+    
+<nav>
+    <div class="nav">
+    
+    <img src="https://www.digo.com.co/wp-content/uploads/2020/09/imagen-vende-turismo-por-internet-landing-800x320.jpg">
+        
+        </div>
+        </nav>
+  <main>
+      <div class="text1">
+    <h2>AUMENTA LAS VENTAS DE TU AGENCIA DE VIAJES HACIENDO MARKETING DIGITAL</h2> 
+    
+    <div id="" class="title">
+    
+   <h5>Descubre cómo VENDER turismo por Internet creando estrategias de Marketing Digital por Google, Facebook, Instagram y WhatsApp, deja de vender a lo dinosaurio y AUMENTA LAS VENTAS de tu agencia de viajes en el 2020.</h5></div>
+          
+          
+          
+      
+      </div>
+    
+    
+    </main>
+    
+    
+  <div id="content11">
+      
+     <div class="box">  
+        
+       
+       <h1>CON ESTE CURSO CONSEGUIRÁS </h1>
+<ul class="a">
+<li>
+    Aumentar las ventas de tu agencia en los próximos 30 días.</li>
+    <li>
+Dejar de buscar clientes y que ellos te encuentren a ti. </li>
+<li>
+Conseguir Más prospectos calificados todos los días.</li>
+<li>
+Retornos de inversión de más del 500% en tus campañas.</li>
+<li>
+Hacer que Google, Facebook, Instagram y WhatsApp sean tus mejores vendedores 24 horas al día.</li>
+<li>
+Ahorrar tiempo automatizando tus procesos de venta. </li>
+<li>
+Crear, configurar y personalizar tus propias campañas. </li>
+<li>
+Reinventar la forma en que buscas clientes.</li>
+<li>
+y lo más importante, a VENDER, por que Sin Ventas No Hay Paraíso.</li>
+            </ul>
+
+      <img src="https://www.digo.com.co/wp-content/uploads/2020/11/precio2-3999.fw_.png"> 
+      
+     
+            
+ <ul>
+  <li>LO MAS VENDIDO ⭐⭐⭐⭐⭐</li>
+ <li>50 CUPOS DISPONIBLES</li>
+ <li>1175 Estudiantes.</li>
+ <li>Última actualización: Junio del 2020</li>
+<br>
+Último día para ingresar con el 60% de descuento.
+  <br>
+Ingresa el cupón 058978 para acceder a descuento
+            
+        </ul>
+      
+         
+         
+         
+         <!-- Include the PayPal JavaScript SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=Ab3R-BPrHb_yK4BExaOiv0urHulyMFAeEXSx5eeHS0826-NvPDPTNtl0fAhBTnHXRvD0ioSsRIRCSjUq&amp;currency=MXN" data-uid-auto="uid_fdrfqkrdjrrfkmuisejljfrdcclpzf"></script>
+         
+         
+         
+         
+         
+         
+         
+         <div id="checkout" class="checkout"> <div id="zoid-paypal-buttons-uid_81979786ea_mdy6mjk6mtu" class="paypal-buttons paypal-buttons-context-iframe paypal-buttons-label-unknown paypal-buttons-layout-vertical" data-paypal-smart-button-version="5.0.530" style="height: 158px; transition: 0.2s ease-in-out;"><style nonce="">
+                    #zoid-paypal-buttons-uid_81979786ea_mdy6mjk6mtu {
+                        position: relative;
+                        display: inline-block;
+                        width: 100%;
+                        min-height: 35px;
+                        min-width: 200px;
+                        font-size: 0;
+                    }
+
+                    #zoid-paypal-buttons-uid_81979786ea_mdy6mjk6mtu > iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    #zoid-paypal-buttons-uid_81979786ea_mdy6mjk6mtu > iframe.component-frame {
+                        z-index: 100;
+                    }
+
+                    #zoid-paypal-buttons-uid_81979786ea_mdy6mjk6mtu > iframe.prerender-frame {
+                        transition: opacity .2s linear;
+                        z-index: 200;
+                    }
+
+                    #zoid-paypal-buttons-uid_81979786ea_mdy6mjk6mtu > iframe.visible {
+                        opacity: 1;
+                    }
+
+                    #zoid-paypal-buttons-uid_81979786ea_mdy6mjk6mtu > iframe.invisible {
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+
+                    #zoid-paypal-buttons-uid_81979786ea_mdy6mjk6mtu > .smart-menu {
+                        position: absolute;
+                        z-index: 300;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                    }
+                </style><iframe allowtransparency="true" name="__zoid__paypal_buttons__eyJzZW5kZXIiOnsiZG9tYWluIjoiaHR0cHM6Ly9idXJ6YWNoZW0uZ2l0aHViLmlvIn0sIm1ldGFEYXRhIjp7IndpbmRvd1JlZiI6eyJ0eXBlIjoicGFyZW50IiwiZGlzdGFuY2UiOjB9fSwicmVmZXJlbmNlIjp7InR5cGUiOiJyYXciLCJ2YWwiOiJ7XCJ1aWRcIjpcInpvaWQtcGF5cGFsLWJ1dHRvbnMtdWlkXzgxOTc5Nzg2ZWFfbWR5Nm1qazZtdHVcIixcImNvbnRleHRcIjpcImlmcmFtZVwiLFwidGFnXCI6XCJwYXlwYWwtYnV0dG9uc1wiLFwiY2hpbGREb21haW5NYXRjaFwiOntcIl9fdHlwZV9fXCI6XCJyZWdleFwiLFwiX192YWxfX1wiOlwiXFxcXC5wYXlwYWxcXFxcLihjb218Y24pKDpcXFxcZCspPyRcIn0sXCJ2ZXJzaW9uXCI6XCIxMF81XzBcIixcInByb3BzXCI6e1wiY3JlYXRlT3JkZXJcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF9jNzVlNDUyZjA2X21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJjcmVhdGVPcmRlclwifX0sXCJvbkFwcHJvdmVcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF80ZDk1NmY5MTY1X21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJvbkFwcHJvdmVcIn19LFwiY3NwTm9uY2VcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwiYXBwU3dpdGNoV2hlbkF2YWlsYWJsZVwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJwcmVmZXJlbmNlc1wiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJzaG93UGF5UGFsQXBwU3dpdGNoT3ZlcmxheVwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkXzFhNjQ5NWM0OWVfbWR5Nm1qazZtdHVcIixcIm5hbWVcIjpcInNob3dQYXlQYWxBcHBTd2l0Y2hPdmVybGF5XCJ9fSxcImhpZGVQYXlQYWxBcHBTd2l0Y2hPdmVybGF5XCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfYTI1MTBjYzEzMV9tZHk2bWprNm10dVwiLFwibmFtZVwiOlwiaGlkZVBheVBhbEFwcFN3aXRjaE92ZXJsYXlcIn19LFwicmVkaXJlY3RcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF9jNzJmYWExNjgwX21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJyZWRpcmVjdFwifX0sXCJsaXN0ZW5Gb3JIYXNoQ2hhbmdlc1wiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkX2U4OWE2YTkxNzlfbWR5Nm1qazZtdHVcIixcIm5hbWVcIjpcImxpc3RlbkZvckhhc2hDaGFuZ2VzXCJ9fSxcInJlbW92ZUxpc3RlbmVyRm9ySGFzaENoYW5nZXNcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF83OTU4MDk5YzE4X21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJyZW1vdmVMaXN0ZW5lckZvckhhc2hDaGFuZ2VzXCJ9fSxcImxpc3RlbkZvclZpc2liaWxpdHlDaGFuZ2VcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF8zMjA2ZmE4MjQ2X21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJsaXN0ZW5Gb3JWaXNpYmlsaXR5Q2hhbmdlXCJ9fSxcInJlbW92ZUxpc3RlbmVyRm9yVmlzaWJpbGl0eUNoYW5nZXNcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF8wYmFiOTg4NTQ0X21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJyZW1vdmVMaXN0ZW5lckZvclZpc2liaWxpdHlDaGFuZ2VzXCJ9fSxcImFsbG93QmlsbGluZ1BheW1lbnRzXCI6dHJ1ZSxcImFtb3VudFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJhcGlTdGFnZUhvc3RcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwiYXBwbGVQYXlcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwiYXBwbGVQYXlTdXBwb3J0XCI6ZmFsc2UsXCJicmFuZGVkXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImJ1dHRvbkxvY2F0aW9uXCI6XCJidXJ6YWNoZW0uZ2l0aHViLmlvXCIsXCJidXR0b25TZXNzaW9uSURcIjpcInVpZF9hNzBhMDM4NTg1X21keTZtams2bXR1XCIsXCJidXR0b25TaXplXCI6XCJsYXJnZVwiLFwiYnV5ZXJDb3VudHJ5XCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImNsaWVudEFjY2Vzc1Rva2VuXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImN1c3RvbWVySWRcIjpcIlwiLFwiY2xpZW50SURcIjpcIkFiM1ItQlBySGJfeUs0QkV4YU9pdjB1ckh1bHlNRkFlRVhTeDVlZUhTMDgyNi1OdlBEUFROdGwwZkFoQlRuSFhSdkQwaW9Tc1JJUkNTalVxXCIsXCJjbGllbnRNZXRhZGF0YUlEXCI6XCJ1aWRfNzBkODZkZDFkMF9tZHk2bWptNm10eVwiLFwiY29tbWl0XCI6dHJ1ZSxcImNvbXBvbmVudHNcIjpbXCJidXR0b25zXCJdLFwiY3JlYXRlQmlsbGluZ0FncmVlbWVudFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJjcmVhdGVTdWJzY3JpcHRpb25cIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwiY3JlYXRlVmF1bHRTZXR1cFRva2VuXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImNzcFwiOntcIm5vbmNlXCI6XCJcIn0sXCJjdXJyZW5jeVwiOlwiTVhOXCIsXCJkZWJ1Z1wiOmZhbHNlLFwiZGlzYWJsZUNhcmRcIjpbXSxcImRpc2FibGVGdW5kaW5nXCI6W10sXCJkaXNhYmxlU2V0Q29va2llXCI6dHJ1ZSxcImRpc3BsYXlPbmx5XCI6W10sXCJlYWdlck9yZGVyQ3JlYXRpb25cIjpmYWxzZSxcImVuYWJsZUZ1bmRpbmdcIjpbXSxcImVuYWJsZVRocmVlRG9tYWluU2VjdXJlXCI6ZmFsc2UsXCJlbmFibGVWYXVsdFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJlbnZcIjpcInByb2R1Y3Rpb25cIixcImV4cGVyaW1lbnRcIjp7XCJlbmFibGVWZW5tb1wiOmZhbHNlLFwidmVubW9WYXVsdFdpdGhvdXRQdXJjaGFzZVwiOmZhbHNlLFwic3BiRWFnZXJPcmRlckNyZWF0aW9uXCI6ZmFsc2UsXCJ2ZW5tb1dlYkVuYWJsZWRcIjpmYWxzZSxcImlzV2ViVmlld0VuYWJsZWRcIjpmYWxzZSxcImlzUGF5cGFsUmVicmFuZEVuYWJsZWRcIjpmYWxzZSxcImlzUGF5cGFsUmVicmFuZEFCVGVzdEVuYWJsZWRcIjpmYWxzZSxcImRlZmF1bHRCbHVlQnV0dG9uQ29sb3JcIjpcImRlZmF1bHRCbHVlX2RhcmtCbHVlXCIsXCJpc0VkZ2VDYWNoZVN0YWxlRW5hYmxlZFwiOmZhbHNlLFwiaXNKdW5vQ2lyY3VpdEJyZWFrZXJFbmFibGVkXCI6ZmFsc2UsXCJpc0NzbndFcnJvclRlc3RpbmdFbmFibGVkXCI6ZmFsc2UsXCJ2ZW5tb0VuYWJsZVdlYk9uTm9uTmF0aXZlQnJvd3NlclwiOmZhbHNlLFwicGF5cGFsQ3JlZGl0QnV0dG9uQ3JlYXRlVmF1bHRTZXR1cFRva2VuRXhpc3RzXCI6ZmFsc2V9LFwiZXhwZXJpbWVudGF0aW9uXCI6e30sXCJmbG93XCI6XCJwdXJjaGFzZVwiLFwiZnVuZGluZ0VsaWdpYmlsaXR5XCI6e1wicGF5cGFsXCI6e1wiZWxpZ2libGVcIjp0cnVlLFwidmF1bHRhYmxlXCI6ZmFsc2V9LFwicGF5bGF0ZXJcIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwidmF1bHRhYmxlXCI6ZmFsc2UsXCJwcm9kdWN0c1wiOntcInBheUluM1wiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJ2YXJpYW50XCI6bnVsbH0sXCJwYXlJbjRcIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwidmFyaWFudFwiOm51bGx9LFwicGF5bGF0ZXJcIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwidmFyaWFudFwiOm51bGx9fX0sXCJjYXJkXCI6e1wiZWxpZ2libGVcIjp0cnVlLFwiYnJhbmRlZFwiOmZhbHNlLFwiaW5zdGFsbG1lbnRzXCI6ZmFsc2UsXCJ2ZW5kb3JzXCI6e1widmlzYVwiOntcImVsaWdpYmxlXCI6dHJ1ZSxcInZhdWx0YWJsZVwiOnRydWV9LFwibWFzdGVyY2FyZFwiOntcImVsaWdpYmxlXCI6dHJ1ZSxcInZhdWx0YWJsZVwiOnRydWV9LFwiYW1leFwiOntcImVsaWdpYmxlXCI6dHJ1ZSxcInZhdWx0YWJsZVwiOnRydWV9LFwiZGlzY292ZXJcIjp7XCJlbGlnaWJsZVwiOnRydWUsXCJ2YXVsdGFibGVcIjp0cnVlfSxcImhpcGVyXCI6e1wiZWxpZ2libGVcIjpmYWxzZSxcInZhdWx0YWJsZVwiOmZhbHNlfSxcImVsb1wiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJ2YXVsdGFibGVcIjp0cnVlfSxcImpjYlwiOntcImVsaWdpYmxlXCI6ZmFsc2UsXCJ2YXVsdGFibGVcIjp0cnVlfSxcIm1hZXN0cm9cIjp7XCJlbGlnaWJsZVwiOnRydWUsXCJ2YXVsdGFibGVcIjp0cnVlfSxcImRpbmVyc1wiOntcImVsaWdpYmxlXCI6dHJ1ZSxcInZhdWx0YWJsZVwiOnRydWV9LFwiY3VwXCI6e1wiZWxpZ2libGVcIjp0cnVlLFwidmF1bHRhYmxlXCI6dHJ1ZX0sXCJjYl9uYXRpb25hbGVcIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwidmF1bHRhYmxlXCI6dHJ1ZX19LFwiZ3Vlc3RFbmFibGVkXCI6ZmFsc2V9LFwidmVubW9cIjp7XCJlbGlnaWJsZVwiOmZhbHNlLFwidmF1bHRhYmxlXCI6ZmFsc2V9LFwiaXRhdVwiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwiY3JlZGl0XCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJhcHBsZXBheVwiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwic2VwYVwiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwiaWRlYWxcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcImJhbmNvbnRhY3RcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcImdpcm9wYXlcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcImVwc1wiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwic29mb3J0XCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJteWJhbmtcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcInAyNFwiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwid2VjaGF0cGF5XCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJwYXl1XCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJibGlrXCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJ0cnVzdGx5XCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJveHhvXCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJib2xldG9cIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcImJvbGV0b2JhbmNhcmlvXCI6e1wiZWxpZ2libGVcIjpmYWxzZX0sXCJtZXJjYWRvcGFnb1wiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwibXVsdGliYW5jb1wiOntcImVsaWdpYmxlXCI6ZmFsc2V9LFwic2F0aXNwYXlcIjp7XCJlbGlnaWJsZVwiOmZhbHNlfSxcInBhaWR5XCI6e1wiZWxpZ2libGVcIjpmYWxzZX19LFwiZnVuZGluZ1NvdXJjZVwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJnZXRQYWdlVXJsXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfZThkOGUwYTYwOF9tZHk2bWprNm10dVwiLFwibmFtZVwiOlwiZ2V0UGFnZVVybFwifX0sXCJnZXRQb3B1cEJyaWRnZVwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkXzhjY2RmNjQ2ODRfbWR5Nm1qazZtdHVcIixcIm5hbWVcIjpcImdldFBvcHVwQnJpZGdlXCJ9fSxcImdldFByZXJlbmRlckRldGFpbHNcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF8zZGMzMTJkNmYzX21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJnZXRQcmVyZW5kZXJEZXRhaWxzXCJ9fSxcImdldFF1ZXJpZWRFbGlnaWJsZUZ1bmRpbmdcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF9lNDc2MGJiM2E5X21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJnZXRRdWVyaWVkRWxpZ2libGVGdW5kaW5nXCJ9fSxcImhvc3RlZEJ1dHRvbklkXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImludGVudFwiOlwiY2FwdHVyZVwiLFwianNTZGtMaWJyYXJ5XCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImxvY2FsZVwiOntcImNvdW50cnlcIjpcIlVTXCIsXCJsYW5nXCI6XCJlblwifSxcIm1lcmNoYW50SURcIjpbXSxcIm1lcmNoYW50UmVxdWVzdGVkUG9wdXBzRGlzYWJsZWRcIjpmYWxzZSxcIm1lc3NhZ2VcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwibm9uY2VcIjpcIlwiLFwib25DYW5jZWxcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwib25DbGlja1wiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJvbkNvbXBsZXRlXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcIm9uSW5pdFwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkX2Y0NjgwMjg1NTRfbWR5Nm1qazZtdHVcIixcIm5hbWVcIjpcIm9uSW5pdFwifX0sXCJvbk1lc3NhZ2VDbGlja1wiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkX2FmODNmOTE4ZWVfbWR5Nm1qazZtdHVcIixcIm5hbWVcIjpcIm9uTWVzc2FnZUNsaWNrXCJ9fSxcIm9uTWVzc2FnZUhvdmVyXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfYzYxNmNkYWYyZF9tZHk2bWprNm10dVwiLFwibmFtZVwiOlwib25NZXNzYWdlSG92ZXJcIn19LFwib25NZXNzYWdlUmVhZHlcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF8wM2VlNjMwMzA1X21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJvbk1lc3NhZ2VSZWFkeVwifX0sXCJvblNoaXBwaW5nQWRkcmVzc0NoYW5nZVwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJvblNoaXBwaW5nQ2hhbmdlXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcIm9uU2hpcHBpbmdPcHRpb25zQ2hhbmdlXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImhhc1NoaXBwaW5nQ2FsbGJhY2tcIjpmYWxzZSxcInBhZ2VUeXBlXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcInBhcnRuZXJBdHRyaWJ1dGlvbklEXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcInBheW1lbnRNZXRob2ROb25jZVwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJwYXltZW50TWV0aG9kVG9rZW5cIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwicGF5bWVudFJlcXVlc3RcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwicGxhdGZvcm1cIjpcImRlc2t0b3BcIixcInJlZmVycmVyRG9tYWluXCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcInJlbWVtYmVyXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfY2M5MGJmMjRkMV9tZHk2bWprNm10dVwiLFwibmFtZVwiOlwicmVtZW1iZXJcIn19LFwicmVtZW1iZXJlZFwiOltdLFwicmVuZGVyZWRCdXR0b25zXCI6W1wicGF5cGFsXCIsXCJjYXJkXCJdLFwic2Vzc2lvbklEXCI6XCJ1aWRfNzBkODZkZDFkMF9tZHk2bWptNm10eVwiLFwic2RrQ29ycmVsYXRpb25JRFwiOlwicHJlYnVpbGRcIixcInNka0luaXRUaW1pbmdzXCI6e1wic2RrSW5pdFRpbWVTdGFtcFwiOjE3NzA2MTg1NTUzMzksXCJzZGtTY3JpcHREb3dubG9hZER1cmF0aW9uXCI6MCxcImlzU2RrQ2FjaGVkXCI6XCJ5ZXNcIn0sXCJzZGtUb2tlblwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJzZXNzaW9uU3RhdGVcIjp7XCJnZXRcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF81NGJkYmUwNzcxX21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJnZXRcIn19LFwic2V0XCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfMjkyYmJlZWE0NF9tZHk2bWprNm10dVwiLFwibmFtZVwiOlwic2V0XCJ9fX0sXCJzaG9wcGVyU2Vzc2lvbklkXCI6XCJcIixcImdldFNob3BwZXJJbnNpZ2h0c1VzZWRcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF8wMTRkZmU3ODZmX21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJMclwifX0sXCJzdGFnZUhvc3RcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwic3RvcmFnZUlEXCI6XCJ1aWRfNzUzNGJmNGNkOV9tZHU2bXRtNm16a1wiLFwic3RvcmFnZVN0YXRlXCI6e1wiZ2V0XCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfNGZjNWY1OGRmOF9tZHk2bWprNm10dVwiLFwibmFtZVwiOlwiZ2V0XCJ9fSxcInNldFwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkXzM3Mzk1MWRhZDZfbWR5Nm1qazZtdHVcIixcIm5hbWVcIjpcInNldFwifX19LFwic3R5bGVcIjp7XCJsYWJlbFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJsYXlvdXRcIjpcInZlcnRpY2FsXCIsXCJjb2xvclwiOlwiZ29sZFwiLFwic2hhcGVcIjpcInJlY3RcIixcInRhZ2xpbmVcIjpmYWxzZSxcImhlaWdodFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJwZXJpb2RcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwibWVudVBsYWNlbWVudFwiOlwiYmVsb3dcIixcImRpc2FibGVNYXhXaWR0aFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJkaXNhYmxlTWF4SGVpZ2h0XCI6e1wiX190eXBlX19cIjpcInVuZGVmaW5lZFwifSxcImJvcmRlclJhZGl1c1wiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJzaG91bGRBcHBseVJlYnJhbmRlZFN0eWxlc1wiOmZhbHNlLFwiaXNCdXR0b25Db2xvckFCVGVzdE1lcmNoYW50XCI6ZmFsc2V9LFwiYnV0dG9uQ29sb3JcIjp7XCJzaG91bGRBcHBseVJlYnJhbmRlZFN0eWxlc1wiOmZhbHNlLFwiY29sb3JcIjpcImdvbGRcIixcImlzQnV0dG9uQ29sb3JBQlRlc3RNZXJjaGFudFwiOmZhbHNlfSxcInN1cHBvcnRlZE5hdGl2ZUJyb3dzZXJcIjpmYWxzZSxcInN1cHBvcnRlZE5hdGl2ZVZlbm1vQnJvd3NlclwiOmZhbHNlLFwic3VwcG9ydHNQb3B1cHNcIjp0cnVlLFwic3VwcG9ydHNWZW5tb1BvcHVwc1wiOnRydWUsXCJ0ZXN0XCI6e1wiYWN0aW9uXCI6XCJjaGVja291dFwifSxcInVzZXJFeHBlcmllbmNlRmxvd1wiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJ1c2VySURUb2tlblwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJzZGtTb3VyY2VcIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwidmF1bHRcIjpmYWxzZSxcIndhbGxldFwiOntcIl9fdHlwZV9fXCI6XCJ1bmRlZmluZWRcIn0sXCJoaWRlU3VibWl0QnV0dG9uRm9yQ2FyZEZvcm1cIjp7XCJfX3R5cGVfX1wiOlwidW5kZWZpbmVkXCJ9LFwidXNlckFnZW50XCI6XCJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTQ0LjAuMC4wIFNhZmFyaS81MzcuMzZcIn0sXCJleHBvcnRzXCI6e1wiaW5pdFwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkXzQ4YmZkOTY1NzdfbWR5Nm1qazZtdHVcIixcIm5hbWVcIjpcImluaXRcIn19LFwiY2xvc2VcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF80M2FkODJmOWUyX21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJjbG9zZTo6bWVtb2l6ZWRcIn19LFwiY2hlY2tDbG9zZVwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkX2Q5ODc2NGU4ZGVfbWR5Nm1qazZtdHVcIixcIm5hbWVcIjpcImNoZWNrQ2xvc2VcIn19LFwicmVzaXplXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfZjEwZTNkMmRjZV9tZHk2bWprNm10dVwiLFwibmFtZVwiOlwieG5cIn19LFwib25FcnJvclwiOntcIl9fdHlwZV9fXCI6XCJjcm9zc19kb21haW5fZnVuY3Rpb25cIixcIl9fdmFsX19cIjp7XCJpZFwiOlwidWlkXzhhZjczZDJjZjdfbWR5Nm1qazZtdHVcIixcIm5hbWVcIjpcImtuXCJ9fSxcInNob3dcIjp7XCJfX3R5cGVfX1wiOlwiY3Jvc3NfZG9tYWluX2Z1bmN0aW9uXCIsXCJfX3ZhbF9fXCI6e1wiaWRcIjpcInVpZF8zOWM2OWVlODYyX21keTZtams2bXR1XCIsXCJuYW1lXCI6XCJzblwifX0sXCJoaWRlXCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfZjI0ODI1NDQ5Nl9tZHk2bWprNm10dVwiLFwibmFtZVwiOlwiZG5cIn19LFwiZXhwb3J0XCI6e1wiX190eXBlX19cIjpcImNyb3NzX2RvbWFpbl9mdW5jdGlvblwiLFwiX192YWxfX1wiOntcImlkXCI6XCJ1aWRfYmU0ZDM1OTkwOF9tZHk2bWprNm10dVwiLFwibmFtZVwiOlwiSW5cIn19fX0ifX0__" title="PayPal" allowpaymentrequest="allowpaymentrequest" scrolling="no" id="jsx-iframe-25eec25c9b" class="component-frame visible" style="background-color: transparent; border: none;"></iframe><div id="smart-menu" class="smart-menu"></div><div id="installments-modal" class="installments-modal"></div><iframe name="__detect_close_uid_515908c35f_mdy6mjk6mtu__" style="display: none;"></iframe></div></div>
+   
+         
+
+        
+    <script>paypal.Buttons({
+            // Set up the transaction
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '2500.00'
+                        }
+                    }]
+                });
+            },
+
+            // Finalize the transaction
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    // Show a success message to the buyer
+                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                });
+            }
+
+
+        }).render('#checkout');</script>
+        
+      <!-- 
+ 
+   <a onclick="return false;" href="https://pay.hotmart.com/X45387516H?checkoutMode=2" class="hotmart-fb hotmart__button-checkout">Buy now</a> 
+
+
+<button class="btn">CLIC AQUÍ PARA INSCRIBIRTE HOY CON EL 60% DE DESCUENTO</button>-->
+      
+       
+    
+   </div>
+            </div>
+    
+
+    
+   
+    
+  <div id="content1">    <iframe width="500" height="300" src="https://www.youtube.com/embed/5mcAcBT26ao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>  </div>
+    
+    
+
+    
+    
+    
+    
+  <div id="content3">  
+      
+         <div class="box3">  
+      
+      <div id="" class="list">
+        <h1>CONTENIDO</h1>
+<ul class="a">
+<li>
+
+    Cómo venderle al consumidor de hoy.</li>
+
+<li>Estrategias para vender planes por Google (SUPER EFECTIVO)</li>
+
+<li>Estrategias para vender planes por Facebook e Instagram.</li>
+
+<li>Cómo más ventas por WhatsApp Business.</li>
+
+<li>Cómo hacer que Internet trabaje para ti las 24 horas. </li>
+
+<li>Estructura para tu estrategia de marketing digital</li>
+
+<li>Cómo hacer seguimiento por remarketing en Facebook y YouTube</li>
+
+<li>Cómo hacer anuncios VENDEDORES en Facebook, Instagram y Google</li>
+
+<li>Cómo diseñar paginas web o landing page persuasivas que den ganas de comprar.</li>
+
+<li>Cómo escribir textos persuasivos que lleven al cliente directamente a la compra</li>
+        </ul>
+
+</div>
+             
+      </div>
+</div>
+    
+    
+    
+    
+  <footer>
+   
+<div class="photo">
+  <img class="photo" src="https://www.digo.com.co/wp-content/uploads/2020/11/testi-fabian-600x248.png" alt="">
+ </div>
+    
+    </footer>
+    
+    
+    
+      
+   
+    
+    
+   
+</div>
+
+  
+
+
+<div class="html-viewer-info-panel html-viewer-panel-right">
+      <div class="html-viewer-panel-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div class="stars-container">
+            <span class="star" data-rating="1">★</span>
+            <span class="star" data-rating="2">★</span>
+            <span class="star" data-rating="3">★</span>
+            <span class="star" data-rating="4">★</span>
+            <span class="star" data-rating="5">★</span>
+          </div>
+          <span class="html-viewer-rate-text">Rate Us</span>
+        </div>
+          <div class="html-viewer-header-controls">
+          <div class="html-viewer-position-controls" title="Panel Position">
+            <button class="html-viewer-position-btn" data-position="left" title="Left">←</button>
+            <button class="html-viewer-position-btn active" data-position="right" title="Right">→</button>
+          </div>
+          <button class="html-viewer-close-panel" title="Close">×</button>
+        </div>
+      </div>
+    </div><div class="html-viewer-tooltip"></div></body></html>
